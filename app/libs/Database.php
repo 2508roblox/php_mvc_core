@@ -1,6 +1,5 @@
-//connect and excuse sql Model extend Database
 <?php
-// path relation problem
+
 class Database
 {
     public $host   = DB_HOST;

@@ -1,10 +1,10 @@
 <?php
-class AdminModel extends Database
+class AdminModel
 {
+    public $db;
     public function __construct()
     {
-        echo "done";
-        $this->insert('gawge');
+        $this->db = new Database();
     }
     public function get($id)
     {

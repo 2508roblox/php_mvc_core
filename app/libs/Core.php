@@ -2,9 +2,9 @@
 // handle route to include ->Controller
 class Core
 {
-    private $controller = "HomeController";
-    private $method = "index";
-    private $params = [''];
+    private $controller = DEFAULT_CONTROLLER;
+    private $method = DEFAULT_METHOD;
+    private $params = DEFAULT_PARAMS;
     // default controller, method, params
     public function __construct()
     {

@@ -3,8 +3,8 @@
     {
         public function __construct()
         {
-            echo 'Post ';
-            $this->model('admin');
+            $data = $this->model('admin')->get(2);
+            $this->view('posts', $data);
         }
         public function index()
         {
