@@ -23,12 +23,25 @@ class AdminController extends Controller
         //isset POST update
         $this->view('admin/addproduct');
     }
+    public function updateproduct()
+    {
+        // handle all method, ->view
+        //isset POST update
+        $this->view('admin/updateproduct');
+    }
     public function productlist()
     {
 
         // handle all method del, get, update, ->view
         //isset POST update
         $this->view('admin/productlist');
+    }
+    public function orders()
+    {
+
+        // handle all method del, get, update, ->view
+        //isset POST update
+        $this->view('admin/orders');
     }
     public function reviews()
     {
