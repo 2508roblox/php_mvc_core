@@ -5,5 +5,7 @@ define("DB_PASS", "");
 define("DB_NAME", "mvc_class");
 define("DB_PORT", 3308);
 define("DEFAULT_CONTROLLER", "HomeController");
-define("DEFAULT_METHOD", "index");
+define("DEFAULT_METHOD", "get");
 define("DEFAULT_PARAMS", ['']);
+define("URL_ROOT", 'http://localhost/mvc_test_india');
+define("ASSETS_URL_ROOT", 'http://localhost/mvc_test_india');

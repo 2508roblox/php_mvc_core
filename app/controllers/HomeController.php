@@ -3,14 +3,19 @@ class HomeController extends Controller
 {
     public function __construct()
     {
-        $this->view('home');
+
         // model, view Controller's extend method
     }
-    public function index()
+    public function get()
     {
+        if ($_SERVER['REQUEST_METHOD'] = 'POST' && isset($_POST['login'])) {
+            echo "login...";
+        }
+        if ($_SERVER['REQUEST_METHOD'] = 'POST' && isset($_POST['logout'])) {
+            echo "logout...";
+        }
+        // redirect('/admin');
+        $this->view('frontend/index');
     }
-    public function get($id)
-    {
-        echo 'Home ' . $id;
-    }
+    
 }

@@ -9,10 +9,6 @@
         public function index()
         {
             //include file view
-            $this->view('posts', ['postsData' => ['faew', 'gaw', 'gwg']]);
-        }
-        public function get($params)
-        {
-            $this->view('posts', ['postId' => $params]);
+
         }
     }
