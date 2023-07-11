@@ -21025,4 +21025,14 @@ body.open .closeMask {
     }
 }
 
+svg {
+    transition: var(--transition) ease-in-out;
+
+}
+
+svg:hover {
+    fill: rgb(255, 255, 255) !important;
+
+}
+
 /*# sourceMappingURL=../maps/style.min.css.map */

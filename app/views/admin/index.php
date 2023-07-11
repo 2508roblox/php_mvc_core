@@ -5,6 +5,7 @@ include __DIR__ . '/./inc/sidebar.php';
 
 <!-- Start::app-content -->
 <div class="main-content app-content">
+
     <div class="container-fluid">
         <!-- Page Header -->
         <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
@@ -20,6 +21,7 @@ include __DIR__ . '/./inc/sidebar.php';
         </div>
         <!-- Page Header Close -->
         <!-- Start::row-1 -->
+
         <div class="row">
             <div class="col-xxl-6 col-xl-12">
                 <div class="row">
@@ -1100,6 +1102,7 @@ include __DIR__ . '/./inc/sidebar.php';
         </div>
     </div>
 </div>
+
 <!-- Footer Start -->
 <footer class="footer mt-auto py-3 bg-white text-center">
     <div class="container"> <span class="text-muted"> Copyright © <span id="year"></span> <a href="javascript:void(0);" class="text-dark fw-semibold">Ynex</a>. Designed with <span class="bi bi-heart-fill text-danger"></span> by <a href="javascript:void(0);"> <span class="fw-semibold text-primary text-decoration-underline">Spruko</span> </a> All rights
@@ -1110,6 +1113,7 @@ include __DIR__ . '/./inc/sidebar.php';
 </div>
 <div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
 <div id="responsive-overlay"></div>
+
 <!-- Popper JS -->
 <script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/@popperjs/core/umd/popper.min.js"></script>
 <!-- Bootstrap JS -->
@@ -1133,6 +1137,26 @@ include __DIR__ . '/./inc/sidebar.php';
 <script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/js/custom-switcher.min.js"></script>
 <!-- Custom JS -->
 <script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/js/custom.js"></script>
+
+<!-- All cdn for TableData -->
+<!-- table data -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+<div id="responsive-overlay"></div>
+<!-- Datatables Cdn -->
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.6/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<!-- Internal Datatables JS -->
+<script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/js/datatables.js"></script>
+
+
 </body>
 
 </html>

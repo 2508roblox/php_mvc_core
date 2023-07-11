@@ -114,7 +114,12 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#">Shop</a>
+                                    <a href="#">Shop
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24" width="10" height="10">
+                                            <path d="M1.51,6.079a1.492,1.492,0,0,1,1.06.44l7.673,7.672a2.5,2.5,0,0,0,3.536,0L21.44,6.529A1.5,1.5,0,1,1,23.561,8.65L15.9,16.312a5.505,5.505,0,0,1-7.778,0L.449,8.64A1.5,1.5,0,0,1,1.51,6.079Z" />
+                                        </svg>
+                                    </a>
+
                                     <ul class="axil-submenu">
                                         <li><a href="products">All Products</a></li>
                                         <li><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Category 1</a></li>
@@ -139,23 +144,36 @@
                         <ul class="action-list">
                             <li class="axil-search">
                                 <a href="javascript:void(0)" class="header-search-icon" title="Search">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <svg class="svg_icon_ct" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20">
+                                        <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="wishlist">
                                 <a href="wishlist">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <svg class="svg_icon_ct" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                        <g id="_01_align_center" data-name="01 align center">
+                                            <path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z" />
+                                        </g>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="shopping-cart">
                                 <a href="#" class="cart-dropdown-btn">
                                     <span class="cart-count">3</span>
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <svg class="svg_icon_ct" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20">
+                                        <path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z" />
+                                        <circle cx="7" cy="22" r="2" />
+                                        <circle cx="17" cy="22" r="2" />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="my-account">
                                 <a href="javascript:void(0)">
-                                    <i class="fa-regular fa-user"></i>
+                                    <svg class="svg_icon_ct" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20">
+                                        <path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z" />
+                                        <path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z" />
+                                    </svg>
                                 </a>
                                 <div class="my-account-dropdown">
                                     <span class="title">QUICKLINKS</span>

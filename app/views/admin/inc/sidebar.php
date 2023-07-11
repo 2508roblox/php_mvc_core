@@ -44,7 +44,7 @@
                         <li class="slide side-menu__label1"> <a href="javascript:void(0)">Category</a> </li>
                         <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addproduct" class="side-menu__item">Add Category</a> </li>
                         <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updateproduct" class="side-menu__item">Update Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updateproduct" class="side-menu__item">Category List</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/categorylist" class="side-menu__item">Category List</a> </li>
 
 
 
@@ -52,10 +52,10 @@
                 </li>
                 <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-file-blank side-menu__icon"></i> <span class="side-menu__label">sub-category</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
                     <ul class="slide-menu child1">
-                        <li class="slide side-menu__label1"> <a href="javascript:void(0)">Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addproduct" class="side-menu__item">Add Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updateproduct" class="side-menu__item">Update Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updateproduct" class="side-menu__item">Category List</a> </li>
+                        <li class="slide side-menu__label1"> <a href="javascript:void(0)">sub-category</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addproduct" class="side-menu__item">Add sub-category</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updateproduct" class="side-menu__item">Update sub-category</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/categorylist" class="side-menu__item">sub-category List</a> </li>
 
 
 

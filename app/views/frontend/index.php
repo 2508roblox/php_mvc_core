@@ -16,7 +16,10 @@ include_once __DIR__ . '/./inc/header.php';
                                 <h1 class="title">Roco Wireless Headphone</h1>
                                 <div class="slide-action">
                                     <div class="shop-btn">
-                                        <a href="products" class="axil-btn btn-bg-white"><i class="fa-brands fa-slack"></i>Shop Now</a>
+                                        <a href="products" class="axil-btn btn-bg-white d-flex">
+                                            <img style="object-fit: contain;" width="20px" height="20px" src="<?php echo ASSETS_URL_ROOT ?>/public/client_assets/assets/images/fire-icon.gif" alt="">
+                                            Shop Now</a>
+                                        <!-- <i class="fa-brands fa-slack"></i> -->
                                     </div>
                                     <div class="item-rating">
                                         <div class="thumb">
@@ -1753,7 +1756,7 @@ include_once __DIR__ . '/./inc/header.php';
                                 <li><a href="user">My Account</a></li>
                                 <li><a href="user/signup">Login / Register</a></li>
                                 <li><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Cart</a></li>
-                                <li><a href="wishlist">Wishlist</a></li>
+                                <li><a href="wishlist">wishlist</a></li>
                                 <li><a href="products">Shop</a></li>
                             </ul>
                         </div>

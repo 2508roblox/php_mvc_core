@@ -5,8 +5,15 @@
 //     $postModel->getAllPost();
 class Controller
 {
+    public $fm ;
+    public function __construct()
+    {
+        $this->fm = new Format();
+        
+    }
     public function model($model)
     {
+        // model first name ex: product
         if (file_exists('../app/models/' . $model . 'Model.php')) {
             require_once __DIR__ . "/../models/" . $model . 'Model.php';
             $model = ucfirst($model) . 'Model';

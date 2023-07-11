@@ -118,7 +118,7 @@ include_once __DIR__ . '/./inc/header.php';
                                 <li><a href="user">My Account</a></li>
                                 <li><a href="sign-up.html">Login / Register</a></li>
                                 <li><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Cart</a></li>
-                                <li><a href="wishlist">Wishlist</a></li>
+                                <li><a href="wishlist">wishlist</a></li>
                                 <li><a href="shop.html">Shop</a></li>
                             </ul>
                         </div>

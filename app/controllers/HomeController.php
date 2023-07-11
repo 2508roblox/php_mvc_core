@@ -17,5 +17,8 @@ class HomeController extends Controller
         // redirect('/admin');
         $this->view('frontend/index');
     }
+    public function getProducts() {
+        echo "Products List";
+    }
     
 }

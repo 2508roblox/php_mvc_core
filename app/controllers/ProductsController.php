@@ -10,11 +10,7 @@ class ProductsController extends Controller
     {
         $this->view('frontend/productdetail');
     }
-    public function wishlist()
-    //get product detail from product Model
-    {
-        $this->view('frontend/wishlist');
-    }
+   
     // public function productdetail()
     // {
     //     $this->view('frontend/productdetail');

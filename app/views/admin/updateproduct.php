@@ -111,7 +111,8 @@ include __DIR__ . '/./inc/sidebar.php';
                                                 <div class="col-xl-6"> <label for="product-type" class="form-label">Product Type</label> <input type="text" class="form-control" id="product-type" placeholder="Type"> </div>
                                                 <div class="col-xl-6"> <label for="product-discount" class="form-label">Item Weight</label> <input type="text" class="form-control" id="product-discount1" placeholder="Weight in gms"> </div>
                                                 <div class="col-xl-12 product-documents-container">
-                                                    <p class="fw-semibold mb-2 fs-14">Product Images :</p><input type="file" class="product-Images" name="filepond" multiple data-allow-reorder="true" data-max-file-size="3MB" data-max-files="6">
+                                                    <p class="fw-semibold mb-2 fs-14">Product Images :</p>
+                                                    <input type="file" class="product-Images" name="filepond" multiple data-allow-reorder="true" data-max-file-size="3MB" data-max-files="6">
                                                 </div> <label class="form-label op-5 mt-3">Minimum 0f 6 images
                                                     are need to be uploaded,make sure the image size match the
                                                     proper background size and all images should be uniformly

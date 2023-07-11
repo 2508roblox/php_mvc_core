@@ -37,6 +37,7 @@ class Core
     }
     public function explodeUrl()
     {
+
         if (isset($_GET['url'])) {
             $url = $_GET['url'];
             $url = filter_var($url, FILTER_SANITIZE_URL);

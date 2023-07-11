@@ -7,7 +7,7 @@ include_once __DIR__ . '/./inc/header.php';
 
 <main class="main-wrapper">
 
-    <!-- Start Wishlist Area  -->
+    <!-- Start wishlist Area  -->
     <div class="axil-wishlist-area axil-section-gap">
         <div class="container">
             <div class="product-table-heading">
@@ -59,7 +59,7 @@ include_once __DIR__ . '/./inc/header.php';
             </div>
         </div>
     </div>
-    <!-- End Wishlist Area  -->
+    <!-- End wishlist Area  -->
 </main>
 
 
@@ -153,7 +153,7 @@ include_once __DIR__ . '/./inc/header.php';
                                 <li><a href="user">My Account</a></li>
                                 <li><a href="sign-up.html">Login / Register</a></li>
                                 <li><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Cart</a></li>
-                                <li><a href="wishlist">Wishlist</a></li>
+                                <li><a href="wishlist">wishlist</a></li>
                                 <li><a href="shop.html">Shop</a></li>
                             </ul>
                         </div>
