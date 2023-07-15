@@ -40,7 +40,7 @@
                 <div class="col-sm-8">
                     <div class="singin-header-btn">
                         <p>Not a member?</p>
-                        <a href="user/signup" class="axil-btn btn-bg-secondary sign-up-btn">Sign Up Now</a>
+                        <a href="<?php echo ASSETS_URL_ROOT ?>/user/signup" class="axil-btn btn-bg-secondary sign-up-btn">Sign Up Now</a>
                     </div>
                 </div>
             </div>

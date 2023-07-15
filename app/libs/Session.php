@@ -3,6 +3,7 @@
 /**
  *Session Class
  **/
+
 class Session
 {
    public static function init()
@@ -54,6 +55,6 @@ class Session
    public static function destroy()
    {
       session_destroy();
-      header("Location:login.php");
+      redirect('/admin/login');
    }
 }

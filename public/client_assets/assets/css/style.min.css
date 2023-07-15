@@ -5153,7 +5153,7 @@ button.axil-btn.btn-size-md i {
 
 .main-slider-large-thumb .slick-track {
     display: flex;
-    align-items: flex-end
+    align-items: center
 }
 
 .main-slider-large-thumb .single-slide {
@@ -9894,9 +9894,12 @@ body.open .closeMask {
 
 .axil-product>.thumbnail>a img {
     border-radius: 6px;
-    width: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
     transition: .3s
 }
+
 
 .axil-product>.thumbnail>a .hover-img {
     position: absolute;
@@ -21033,6 +21036,22 @@ svg {
 svg:hover {
     fill: rgb(255, 255, 255) !important;
 
+}
+
+.thumbnail a img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.slick-list img {
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+}
+
+.slick-track {
+    align-items: center;
 }
 
 /*# sourceMappingURL=../maps/style.min.css.map */

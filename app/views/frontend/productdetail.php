@@ -1,5 +1,6 @@
 <?php
 include_once __DIR__ . '/./inc/header.php';
+$p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
 ?>
 
 
@@ -10,92 +11,25 @@ include_once __DIR__ . '/./inc/header.php';
 <main class="main-wrapper">
     <!-- Start Shop Area  -->
     <div class="axil-single-product-area bg-color-white">
-        <div class="single-product-thumb axil-section-gap pb--20 pb_sm--0 bg-vista-white">
+        <div class="single-product-thumb axil-section-gap pb--20 pb_sm--0 ">
             <div class="container">
                 <div class="row row--25">
                     <div class="col-lg-6 mb--40">
                         <div class="h-100">
                             <div class="position-sticky sticky-top">
                                 <div class="row row--10">
-                                    <div class="col-6 mb--20">
+                                    <div class="col-12 mb--20">
                                         <div class="single-product-thumbnail axil-product thumbnail-grid">
                                             <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-18.png" alt="Product Images">
+                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_detail['Image'] ?> " alt="Product Images">
                                             </div>
                                         </div>
                                     </div>
                                     <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-17.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
+
                                     <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-14.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-15.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-15.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-16.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-19.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-20.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-21.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End .col -->
-                                    <div class="col-6 mb--20">
-                                        <div class="single-product-thumbnail axil-product thumbnail-grid">
-                                            <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-22.png" alt="Product Images">
-                                            </div>
-                                        </div>
-                                    </div>
+
+
                                     <!-- End .col -->
                                 </div>
                             </div>
@@ -106,8 +40,23 @@ include_once __DIR__ . '/./inc/header.php';
                             <div class="position-sticky sticky-top">
                                 <div class="single-product-content">
                                     <div class="inner">
-                                        <h2 class="product-title">Ella Everyday Tote</h2>
-                                        <span class="price-amount">$155.00 - $255.00</span>
+                                        <h2 class="product-title"><?php echo $p_detail['Name']  ?></h2>
+                                        <span class="price-amount">
+                                            <?php
+                                            if ($p_detail['PromotionPrice']  != '0') {
+                                            ?>
+                                                <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['PromotionPrice'] ?></span>
+                                                <span style="color: gray; text-decoration-line: line-through;" class="price old-price">$<?php echo $p_detail['Price'] ?></span>
+                                            <?php
+                                            } else {
+                                            ?>
+                                                <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['Price'] ?></span>
+
+                                            <?php
+                                            }
+                                            ?>
+
+                                        </span>
                                         <div class="product-rating">
                                             <div class="star-rating">
                                                 <i class="fas fa-star"></i>

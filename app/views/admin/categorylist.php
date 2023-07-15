@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/./inc/header.php';
 include __DIR__ . '/./inc/sidebar.php';
-$result = isset($data['products']) ? $data['products'] : [''];
+$result = isset($data['category']) ? $data['category'] : [''];
 ?>
 
 
@@ -27,75 +27,69 @@ $result = isset($data['products']) ? $data['products'] : [''];
             <div class="col-xl-12">
                 <div class="card custom-card">
                     <div class="card-header">
-                        <div class="card-title">Products List</div>
+                        <div class="card-title">Category List</div>
                     </div>
                     <div class="card-body">
                         <table id="file-export" class="table table-bordered text-nowrap" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Product</th>
+                                    <th>ID</th>
+                                    <th>Image</th>
                                     <th>Category</th>
-                                    <th>Sub - Category</th>
-                                    <th>Status</th>
-                                    <th>Vat</th>
-                                    <th>Price</th>
-                                    <th>Stock</th>
                                     <th>Published</th>
+                                    <th>Created Date</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                                while ($p_data = $result->fetch_assoc()) {
-
-
+                                if ($result) {
+                                    while ($c_data = $result->fetch_assoc()) {
                                 ?>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="me-2"> <span class="avatar avatar-md avatar-rounded"> <img src="../assets/images/ecommerce/png/1.png" alt=""> </span> </div>
-                                                <div class="fw-semibold"> <?php echo $p_data['Name'] ?> </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-light text-default">Clothing</span>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-light text-default">T-shirt</span>
-                                        </td>
-                                        <td>
-                                            <?php if (strtotime(date("Y-m-d")) > strtotime($p_data['Hot'])) {
-                                                echo "<span class=\"badge bg-danger text-light\">" . "Non - Featured";
-                                            } elseif (strtotime(date("Y-m-d")) < strtotime($p_data['Hot'])) {
-                                                echo "<span class=\"badge bg-success text-light\">" . "Featured";
-                                            } ?>
+
+                                        <tr>
+                                            <td>
+                                                <?php echo $c_data['CateID'] ?>
+                                            </td>
+                                            <td>
+                                                <img width="50px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $c_data['Image'] ?>" alt="">
+                                            </td>
+                                            <td>
+                                                <span class=" text-default"><?php echo   $c_data['Name'] ?></span>
+                                            </td>
 
 
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-info text-light">
+                                            <td>
                                                 <?php
-                                                if ($p_data['VAT'] == '0') {
-                                                    echo "10%";
+                                                if ($c_data['Status'] == '1') {
+                                                ?>
+                                                    <span class="badge bg-success text-light">Published</span>
+
+                                                <?php
                                                 } else {
-                                                    echo "0%";
+                                                ?>
+                                                    <span class="badge bg-danger text-light">UnPublished</span>
+
+                                                <?php
                                                 }
                                                 ?>
-                                            </span>
-                                        </td>
+                                            </td>
 
-                                        <td>$320,800</td>
-                                        <td><?php echo $p_data['Quantity'] ?></td>
-                                        <td>
-                                            <span class="badge bg-success text-light">Published</span>
-                                        </td>
-                                        <td>
-                                            <div class="hstack gap-2 fs-15"> <a href="edit-products.html" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a> <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a> </div>
-                                        </td>
-                                    </tr>
-                                <?php   } ?>
+                                            <td>
+                                                <span class=""><?php echo $c_data['CreatedDate'] ?></span>
 
+                                            </td>
+                                            <td>
+                                                <div class="hstack gap-2 fs-15">
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updatecategory' . '?id=' . $c_data['CateID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                    <a onclick="return confirm('Are you sure about that?')" href="<?php echo ASSETS_URL_ROOT . '/admin/delcategory' . '?delid=' . $c_data['CateID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                <?php
+                                    }
+                                }
+                                ?>
 
 
 

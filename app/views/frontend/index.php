@@ -1,5 +1,11 @@
 <?php
 include_once __DIR__ . '/./inc/header.php';
+$p_first =  $data['products_first'];
+$p_second =  $data['products_second'];
+$cat =  $data['cate'];
+$latest_product =  $data['latest_product'];
+$fm = new Format();
+
 ?>
 
 
@@ -192,125 +198,25 @@ include_once __DIR__ . '/./inc/header.php';
                 <h2 class="title">Browse by Category</h2>
             </div>
             <div class="categrie-product-activation slick-layout-wrapper--15 axil-slick-arrow  arrow-top-slide">
-                <div class="slick-single-layout">
-                    <div class="categrie-product" data-sal="zoom-out" data-sal-delay="200" data-sal-duration="500">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-4.png" alt="product categorie">
-                            <h6 class="cat-title">Phones</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product" data-sal="zoom-out" data-sal-delay="300" data-sal-duration="500">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-5.png" alt="product categorie">
-                            <h6 class="cat-title">Computers</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product" data-sal="zoom-out" data-sal-delay="400" data-sal-duration="500">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-11.png" alt="product categorie">
-                            <h6 class="cat-title">Accessories</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product" data-sal="zoom-out" data-sal-delay="500" data-sal-duration="500">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-6.png" alt="product categorie">
-                            <h6 class="cat-title">Laptops</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product" data-sal="zoom-out" data-sal-delay="600" data-sal-duration="500">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-2.png" alt="product categorie">
-                            <h6 class="cat-title">Monitors</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product" data-sal="zoom-out" data-sal-delay="700" data-sal-duration="500">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-7.png" alt="product categorie">
-                            <h6 class="cat-title">Networking</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product" data-sal="zoom-out" data-sal-delay="800" data-sal-duration="500">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-8.png" alt="product categorie">
-                            <h6 class="cat-title">PC Gaming</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-1.png" alt="product categorie">
-                            <h6 class="cat-title">Smartwatches</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-9.png" alt="product categorie">
-                            <h6 class="cat-title">Headphones</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-10.png" alt="product categorie">
-                            <h6 class="cat-title">Camera & Photo</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-8.png" alt="product categorie">
-                            <h6 class="cat-title">Video Games</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
-                <!-- End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="categrie-product">
-                        <a href="#">
-                            <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/categories/elec-1.png" alt="product categorie">
-                            <h6 class="cat-title">Sports</h6>
-                        </a>
-                    </div>
-                    <!-- End .categrie-product -->
-                </div>
+                <?php
+                if (isset($cat)) {
+                    while ($cat_data  = $cat->fetch_assoc()) {
+
+                ?>
+                        <div class="slick-single-layout">
+                            <div class="categrie-product" data-sal="zoom-out" data-sal-delay="200" data-sal-duration="500">
+                                <a href="#">
+                                    <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $cat_data['Image'] ?> " alt="product categorie">
+                                    <h6 class="cat-title"><?php echo $cat_data['Name'] ?></h6>
+                                </a>
+                            </div>
+                            <!-- End .categrie-product -->
+                        </div>
+                        <!-- End .slick-single-layout -->
+                <?php
+                    }
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -358,630 +264,157 @@ include_once __DIR__ . '/./inc/header.php';
                 <h2 class="title">Explore our Products</h2>
             </div>
             <div class="explore-product-activation slick-layout-wrapper slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide">
+                <!-- first 8 product -->
                 <div class="slick-single-layout">
                     <div class="row row--15">
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img data-sal="zoom-out" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-01.png" alt="Product Images">
-                                        <img class="hover-img" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-08.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option">
-                                                <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                                    Add to Cart
-                                                </a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
+                        <?php
+                        if (isset($p_first)) {
+                            $count = 0;
+                            while ($p_assoc = $p_first->fetch_assoc()) {
+                        ?>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
+                                    <div class="axil-product product-style-one">
+                                        <div class="thumbnail">
+                                            <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_assoc['ProductID'] ?>">
+                                                <img style="height: 300px; object-fit: contain;" data-sal="zoom-out" width="300px" height="300px" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_assoc['Image'] ?>" alt="Product Images">
+                                                <img class="hover-img" width="300px" height="300px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_assoc['Image'] ?>" alt="Product Images">
+                                            </a>
+                                            <div class="label-block label-right">
+                                                <?php
+                                                if ($p_assoc['Discount'] != '0') {
+                                                    $discount = $p_assoc['Discount'];
+                                                    echo  "<div class=\"product-badget\">$discount% Off</div>";
+                                                }
+                                                ?>
+                                            </div>
+                                            <div class="product-hover-action">
+                                                <ul class="cart-action">
+                                                    <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                                    <li class="select-option">
+                                                        <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
+                                                            Add to Cart
+                                                        </a>
+                                                    </li>
+                                                    <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="inner">
+                                                <div class="product-rating">
+                                                    <span class="icon">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <span class="rating-number">(64)</span>
+                                                </div>
+                                                <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $fm->textShorten($p_assoc['Name'], 50) ?></a></h5>
+                                                <div class="product-price-variant">
+                                                    <?php
+                                                    if ($p_assoc['PromotionPrice']  != '0') {
+                                                    ?>
+                                                        <span class="price current-price">$<?php echo $p_assoc['PromotionPrice'] ?></span>
+                                                        <span class="price old-price">$<?php echo $p_assoc['Price'] ?></span>
+                                                    <?php
+                                                    } else {
+                                                    ?>
+                                                        <span class="price current-price">$<?php echo $p_assoc['Price'] ?></span>
+
+                                                    <?php
+                                                    }
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <div class="product-rating">
-                                            <span class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <span class="rating-number">(64)</span>
-                                        </div>
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Yantiti Leather & Canvas
-                                                Bags</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                            }
+                        }
+
+                        ?>
                         <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img data-sal="zoom-out" data-sal-delay="300" data-sal-duration="800" loading="lazy" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-02.png" alt="Product Images">
-                                        <img class="hover-img" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-06.png" alt="Product Images">
-                                    </a>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Level 20 RGB Cherry</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img data-sal="zoom-out" data-sal-delay="400" data-sal-duration="800" loading="lazy" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-03.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Logitech Streamcam</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img data-sal="zoom-out" data-sal-delay="500" data-sal-duration="800" loading="lazy" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-04.png" alt="Product Images">
-                                        <img class="hover-img" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-05.png" alt="Product Images">
-                                    </a>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <div class="product-rating">
-                                            <span class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <span class="rating-number">(44)</span>
-                                        </div>
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img data-sal="zoom-out" data-sal-delay="200" data-sal-duration="800" loading="lazy" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-05.png" alt="Product Images">
-                                        <img class="hover-img" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-04.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Bass Meets Clarity</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img data-sal="zoom-out" data-sal-delay="300" data-sal-duration="800" loading="lazy" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-06.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Mice Logitech</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img data-sal="zoom-out" data-sal-delay="400" data-sal-duration="800" loading="lazy" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-07.png" alt="Product Images">
-                                        <img class="hover-img" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-08.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <div class="product-rating">
-                                            <span class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <span class="rating-number">(64)</span>
-                                        </div>
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Zone Headphone</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img data-sal="zoom-out" data-sal-delay="500" data-sal-duration="800" loading="lazy" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-08.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <!-- End Single Product  -->
                     </div>
                 </div>
-                <!-- End .slick-single-layout -->
+                <!-- second 8 End .slick-single-layout -->
                 <div class="slick-single-layout">
                     <div class="row row--15">
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-01.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Yantiti Leather & Canvas
-                                                Bags</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
+                        <?php
+                        if (isset($p_second)) {
+                            while ($p_s_data  = $p_second->fetch_assoc()) {
+                                # code...
+                        ?>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
+                                    <div class="axil-product product-style-one">
+                                        <div class="thumbnail">
+                                            <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
+                                                <img style="height: 300px; object-fit: contain;" data-sal="zoom-out" width="300px" height="300px" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>" alt="Product Images">
+                                                <img class="hover-img" width="300px" height="300px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>" alt="Product Images">
+                                            </a>
+                                            </a>
+                                            <div class="label-block label-right">
+
+                                                <?php
+                                                if ($p_s_data['Discount'] != '0') {
+                                                    $discount = $p_s_data['Discount'];
+                                                    echo  "<div class=\"product-badget\">$discount% Off</div>";
+                                                }
+                                                ?>
+                                            </div>
+                                            <div class="product-hover-action">
+                                                <ul class="cart-action">
+                                                    <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                                    <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>">Select Option</a>
+                                                    </li>
+                                                    <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="inner">
+                                                <div class="product-rating">
+                                                    <span class="icon">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <span class="rating-number">(64)</span>
+                                                </div>
+                                                <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $p_s_data['Name'] ?></a></h5>
+                                                <div class="product-price-variant">
+                                                    <?php
+                                                    if ($p_s_data['PromotionPrice']  != '0') {
+                                                    ?>
+                                                        <span class="price current-price">$<?php echo $p_s_data['PromotionPrice'] ?></span>
+                                                        <span class="price old-price">$<?php echo $p_s_data['Price'] ?></span>
+                                                    <?php
+                                                    } else {
+                                                    ?>
+                                                        <span class="price current-price">$<?php echo $p_s_data['Price'] ?></span>
+
+                                                    <?php
+                                                    }
+                                                    ?>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                        <?php
+                            }
+                        }
+                        ?>
+
+
                         <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-02.png" alt="Product Images">
-                                    </a>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-03.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-04.png" alt="Product Images">
-                                    </a>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-05.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-06.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-07.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                            <div class="axil-product product-style-one">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-08.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">20% Off</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
-                                        </div>
-                                        <div class="color-variant-wrapper">
-                                            <ul class="color-variant">
-                                                <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-02"><span><span class="color"></span></span>
-                                                </li>
-                                                <li class="color-extra-03"><span><span class="color"></span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <!-- End Single Product  -->
 
                     </div>
@@ -996,9 +429,10 @@ include_once __DIR__ . '/./inc/header.php';
 
         </div>
     </div>
+
     <!-- End Expolre Product Area  -->
 
-    <!-- Start Testimonila Area  -->
+    <!-- Start Testimonila Area Users Feedback  -->
     <div class="axil-testimoial-area axil-section-gap bg-vista-white">
         <div class="container">
             <div class="section-title-wrapper">
@@ -1083,6 +517,7 @@ include_once __DIR__ . '/./inc/header.php';
             </div>
         </div>
     </div>
+
     <!-- End Testimonila Area  -->
 
     <!-- Start New Arrivals Product Area  -->
@@ -1095,206 +530,72 @@ include_once __DIR__ . '/./inc/header.php';
                     <h2 class="title">New Arrivals</h2>
                 </div>
                 <div class="new-arrivals-product-activation slick-layout-wrapper--30 axil-slick-arrow  arrow-top-slide">
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-two">
-                            <div class="thumbnail">
-                                <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-out" data-sal-delay="200" data-sal-duration="500" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-05.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">10% OFF</div>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Demon's Souls</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$40</span>
-                                        <span class="price current-price">$30</span>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Add to Cart</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-two">
-                            <div class="thumbnail">
-                                <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-out" data-sal-delay="300" data-sal-duration="500" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-06.png" alt="Product Images">
-                                </a>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Google Home</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$50</span>
-                                        <span class="price current-price">$40</span>
-                                    </div>
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a>
-                                        </li>
-                                        <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Select Option</a>
-                                        </li>
-                                        <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-two">
-                            <div class="thumbnail">
-                                <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-out" data-sal-delay="400" data-sal-duration="500" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-07.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">15% OFF</div>
-                                </div>
+                    <?php
+                    if (isset($latest_product)) {
+                        while ($l_data  = $latest_product->fetch_assoc()) {
 
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
+                    ?>
+                            <div class="slick-single-layout">
+                                <div class="axil-product product-style-two">
+                                    <div class="thumbnail">
+                                        <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $l_data['ProductID'] ?>">
+                                            <img data-sal="zoom-out" data-sal-delay="200" data-sal-duration="500" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $l_data['Image'] ?>" alt="Product Images">
+                                        </a>
+                                        <div class="label-block label-right">
+                                            <?php
+                                            if ($l_data['Discount'] != '0') {
+                                                $discount = $l_data['Discount'];
+                                                echo  "<div class=\"product-badget\">$discount% Off</div>";
+                                            }
+                                            ?>
+                                        </div>
                                     </div>
-                                    <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Netfilx Remot</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$60</span>
-                                        <span class="price current-price">$45</span>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Add to Cart</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-two">
-                            <div class="thumbnail">
-                                <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-out" data-sal-delay="500" data-sal-duration="500" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-08.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">30% OFF</div>
-                                </div>
+                                    <div class="product-content">
+                                        <div class="inner">
+                                            <div class="color-variant-wrapper">
+                                                <ul class="color-variant">
+                                                    <li class="color-extra-01 active"><span><span class="color"></span></span>
+                                                    </li>
+                                                    <li class="color-extra-02"><span><span class="color"></span></span>
+                                                    </li>
+                                                    <li class="color-extra-03"><span><span class="color"></span></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $fm->textShorten($l_data['Name'], 50) ?></a></h5>
+                                            <div class="product-price-variant">
+                                                <?php
+                                                if ($l_data['PromotionPrice']  != '0') {
+                                                ?>
+                                                    <span class="price current-price">$<?php echo $l_data['PromotionPrice'] ?></span>
+                                                    <span class="price old-price">$<?php echo $l_data['Price'] ?></span>
+                                                <?php
+                                                } else {
+                                                ?>
+                                                    <span class="price current-price">$<?php echo $l_data['Price'] ?></span>
 
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Digital Accessories</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$30</span>
-                                        <span class="price current-price">$20</span>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Add to Cart</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
+                                                <?php
+                                                }
+                                                ?>
+                                            </div>
+                                            <div class="product-hover-action">
+                                                <ul class="cart-action">
+                                                    <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                                    <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Add to Cart</a>
+                                                    </li>
+                                                    <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-two">
-                            <div class="thumbnail">
-                                <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="500" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-04.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">50% OFF</div>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">PS5 Smart Remote</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$50</span>
-                                        <span class="price current-price">$25</span>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Add to Cart</a>
-                                            </li>
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
+                            <!-- End .slick-single-layout -->
+                    <?php
+                        }
+                    }
+                    ?>
+
                 </div>
             </div>
         </div>

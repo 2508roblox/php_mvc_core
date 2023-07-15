@@ -1,7 +1,8 @@
 <?php
 include __DIR__ . '/./inc/header.php';
 include __DIR__ . '/./inc/sidebar.php';
-
+$b_data = isset($data['b_data']) ? $data['b_data'] : '';
+$c_data = isset($data['c_data']) ? $data['c_data'] : '';
 ?>
 <!-- Start::app-content -->
 <div class="main-content app-content">
@@ -21,7 +22,8 @@ include __DIR__ . '/./inc/sidebar.php';
         <!-- Page Header Close -->
         <!-- Start::row-1 -->
         <form action="<?php echo ASSETS_URL_ROOT ?>/admin/addproduct" method="POST" enctype="multipart/form-data">
-            <?php echo $data[0] ?>
+            <?php echo isset($data['result']) ? $data['result'] : '' ?>
+
             <div class="row">
                 <div class="col-xl-12">
                     <div class="card custom-card">
@@ -35,31 +37,41 @@ include __DIR__ . '/./inc/sidebar.php';
                                                     <div class="col-xl-12"> <label for="product-name-add" class="form-label">Product Name</label> <input name="Name" type="text" class="form-control" id="product-name-add" placeholder="Name"> <label for="product-name-add" class="form-label mt-1 fs-12 op-5 text-muted mb-0">*Product
                                                             Name should not exceed 30 characters</label> </div>
                                                     <div class="col-xl-6"> <label for="product-category-add" class="form-label">Category</label> <select class="form-control" data-trigger name="CateID" id="product-category-add">
-                                                            <option value="1">Category</option>
-                                                            <option value="2">Clothing</option>
-                                                            <option value="3">Footwear</option>
-                                                            <option value="4">Accesories</option>
-                                                            <option value="5">Grooming</option>
-                                                            <option value="Ethnic & Festive">Ethnic & Festive
-                                                            </option>
-                                                            <option value="Jewellery">Jewellery</option>
-                                                            <option value="Toys & Babycare">Toys & Babycare</option>
-                                                            <option value="Festive Gifts">Festive Gifts</option>
-                                                            <option value="Kitchen">Kitchen</option>
-                                                            <option value="Dining">Dining</option>
-                                                            <option value="Home Decors">Home Decors</option>
-                                                            <option value="Stationery">Stationery</option>
-                                                        </select> </div>
-                                                    <div class="col-xl-6"> <label for="product-gender-add" class="form-label">Sub-Category</label> <select class="form-control" data-trigger name="SubCateID" id="product-gender-add">
-                                                            <option value="">Select</option>
-                                                            <option value="All">All</option>
-                                                            <option value="Male">Male</option>
-                                                            <option value="Female">Female</option>
-                                                            <option value="Others">Others</option>
-                                                        </select> </div>
-                                                    <div class="col-xl-6"> <label for="product-size-add" class="form-label">#Tag</label> <select class="form-control" data-trigger name="product-size-add" id="product-size-add" multiple>
+                                                            <?php
+                                                            if (isset($c_data) && $c_data != '') {
+
+                                                                while ($c = $c_data->fetch_assoc()) {
+
+                                                            ?>
+                                                                    <option value="<?php echo $c['CateID'] ?>"><?php echo $c['Name'] ?></option>
+
+
+                                                            <?php
+                                                                }
+                                                            }
+                                                            ?>
+
 
                                                         </select> </div>
+                                                    <div class="col-xl-6"> <label for="product-gender-add" class="form-label">Sub-Category</label> <select class="form-control" data-trigger name="BrandID" id="product-gender-add">
+                                                            <option value="">Select</option>
+                                                            <?php
+                                                            if (isset($b_data) && $b_data != '') {
+
+                                                                print_r($b_data);
+                                                                while ($b = $b_data->fetch_assoc()) {
+
+                                                            ?>
+                                                                    <option value="<?php echo $b['BrandID'] ?>"><?php echo $b['Name'] ?></option>
+
+
+                                                            <?php
+                                                                }
+                                                            }
+                                                            ?>
+
+                                                        </select> </div>
+
                                                     <div class="col-xl-6"> <label for="product-brand-add" class="form-label">VAT</label> <select class="form-control" data-trigger name="VAT" id="product-brand-add">
                                                             <option value="">Select</option>
                                                             <option value="0">0</option>
@@ -69,15 +81,14 @@ include __DIR__ . '/./inc/sidebar.php';
                                                             <option value="20">20%</option>
 
                                                         </select> </div>
-                                                    <div class="col-xl-6 color-selection"> <label for="product-color-add" class="form-label">#Tag</label> <select class="form-control" name="Tag" id="product-color-add" multiple>
+                                                    <div class="col-xl-6 color-selection"> <label for="product-color-add" class="form-label">#Tag</label> <select class="form-control" name="Tag[]" id="product-color-add" multiple>
                                                             <option value="Laptop">#Laptop</option>
                                                             <option value="Pc">#Pc</option>
                                                             <option value="Phone">#Phone</option>
                                                             <option value="Mouse">#Mouse</option>
                                                             <option value="Keyboard">#Keyboard</option>
                                                         </select> </div>
-                                                    <div class="col-xl-6"> <label for="product-cost-add" class="form-label">Enter Cost</label> <input type="text" class="form-control" id="product-cost-add" placeholder="Cost"> <label for="product-cost-add" class="form-label mt-1 fs-12 op-5 text-muted mb-0">*Mention
-                                                            final price of the product</label> </div>
+
                                                     <div class="col-xl-12"> <label for="product-description-add" class="form-label">Product Description</label> <textarea name="Description" class="form-control" id="product-description-add" rows="2"></textarea> <label for="product-description-add" class="form-label mt-1 fs-12 op-5 text-muted mb-0">*Description
                                                             should not exceed 500 letters</label> </div>
                                                     <div class="col-xl-12"> <label class="form-label">Product
@@ -105,9 +116,9 @@ include __DIR__ . '/./inc/sidebar.php';
                                                     <div class="col-xl-6"> <label for="product-discount" class="form-label">Warranty</label> <input name="Warranty" type="number" class="form-control" id="product-discount1" placeholder="Weight in gms"> </div>
                                                     <div class="col-xl-12 product-documents-container">
                                                         <p class="fw-semibold mb-2 fs-14">Product Images :</p>
-                                                        <input type="file" class="product-Images" name="filepond" data-allow-reorder="true" data-max-file-size="3M" data-max-files="6" multiple>
+                                                        <input type="file" class="" name="filepond[]" data-allow-reorder="true" data-max-file-size="3M" data-max-files="6" multiple>
                                                     </div>
-                                                    <label class="form-label op-5 m">Minimum 0f 6 images
+                                                    <label class="form-label op-5 ">Minimum 0f 6 images
                                                         are need to be uploaded,make sure the image size match the
                                                         proper background size and all images should be uniformly
                                                         maintained with width and height to the image
@@ -124,13 +135,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                             <option value="1">Published</option>
                                                             <option value="0">UnPublished</option>
                                                         </select> </div>
-                                                    <div class="col-xl-6"> <label for="product-tags" class="form-label">Product Tags</label> <select class="form-control" name="product-tags" id="product-tags" multiple>
-                                                            <option value="Relaxed" selected>Relaxed</option>
-                                                            <option value="Solid">Solid</option>
-                                                            <option value="Washed">Washed</option>
-                                                            <option value="Plain" selected>Plain</option>
-                                                        </select> </div>
-                                                    <div class="col-xl-12"> <label for="product-status-add1" class="form-label">Availability</label> <select class="form-control" data-trigger name="product-status-add1" id="product-status-add1">
+                                                    <div class="col-xl-6"> <label for="product-status-add1" class="form-label">Availability</label> <select class="form-control" data-trigger name="product-status-add1" id="product-status-add1">
                                                             <option value="">Select</option>
                                                             <option value="In Stock">In Stock</option>
                                                             <option value="Out Of Stock">Out Of Stock</option>
@@ -199,6 +204,8 @@ include __DIR__ . '/./inc/sidebar.php';
 </footer>
 <!-- Footer End -->
 </div>
+
+<!-- f -->
 <div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
 <div id="responsive-overlay"></div>
 <!-- Popper JS -->

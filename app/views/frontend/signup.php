@@ -42,7 +42,7 @@
                 <div class="col-md-6">
                     <div class="singin-header-btn">
                         <p>Already a member?</p>
-                        <a href="user/signin" class="axil-btn btn-bg-secondary sign-up-btn">Sign In</a>
+                        <a href="<?php echo ASSETS_URL_ROOT ?>/user/signin" class="axil-btn btn-bg-secondary sign-up-btn">Sign In</a>
                     </div>
                 </div>
             </div>
@@ -60,21 +60,31 @@
                     <div class="axil-signin-form">
                         <h3 class="title">I'm New Here</h3>
                         <p class="b2 mb--55">Enter your detail below</p>
-                        <form class="singin-form">
+                        <form class="singin-form" action="" method="POST">
+                            <div style="display: flex; gap: 1rem;" class="">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control" name="Firstname" value="anniemario">
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" name="Lastname" value="anniemario">
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label>User Name</label>
-                                <input type="text" class="form-control" name="username" value="anniemario">
+                                <input type="text" class="form-control" name="Username" value="anniemario">
                             </div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control" name="email" value="annie@example.com">
+                                <input type="email" class="form-control" name="Email" value="annie@example.com">
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" name="password" value="123456789">
+                                <input type="password" class="form-control" name="Password" value="123456789">
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="axil-btn btn-bg-primary submit-btn">Create Account</button>
+                                <button name="signup" type="submit" class="axil-btn btn-bg-primary submit-btn">Create Account</button>
                             </div>
                         </form>
                     </div>

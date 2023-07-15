@@ -42,20 +42,20 @@
                 <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-file-blank side-menu__icon"></i> <span class="side-menu__label">Category</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
                     <ul class="slide-menu child1">
                         <li class="slide side-menu__label1"> <a href="javascript:void(0)">Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addproduct" class="side-menu__item">Add Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updateproduct" class="side-menu__item">Update Category</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addcategory" class="side-menu__item">Add Category</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updatecategory" class="side-menu__item">Update Category</a> </li>
                         <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/categorylist" class="side-menu__item">Category List</a> </li>
 
 
 
                     </ul>
                 </li>
-                <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-file-blank side-menu__icon"></i> <span class="side-menu__label">sub-category</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
+                <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-file-blank side-menu__icon"></i> <span class="side-menu__label">Brand</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
                     <ul class="slide-menu child1">
-                        <li class="slide side-menu__label1"> <a href="javascript:void(0)">sub-category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addproduct" class="side-menu__item">Add sub-category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updateproduct" class="side-menu__item">Update sub-category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/categorylist" class="side-menu__item">sub-category List</a> </li>
+                        <li class="slide side-menu__label1"> <a href="javascript:void(0)">Brand</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addbrand" class="side-menu__item">Add Brand</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updatebrand" class="side-menu__item">Update Brand</a> </li>
+                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/brandlist" class="side-menu__item">Brand List</a> </li>
 
 
 
@@ -67,7 +67,11 @@
                 <!-- Start::slide -->
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/orders" class="side-menu__item"> <i class="bx bx-store-alt side-menu__icon"></i> <span class="side-menu__label">Orders</span> </a> </li>
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/reviews" class="side-menu__item"> <i class="bx bx-store-alt side-menu__icon"></i> <span class="side-menu__label">Reviews</span> </a> </li>
-                <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/login" class="side-menu__item"> <i class="bx bx-store-alt side-menu__icon"></i> <span class="side-menu__label">Logout</span> </a> </li>
+                <li class="slide">
+
+                    <a href="<?php echo URL_ROOT ?>/admin/logout" class="side-menu__item"> <i class="bx bx-store-alt side-menu__icon"></i> <span class="side-menu__label">Logout</span> </a>
+
+                </li>
                 <!-- End::slide -->
             </ul>
             <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">

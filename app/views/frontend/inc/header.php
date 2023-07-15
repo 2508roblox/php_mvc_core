@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/base.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/style.min.css">
+    <style>
+        .slick-track {
+            align-items: center;
+        }
+    </style>
 
 
 </head>
@@ -192,7 +197,7 @@
                                         </li>
                                     </ul>
                                     <div class="login-btn">
-                                        <a href="user/signin" class="axil-btn btn-bg-primary">Login</a>
+                                        <a href="<?php echo ASSETS_URL_ROOT ?>/user/signin" class="axil-btn btn-bg-primary">Login</a>
                                     </div>
                                     <div class="reg-footer text-center">No account yet? <a href="user/signup" class="btn-link">REGISTER HERE.</a></div>
                                 </div>

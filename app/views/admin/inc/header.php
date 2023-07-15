@@ -1,3 +1,9 @@
+<?php
+if (Session::get('admin_login')) {
+    print_r($_SESSION);
+} else {
+    redirect('/admin/login');
+} ?>
 <!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="dark" data-header-styles="dark" data-menu-styles="dark" data-toggled="close">
@@ -634,9 +640,9 @@
                         <!-- Start::header-link|dropdown-toggle -->
                         <a href="#" class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                             <div class="d-flex align-items-center">
-                                <div class="me-sm-2 me-0"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/faces/9.jpg" alt="img" width="32" height="32" class="rounded-circle"> </div>
+                                <div class="me-sm-2 me-0"> <img src="<?php echo $_SESSION['admin_img'] ?>" alt="img" width="32" height="32" class="rounded-circle"> </div>
                                 <div class="d-sm-block d-none">
-                                    <p class="fw-semibold mb-0 lh-1">Json Taylor</p><span class="op-7 fw-normal d-block fs-11">Web Designer</span>
+                                    <p class="fw-semibold mb-0 lh-1"><?php echo $_SESSION['admin_name'] ?></p><span class="op-7 fw-normal d-block fs-11">Web Designer</span>
                                 </div>
                             </div>
                         </a>

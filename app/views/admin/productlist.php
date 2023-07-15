@@ -46,55 +46,76 @@ $result = isset($data['products']) ? $data['products'] : [''];
                             </thead>
                             <tbody>
                                 <?php
-                                while ($p_data = $result->fetch_assoc()) {
+                                if ($result != '') {
+                                    # code...
+                                    while ($p_data = $result->fetch_assoc()) {
 
 
                                 ?>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="me-2"> <span class="avatar avatar-md avatar-rounded"> <img src="../assets/images/ecommerce/png/1.png" alt=""> </span> </div>
-                                                <div class="fw-semibold"> <?php echo $p_data['Name'] ?> </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-light text-default">Clothing</span>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-light text-default">T-shirt</span>
-                                        </td>
-                                        <td>
-                                            <?php if (strtotime(date("Y-m-d")) > strtotime($p_data['Hot'])) {
-                                                echo "<span class=\"badge bg-danger text-light\">" . "Non - Featured";
-                                            } elseif (strtotime(date("Y-m-d")) < strtotime($p_data['Hot'])) {
-                                                echo "<span class=\"badge bg-success text-light\">" . "Featured";
-                                            } ?>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-2"> <span class="avatar avatar-md avatar-rounded"> <img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_data['Image'] ?>" alt=""> </span> </div>
+                                                    <div class="fw-semibold"> <?php echo $p_data['Name'] ?> </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-light text-default">Clothing</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-light text-default">T-shirt</span>
+                                            </td>
+                                            <td>
+                                                <?php if (strtotime(date("Y-m-d")) > strtotime($p_data['Hot'])) {
+                                                    echo "<span class=\"badge bg-danger text-light\">" . "Non - Featured";
+                                                } elseif (strtotime(date("Y-m-d")) < strtotime($p_data['Hot'])) {
+                                                    echo "<span class=\"badge bg-success text-light\">" . "Featured";
+                                                } ?>
 
 
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-info text-light">
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-info text-light">
+                                                    <?php
+                                                    if ($p_data['VAT'] == '0') {
+                                                        echo "10%";
+                                                    } else {
+                                                        echo "0%";
+                                                    }
+                                                    ?>
+                                                </span>
+                                            </td>
+
+                                            <td><?php echo $p_data['Price'] ?></td>
+                                            <td><?php echo $p_data['Quantity'] ?></td>
+                                            <td>
                                                 <?php
-                                                if ($p_data['VAT'] == '0') {
-                                                    echo "10%";
+                                                if ($p_data['Status'] == '1') {
+                                                ?>
+                                                    <span class="badge bg-success text-light">Published</span>
+
+
+                                                <?php
                                                 } else {
-                                                    echo "0%";
+                                                ?>
+                                                    <span class="badge bg-danger text-light">UnPublished</span>
+
+                                                <?php
                                                 }
                                                 ?>
-                                            </span>
-                                        </td>
 
-                                        <td>$320,800</td>
-                                        <td><?php echo $p_data['Quantity'] ?></td>
-                                        <td>
-                                            <span class="badge bg-success text-light">Published</span>
-                                        </td>
-                                        <td>
-                                            <div class="hstack gap-2 fs-15"> <a href="edit-products.html" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a> <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a> </div>
-                                        </td>
-                                    </tr>
-                                <?php   } ?>
+                                            </td>
+                                            <td>
+                                                <div class="hstack gap-2 fs-15">
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updateproduct' . '?id=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/delproduct' . '?delid=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                <?php
+                                    }
+                                } ?>
 
 
 

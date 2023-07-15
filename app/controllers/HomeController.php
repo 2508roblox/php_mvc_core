@@ -1,24 +1,22 @@
 <?php
 class HomeController extends Controller
 {
-    public function __construct()
-    {
 
-        // model, view Controller's extend method
-    }
     public function get()
     {
-        if ($_SERVER['REQUEST_METHOD'] = 'POST' && isset($_POST['login'])) {
-            echo "login...";
+
+        $first_8 = $this->model('product')->getFirst8Products();
+        $last_8 = $this->model('product')->getSecond8Products();
+        $category = $this->model('category')->getAllPublished();
+        $latest_product = $this->model('product')->getLastestProduct();
+        if ($first_8 || $last_8) {
+            $this->view('frontend/index', ['products_first' => $first_8, 'products_second' => $last_8, 'cate' =>  $category,
+             'latest_product' => $latest_product]);
+        } else {
+            $this->view('frontend/index');
         }
-        if ($_SERVER['REQUEST_METHOD'] = 'POST' && isset($_POST['logout'])) {
-            echo "logout...";
-        }
-        // redirect('/admin');
-        $this->view('frontend/index');
     }
-    public function getProducts() {
-        echo "Products List";
+    public function getProducts()
+    {
     }
-    
 }
