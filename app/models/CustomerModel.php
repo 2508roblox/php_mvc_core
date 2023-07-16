@@ -33,4 +33,22 @@ class CustomerModel extends Database
             }
         }
     }
+    public function signin($data)
+    {
+        $Username = $data['Username'];
+        $Password = $data['Password'];
+
+
+        $Username  = mysqli_escape_string($this->link, $Username);
+        $Password = mysqli_escape_string($this->link, $Password);
+
+        $sql1 = "SELECT * FROM tbl_customer WHERE Username ='$Username' AND Password = '$Password' ";
+        $result =  $this->select($sql1);
+        if ($result) {
+            //check pass
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
