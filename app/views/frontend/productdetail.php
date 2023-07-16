@@ -39,134 +39,148 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                         <div class="h-100">
                             <div class="position-sticky sticky-top">
                                 <div class="single-product-content">
-                                    <div class="inner">
-                                        <h2 class="product-title"><?php echo $p_detail['Name']  ?></h2>
-                                        <span class="price-amount">
-                                            <?php
-                                            if ($p_detail['PromotionPrice']  != '0') {
-                                            ?>
-                                                <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['PromotionPrice'] ?></span>
-                                                <span style="color: gray; text-decoration-line: line-through;" class="price old-price">$<?php echo $p_detail['Price'] ?></span>
-                                            <?php
-                                            } else {
-                                            ?>
-                                                <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['Price'] ?></span>
+                                    <form action="<?php echo ASSETS_URL_ROOT ?>/products/addtocard" method="POST" enctype="multipart/form-data">
 
-                                            <?php
-                                            }
-                                            ?>
 
-                                        </span>
-                                        <div class="product-rating">
-                                            <div class="star-rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                            <div class="review-link">
-                                                <a href="#">(<span>2</span> customer reviews)</a>
-                                            </div>
-                                        </div>
-                                        <ul class="product-meta">
-                                            <li><i class="fal fa-check"></i>In stock</li>
-                                            <li><i class="fal fa-check"></i>Free delivery available</li>
-                                            <li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>
-                                        </ul>
-                                        <p class="description">In ornare lorem ut est dapibus, ut tincidunt nisi
-                                            pretium. Integer ante est, hendrerit in rutrum quis, elementum eget
-                                            magna. Pellentesque sagittis dictum libero, eu dignissim tellus.</p>
+                                        <div class="inner">
+                                            <input type="number" hidden name="ProductID" value="<?php echo $p_detail['ProductID'] ?>">
+                                            <input type="text" hidden name="Name" value="<?php echo $p_detail['Name'] ?>">
 
-                                        <div class="product-variations-wrapper">
+                                            <h2 class="product-title"><?php echo $p_detail['Name']  ?></h2>
+                                            <span class="price-amount">
+                                                <?php
+                                                if ($p_detail['PromotionPrice']  != '0') {
+                                                ?>
+                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['PromotionPrice'] ?></span>
+                                                    <span style="color: gray; text-decoration-line: line-through;" class="price old-price">$<?php echo $p_detail['Price'] ?></span>
+                                                    <input type="number" hidden name="CurrentPrice" value="<?php echo $p_detail['PromotionPrice'] ?>">
+                                                <?php
+                                                } else {
+                                                ?>
+                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['Price'] ?></span>
+                                                    <input type="number" hidden name="CurrentPrice" value="<?php echo $p_detail['Price'] ?>">
 
-                                            <!-- Start Product Variation  -->
-                                            <div class="product-variation">
-                                                <h6 class="title">Colors:</h6>
-                                                <div class="color-variant-wrapper">
-                                                    <ul class="color-variant">
-                                                        <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                                        </li>
-                                                        <li class="color-extra-02"><span><span class="color"></span></span>
-                                                        </li>
-                                                        <li class="color-extra-03"><span><span class="color"></span></span>
-                                                        </li>
-                                                    </ul>
+
+                                                <?php
+                                                }
+                                                ?>
+
+                                            </span>
+                                            <div class="product-rating">
+                                                <div class="star-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="review-link">
+                                                    <a href="#">(<span>2</span> customer reviews)</a>
                                                 </div>
                                             </div>
-                                            <!-- End Product Variation  -->
+                                            <ul class="product-meta">
+                                                <li><i class="fal fa-check"></i>In stock</li>
+                                                <li><i class="fal fa-check"></i>Free delivery available</li>
+                                                <li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>
+                                            </ul>
+                                            <p class="description">In ornare lorem ut est dapibus, ut tincidunt nisi
+                                                pretium. Integer ante est, hendrerit in rutrum quis, elementum eget
+                                                magna. Pellentesque sagittis dictum libero, eu dignissim tellus.</p>
 
-                                            <!-- Start Product Variation  -->
-                                            <div class="product-variation product-size-variation">
-                                                <h6 class="title">Size:</h6>
-                                                <ul class="range-variant">
-                                                    <li>xs</li>
-                                                    <li>s</li>
-                                                    <li>m</li>
-                                                    <li>l</li>
-                                                    <li>xl</li>
+                                            <div class="product-variations-wrapper">
+
+                                                <!-- Start Product Variation  -->
+                                                <div class="product-variation">
+                                                    <h6 class="title">Colors:</h6>
+                                                    <div class="color-variant-wrapper">
+                                                        <ul class="color-variant">
+                                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
+                                                            </li>
+                                                            <li class="color-extra-02"><span><span class="color"></span></span>
+                                                            </li>
+                                                            <li class="color-extra-03"><span><span class="color"></span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- End Product Variation  -->
+
+                                                <!-- Start Product Variation  -->
+                                                <div class="product-variation product-size-variation">
+                                                    <h6 class="title">Size:</h6>
+                                                    <ul class="range-variant">
+                                                        <li>xs</li>
+                                                        <li>s</li>
+                                                        <li>m</li>
+                                                        <li>l</li>
+                                                        <li>xl</li>
+                                                    </ul>
+                                                </div>
+                                                <!-- End Product Variation  -->
+
+                                            </div>
+
+                                            <!-- Start Product Action Wrapper  -->
+                                            <div class="product-action-wrapper d-flex-center">
+                                                <!-- Start Quentity Action  -->
+                                                <div class="pro-qty mr--20"><input name="Quantity" type="text" value="1"></div>
+                                                <!-- End Quentity Action  -->
+
+                                                <!-- Start Product Action  -->
+                                                <ul class="product-action d-flex-center mb--0">
+                                                    <li class="add-to-cart">
+
+                                                        <button type="submit" name="addproduct" class="axil-btn btn-bg-primary">Add to cart</button>
+
+                                                    </li>
+                                                    <li class="wishlist"><a href="wishlist" class="axil-btn wishlist-btn"><i class="far fa-heart"></i></a></li>
                                                 </ul>
+                                                <!-- End Product Action  -->
+
                                             </div>
-                                            <!-- End Product Variation  -->
+                                            <!-- End Product Action Wrapper  -->
 
-                                        </div>
-
-                                        <!-- Start Product Action Wrapper  -->
-                                        <div class="product-action-wrapper d-flex-center">
-                                            <!-- Start Quentity Action  -->
-                                            <div class="pro-qty mr--20"><input type="text" value="1"></div>
-                                            <!-- End Quentity Action  -->
-
-                                            <!-- Start Product Action  -->
-                                            <ul class="product-action d-flex-center mb--0">
-                                                <li class="add-to-cart"><a href="<?php echo ASSETS_URL_ROOT ?>/cart" class="axil-btn btn-bg-primary">Add to Cart</a></li>
-                                                <li class="wishlist"><a href="wishlist" class="axil-btn wishlist-btn"><i class="far fa-heart"></i></a></li>
-                                            </ul>
-                                            <!-- End Product Action  -->
-
-                                        </div>
-                                        <!-- End Product Action Wrapper  -->
-
-                                        <div class="product-desc-wrapper pt--80 pt_sm--60">
-                                            <h4 class="primary-color mb--40 desc-heading">Description</h4>
-                                            <div class="single-desc mb--30">
-                                                <h5 class="title">Specifications:</h5>
-                                                <p>We’ve created a full-stack structure for our working workflow
-                                                    processes, were from the funny the century initial all the made,
-                                                    have spare to negatives. But the structure was from the funny
-                                                    the century rather,
-                                                    initial all the made, have spare to negatives.</p>
+                                            <div class="product-desc-wrapper pt--80 pt_sm--60">
+                                                <h4 class="primary-color mb--40 desc-heading">Description</h4>
+                                                <div class="single-desc mb--30">
+                                                    <h5 class="title">Specifications:</h5>
+                                                    <p>We’ve created a full-stack structure for our working workflow
+                                                        processes, were from the funny the century initial all the made,
+                                                        have spare to negatives. But the structure was from the funny
+                                                        the century rather,
+                                                        initial all the made, have spare to negatives.</p>
+                                                </div>
+                                                <div class="single-desc mb--5">
+                                                    <h5 class="title">Care & Maintenance:</h5>
+                                                    <p>Use warm water to describe us as a product team that creates
+                                                        amazing UI/UX experiences, by crafting top-notch user
+                                                        experience.</p>
+                                                </div>
+                                                <ul class="pro-des-features pro-desc-style-two">
+                                                    <li class="single-features">
+                                                        <div class="icon">
+                                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-3.png" alt="icon">
+                                                        </div>
+                                                        Easy Returns
+                                                    </li>
+                                                    <li class="single-features">
+                                                        <div class="icon">
+                                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-2.png" alt="icon">
+                                                        </div>
+                                                        Quality Service
+                                                    </li>
+                                                    <li class="single-features">
+                                                        <div class="icon">
+                                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-1.png" alt="icon">
+                                                        </div>
+                                                        Original Product
+                                                    </li>
+                                                </ul>
+                                                <!-- End .pro-des-features -->
                                             </div>
-                                            <div class="single-desc mb--5">
-                                                <h5 class="title">Care & Maintenance:</h5>
-                                                <p>Use warm water to describe us as a product team that creates
-                                                    amazing UI/UX experiences, by crafting top-notch user
-                                                    experience.</p>
-                                            </div>
-                                            <ul class="pro-des-features pro-desc-style-two">
-                                                <li class="single-features">
-                                                    <div class="icon">
-                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-3.png" alt="icon">
-                                                    </div>
-                                                    Easy Returns
-                                                </li>
-                                                <li class="single-features">
-                                                    <div class="icon">
-                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-2.png" alt="icon">
-                                                    </div>
-                                                    Quality Service
-                                                </li>
-                                                <li class="single-features">
-                                                    <div class="icon">
-                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-1.png" alt="icon">
-                                                    </div>
-                                                    Original Product
-                                                </li>
-                                            </ul>
-                                            <!-- End .pro-des-features -->
+                                            <!-- End .product-desc-wrapper -->
                                         </div>
-                                        <!-- End .product-desc-wrapper -->
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -860,12 +874,12 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
     <button class="card-close sidebar-close"><i class="fas fa-times"></i></button>
     <div class="header-search-wrap">
         <div class="card-header">
-            <form action="#">
-                <div class="input-group">
-                    <input type="search" class="form-control" name="prod-search" id="prod-search" placeholder="Write Something....">
-                    <button type="submit" class="axil-btn btn-bg-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-            </form>
+
+            <div class="input-group">
+                <input type="search" class="form-control" name="prod-search" id="prod-search" placeholder="Write Something....">
+                <button type="submit" name="addproduct" class="axil-btn btn-bg-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
         </div>
         <div class="card-body">
             <div class="search-result-header">

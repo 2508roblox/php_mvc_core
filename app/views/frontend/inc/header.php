@@ -1,3 +1,7 @@
+<?php
+if (Session::get('User_login')) {
+} else {
+} ?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -143,6 +147,7 @@
                     </div>
                     <div class="header-action">
                         <ul class="action-list">
+
                             <li class="axil-search">
                                 <a href="javascript:void(0)" class="header-search-icon" title="Search">
                                     <svg class="svg_icon_ct" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20">
@@ -169,6 +174,7 @@
                                     </svg>
                                 </a>
                             </li>
+
                             <li class="my-account">
                                 <a href="javascript:void(0)">
                                     <svg class="svg_icon_ct" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20">
@@ -192,12 +198,27 @@
                                             <a href="#">Language</a>
                                         </li>
                                     </ul>
-                                    <div class="login-btn">
-                                        <a href="<?php echo ASSETS_URL_ROOT ?>/user/signin" class="axil-btn btn-bg-primary">Login</a>
-                                    </div>
-                                    <div class="reg-footer text-center">No account yet? <a href="user/signup" class="btn-link">REGISTER HERE.</a></div>
+                                    <?php
+                                    if (Session::get('User_login')) {
+                                    ?>
+                                        <div class="login-btn">
+                                            <a href="<?php echo ASSETS_URL_ROOT ?>/user/signout" class="axil-btn btn-bg-primary">Logout</a>
+                                        </div>
+                                    <?php
+                                    } else {
+                                    ?>
+                                        <div class="login-btn">
+                                            <a href="<?php echo ASSETS_URL_ROOT ?>/user/signin" class="axil-btn btn-bg-primary">Login</a>
+                                        </div>
+                                        <div class="reg-footer text-center">No account yet? <a href="<?php echo ASSETS_URL_ROOT ?>/user/signup" class="btn-link">REGISTER HERE.</a></div>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                             </li>
+
+                            <span><?php echo Session::get('User_login') ? Session::get('User_username') : '' ?> </span>
+
                             <li class="axil-mobile-toggle">
                                 <button class="menu-btn mobile-nav-toggler">
                                     <i class="flaticon-menu-2"></i>

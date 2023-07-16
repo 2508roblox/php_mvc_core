@@ -1,5 +1,6 @@
 <?php
 include_once __DIR__ . '/./inc/header.php';
+$p_data  = isset($data['products']) ? $data['products'] : null;
 ?>
 
 
@@ -144,259 +145,63 @@ include_once __DIR__ . '/./inc/header.php';
                     </div>
                     <!-- End .row -->
                     <div class="row row--15">
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-01.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">10% OFF</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">3D™ wireless headset</a>
-                                        </h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$30</span>
-                                            <span class="price old-price">$30</span>
+                        <?php
+                        if (isset($p_data)) {
+                            while ($p_single_data  = $p_data->fetch_assoc()) {
+
+                        ?>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="axil-product product-style-one mb--30">
+                                        <div class="thumbnail">
+                                            <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_single_data['ProductID'] ?>">
+                                                <img style="max-height: 300px; object-fit: contain;" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_single_data['Image'] ?>" alt="Product Images">
+                                            </a>
+                                            <div class="label-block label-right">
+                                                <div class="product-badget">
+                                                    <?php
+                                                    if ($p_single_data['Discount'] != '0') {
+                                                        $discount = $p_single_data['Discount'];
+                                                        echo  "<div class=\"product-badget\">$discount% Off</div>";
+                                                    }
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="product-hover-action">
+                                                <ul class="cart-action">
+                                                    <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
+                                                    <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
+                                                    <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="inner">
+                                                <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $p_single_data['Name'] ?></a>
+                                                </h5>
+                                                <div class="product-price-variant">
+                                                    <?php
+                                                    if ($p_single_data['PromotionPrice']  != '0') {
+                                                    ?>
+                                                        <span class="price current-price">$<?php echo $p_single_data['PromotionPrice'] ?></span>
+                                                        <span class="price old-price">$<?php echo $p_single_data['Price'] ?></span>
+                                                    <?php
+                                                    } else {
+                                                    ?>
+                                                        <span class="price current-price">$<?php echo $p_single_data['Price'] ?></span>
+
+                                                    <?php
+                                                    }
+                                                    ?>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-02.png" alt="Product Images">
-                                    </a>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Media remote</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$40</span>
-                                            <span class="price old-price">$50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-03.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">25% OFF</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">HD camera</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$45</span>
-                                            <span class="price old-price">$60</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-04.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">5% OFF</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Guys Bomber Jacket</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$50</span>
-                                            <span class="price old-price">$60</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-05.png" alt="Product Images">
-                                    </a>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Level 20 RGB Cherry</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$38</span>
-                                            <span class="price old-price">$50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-06.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">5% OFF</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Level 20 RGB Cherry</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$25</span>
-                                            <span class="price old-price">$40</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-07.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">15% OFF</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Logitech Streamcam</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$15</span>
-                                            <span class="price old-price">$20</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-08.png" alt="Product Images">
-                                    </a>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Bass Meets Clarity</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$60</span>
-                                            <span class="price old-price">$80</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="axil-product product-style-one mb--30">
-                                <div class="thumbnail">
-                                    <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-02.png" alt="Product Images">
-                                    </a>
-                                    <div class="label-block label-right">
-                                        <div class="product-badget">30% OFF</div>
-                                    </div>
-                                    <div class="product-hover-action">
-                                        <ul class="cart-action">
-                                            <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                            <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <div class="inner">
-                                        <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Media remote</a></h5>
-                                        <div class="product-price-variant">
-                                            <span class="price current-price">$40</span>
-                                            <span class="price old-price">$50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product  -->
+                                <!-- End Single Product  -->
+                        <?php
+                            }
+                        }
+                        ?>
                     </div>
                     <div class="text-center pt--20">
                         <a href="#" class="axil-btn btn-bg-lighter btn-load-more">Load more</a>

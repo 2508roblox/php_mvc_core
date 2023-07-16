@@ -25,8 +25,11 @@ class CustomerModel extends Database
             return false;
         } else {
             $sql = "INSERT INTO tbl_customer (Firstname, Lastname, Username, Email, Password) VALUES ('$Firstname', '$Lastname', '$Username', '$Email', '$Password')";
-            $result =  $this->insert($sql1);
+            $result =  $this->insert($sql);
             if ($result) {
+                return $result;
+            } else {
+                return false;
             }
         }
     }

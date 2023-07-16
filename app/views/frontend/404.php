@@ -523,7 +523,7 @@ include_once __DIR__ . '/./inc/header.php';
         </div>
     </div>
 </div>
-
+<?php include  __DIR__ . '/./inc/cart_.php' ?>
 <!-- JS
 ============================================ -->
 <?php

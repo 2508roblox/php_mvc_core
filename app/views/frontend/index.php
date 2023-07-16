@@ -5,7 +5,7 @@ $p_second =  $data['products_second'];
 $cat =  $data['cate'];
 $latest_product =  $data['latest_product'];
 $fm = new Format();
-
+print_r($_SESSION['cart']);
 ?>
 
 
@@ -205,8 +205,8 @@ $fm = new Format();
                 ?>
                         <div class="slick-single-layout">
                             <div class="categrie-product" data-sal="zoom-out" data-sal-delay="200" data-sal-duration="500">
-                                <a href="#">
-                                    <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $cat_data['Image'] ?> " alt="product categorie">
+                                <a href="<?php echo ASSETS_URL_ROOT . '/products/productbycate?cateId=' . $cat_data['CateID'] ?>">
+                                    <img class=" img-fluid" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $cat_data['Image'] ?> " alt="product categorie">
                                     <h6 class="cat-title"><?php echo $cat_data['Name'] ?></h6>
                                 </a>
                             </div>
@@ -1195,12 +1195,8 @@ $fm = new Format();
                                 </div>
                                 <div class="col-lg-2 order-lg-1">
                                     <div class="product-small-thumb small-thumb-wrapper">
-                                        <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-08.png" alt="thumb image">
-                                        </div>
-                                        <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
-                                        </div>
+
+
                                         <div class="small-thumb-img">
                                             <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
                                         </div>

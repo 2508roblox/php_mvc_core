@@ -112,6 +112,17 @@ class ProductModel extends Database
             return false;
         }
     }
+    public function getByCate($id)
+    {
+        $sql = "SELECT * FROM tbl_product WHERE CateID = '$id' ";
+        $result = $this->select($sql);
+        if ($result) {
+
+            return $result;
+        } else {
+            return false;
+        }
+    }
     public function del($id)
     {
         $sql = "DELETE FROM tbl_product WHERE ProductID = '$id'";

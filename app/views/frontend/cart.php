@@ -1,5 +1,7 @@
 <?php
 include_once __DIR__ . '/./inc/header.php';
+$cart = isset($data['cart']) ? $data['cart'] : [''];
+
 ?>
 
 
@@ -30,43 +32,29 @@ include_once __DIR__ . '/./inc/header.php';
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
-                                <td class="product-thumbnail"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-01.png" alt="Digital Product"></a></td>
-                                <td class="product-title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Wireless PS Handler</a></td>
-                                <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
-                                <td class="product-quantity" data-title="Qty">
-                                    <div class="pro-qty">
-                                        <input type="number" class="quantity-input" value="1">
-                                    </div>
-                                </td>
-                                <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
-                            </tr>
-                            <tr>
-                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
-                                <td class="product-thumbnail"><a href="single-product-2.html"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-02.png" alt="Digital Product"></a></td>
-                                <td class="product-title"><a href="single-product-2.html">Gradient Light
-                                        Keyboard</a></td>
-                                <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
-                                <td class="product-quantity" data-title="Qty">
-                                    <div class="pro-qty">
-                                        <input type="number" class="quantity-input" value="1">
-                                    </div>
-                                </td>
-                                <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
-                            </tr>
-                            <tr>
-                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
-                                <td class="product-thumbnail"><a href="single-product-3.html"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-03.png" alt="Digital Product"></a></td>
-                                <td class="product-title"><a href="single-product-3.html">HD CC Camera</a></td>
-                                <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
-                                <td class="product-quantity" data-title="Qty">
-                                    <div class="pro-qty">
-                                        <input type="number" class="quantity-input" value="1">
-                                    </div>
-                                </td>
-                                <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
-                            </tr>
+                            <?php
+                            if (isset($cart)) {
+                                foreach ($cart as $cart_data) {
+                                    # code...
+
+
+                            ?>
+                                    <tr>
+                                        <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
+                                        <td class="product-thumbnail"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $cart_data['Image'] ?> " alt="Digital Product"></a></td>
+                                        <td class="product-title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $cart_data['Name'] ?></a></td>
+                                        <td class="product-price" data-title="Price"><span class="currency-symbol">$</span><?php echo $cart_data['Price'] ?></td>
+                                        <td class="product-quantity" data-title="Qty">
+                                            <div class="pro-qty">
+                                                <input type="number" class="quantity-input" value="<?php echo $cart_data['Quantity'] ?>">
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span><?php echo $cart_data['Quantity'] * $cart_data['Price'] ?></td>
+                                    </tr>
+                            <?php
+                                }
+                            }
+                            ?>
                         </tbody>
                     </table>
                 </div>

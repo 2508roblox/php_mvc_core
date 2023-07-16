@@ -1,3 +1,11 @@
+<?php
+
+
+$result =  isset($data['result']) ?  $data['result'] : null;
+
+$fm = new Format();
+
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -84,6 +92,7 @@
                                 <input type="password" class="form-control" name="Password" value="123456789">
                             </div>
                             <div class="form-group">
+                                <?php echo isset($result) ? $result : '' ?>
                                 <button name="signup" type="submit" class="axil-btn btn-bg-primary submit-btn">Create Account</button>
                             </div>
                         </form>
