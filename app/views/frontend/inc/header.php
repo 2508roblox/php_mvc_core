@@ -24,11 +24,7 @@
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/base.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/style.min.css">
-    <style>
-        .slick-track {
-            align-items: center;
-        }
-    </style>
+
 
 
 </head>

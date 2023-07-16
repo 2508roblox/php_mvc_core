@@ -5153,7 +5153,7 @@ button.axil-btn.btn-size-md i {
 
 .main-slider-large-thumb .slick-track {
     display: flex;
-    align-items: center
+    align-items: flex-end
 }
 
 .main-slider-large-thumb .single-slide {
@@ -9418,7 +9418,7 @@ button.axil-btn.btn-size-md i {
 }
 
 .mainmenu>.menu-item-has-children>a::after {
-    content: "";
+    content: "⌵";
     font-family: var(--font-awesome);
     font-weight: 400;
     color: #a4a4a4;
@@ -9894,12 +9894,9 @@ body.open .closeMask {
 
 .axil-product>.thumbnail>a img {
     border-radius: 6px;
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
+    width: 100%;
     transition: .3s
 }
-
 
 .axil-product>.thumbnail>a .hover-img {
     position: absolute;
@@ -21044,14 +21041,7 @@ svg:hover {
     object-fit: contain;
 }
 
-.slick-list img {
-    width: 10px;
-    height: 10px;
-    object-fit: contain;
-}
 
-.slick-track {
-    align-items: center;
-}
+
 
 /*# sourceMappingURL=../maps/style.min.css.map */
