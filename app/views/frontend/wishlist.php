@@ -28,7 +28,7 @@ include_once __DIR__ . '/./inc/header.php';
                     <tbody>
                         <tr>
                             <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
-                            <td class="product-thumbnail"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-01.png" alt="Digital Product"></a></td>
+                            <td class="product-thumbnail"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-01.png" alt="Digital Product"></a></td>
                             <td class="product-title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Wireless PS Handler</a></td>
                             <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
                             <td class="product-stock-status" data-title="Status">In Stock</td>
@@ -37,7 +37,7 @@ include_once __DIR__ . '/./inc/header.php';
                         </tr>
                         <tr>
                             <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
-                            <td class="product-thumbnail"><a href="single-product-2.html"><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-02.png" alt="Digital Product"></a></td>
+                            <td class="product-thumbnail"><a href="single-product-2.html"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-02.png" alt="Digital Product"></a></td>
                             <td class="product-title"><a href="single-product-2.html">Gradient Light Keyboard</a>
                             </td>
                             <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
@@ -47,7 +47,7 @@ include_once __DIR__ . '/./inc/header.php';
                         </tr>
                         <tr>
                             <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
-                            <td class="product-thumbnail"><a href="single-product-3.html"><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-03.png" alt="Digital Product"></a></td>
+                            <td class="product-thumbnail"><a href="single-product-3.html"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-03.png" alt="Digital Product"></a></td>
                             <td class="product-title"><a href="single-product-3.html">HD CC Camera</a></td>
                             <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
                             <td class="product-stock-status" data-title="Status">In Stock</td>
@@ -69,7 +69,7 @@ include_once __DIR__ . '/./inc/header.php';
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/icons/service1.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service1.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Fast &amp; Secure Delivery</h6>
@@ -80,7 +80,7 @@ include_once __DIR__ . '/./inc/header.php';
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/icons/service2.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service2.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Money Back Guarantee</h6>
@@ -91,7 +91,7 @@ include_once __DIR__ . '/./inc/header.php';
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/icons/service3.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service3.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">24 Hour Return Policy</h6>
@@ -102,7 +102,7 @@ include_once __DIR__ . '/./inc/header.php';
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/icons/service4.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service4.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Pro Quality Support</h6>
@@ -125,7 +125,7 @@ include_once __DIR__ . '/./inc/header.php';
                         <h5 class="widget-title">Support</h5>
                         <!-- <div class="logo mb--30">
                             <a href="<?php echo URL_ROOT ?>/">
-                                <img class="light-logo" src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/logo/logo.png" alt="Logo Images">
+                                <img class="light-logo" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/logo/logo.png" alt="Logo Images">
                             </a>
                         </div> -->
                         <div class="inner">
@@ -184,14 +184,14 @@ include_once __DIR__ . '/./inc/header.php';
                             <span>Save $3 With App & New User only</span>
                             <div class="download-btn-group">
                                 <div class="qr-code">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/others/qr.png" alt="Axilthemes">
+                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/qr.png" alt="Axilthemes">
                                 </div>
                                 <div class="app-link">
                                     <a href="#">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/others/app-store.png" alt="App Store">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/app-store.png" alt="App Store">
                                     </a>
                                     <a href="#">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/others/play-store.png" alt="Play Store">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/play-store.png" alt="Play Store">
                                     </a>
                                 </div>
                             </div>
@@ -227,9 +227,9 @@ include_once __DIR__ . '/./inc/header.php';
                     <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
                         <span class="card-text">Accept For</span>
                         <ul class="payment-icons-bottom quick-link">
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
                         </ul>
                     </div>
                 </div>
@@ -255,34 +255,34 @@ include_once __DIR__ . '/./inc/header.php';
                                 <div class="col-lg-10 order-lg-2">
                                     <div class="single-product-thumbnail product-large-thumbnail axil-product thumbnail-badge zoom-gallery">
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/product-big-01.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-01.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?> /client_assets/assets/images/product/product-big-01.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?> /fix_assets/images/product/product-big-01.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/product-big-02.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-02.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?> /client_assets/assets/images/product/product-big-02.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?> /fix_assets/images/product/product-big-02.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/product-big-03.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-03.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?> /client_assets/assets/images/product/product-big-03.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?> /fix_assets/images/product/product-big-03.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
@@ -292,13 +292,13 @@ include_once __DIR__ . '/./inc/header.php';
                                 <div class="col-lg-2 order-lg-1">
                                     <div class="product-small-thumb small-thumb-wrapper">
                                         <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/product-thumb/thumb-08.png" alt="thumb image">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-08.png" alt="thumb image">
                                         </div>
                                         <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
                                         </div>
                                         <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
                                         </div>
                                     </div>
                                 </div>
@@ -309,7 +309,7 @@ include_once __DIR__ . '/./inc/header.php';
                                 <div class="inner">
                                     <div class="product-rating">
                                         <div class="star-rating">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/icons/rate.png" alt="Rate Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/rate.png" alt="Rate Images">
                                         </div>
                                         <div class="review-link">
                                             <a href="#">(<span>1</span> customer reviews)</a>
@@ -407,7 +407,7 @@ include_once __DIR__ . '/./inc/header.php';
                 <div class="axil-product-list">
                     <div class="thumbnail">
                         <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
+                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
                         </a>
                     </div>
                     <div class="product-content">
@@ -435,7 +435,7 @@ include_once __DIR__ . '/./inc/header.php';
                 <div class="axil-product-list">
                     <div class="thumbnail">
                         <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
+                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
                         </a>
                     </div>
                     <div class="product-content">
@@ -478,7 +478,7 @@ include_once __DIR__ . '/./inc/header.php';
             <ul class="cart-item-list">
                 <li class="cart-item">
                     <div class="item-img">
-                        <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-01.png" alt="Commodo Blown Lamp"></a>
+                        <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-01.png" alt="Commodo Blown Lamp"></a>
                         <button class="close-btn"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="item-content">
@@ -501,7 +501,7 @@ include_once __DIR__ . '/./inc/header.php';
                 </li>
                 <li class="cart-item">
                     <div class="item-img">
-                        <a href="single-product-2.html"><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-02.png" alt="Commodo Blown Lamp"></a>
+                        <a href="single-product-2.html"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-02.png" alt="Commodo Blown Lamp"></a>
                         <button class="close-btn"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="item-content">
@@ -524,7 +524,7 @@ include_once __DIR__ . '/./inc/header.php';
                 </li>
                 <li class="cart-item">
                     <div class="item-img">
-                        <a href="single-product-3.html"><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/product/electric/product-03.png" alt="Commodo Blown Lamp"></a>
+                        <a href="single-product-3.html"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-03.png" alt="Commodo Blown Lamp"></a>
                         <button class="close-btn"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="item-content">

@@ -9,21 +9,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL_ROOT ?> /client_assets/assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL_ROOT ?> /fix_assets/images/favicon.png">
 
     <!-- CSS
     ============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/flaticon/flaticon.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/jquery-ui.min.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/sal.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/magnific-popup.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/vendor/base.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>client_assets/assets/css/style.min.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/flaticon/flaticon.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/jquery-ui.min.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/sal.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/base.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/style.min.css">
 
 
 </head>
@@ -37,7 +37,7 @@
         <div class="signin-header">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <a href="<?php echo URL_ROOT ?>/" class="site-logo"><img src="<?php echo ASSETS_URL_ROOT ?> /client_assets/assets/images/logo/logo.png" alt="logo"></a>
+                    <a href="<?php echo URL_ROOT ?>/" class="site-logo"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="col-md-6">
                     <div class="singin-header-btn">

@@ -146,19 +146,19 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                             <ul class="pro-des-features pro-desc-style-two">
                                                 <li class="single-features">
                                                     <div class="icon">
-                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-thumb/icon-3.png" alt="icon">
+                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-3.png" alt="icon">
                                                     </div>
                                                     Easy Returns
                                                 </li>
                                                 <li class="single-features">
                                                     <div class="icon">
-                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-thumb/icon-2.png" alt="icon">
+                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-2.png" alt="icon">
                                                     </div>
                                                     Quality Service
                                                 </li>
                                                 <li class="single-features">
                                                     <div class="icon">
-                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-thumb/icon-1.png" alt="icon">
+                                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-1.png" alt="icon">
                                                     </div>
                                                     Original Product
                                                 </li>
@@ -192,7 +192,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="axil-product">
                         <div class="thumbnail">
                             <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-01.png" alt="Product Images">
+                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-01.png" alt="Product Images">
                             </a>
                             <div class="label-block label-right">
                                 <div class="product-badget">20% OFF</div>
@@ -232,7 +232,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="axil-product">
                         <div class="thumbnail">
                             <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-02.png" alt="Product Images">
+                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-02.png" alt="Product Images">
                             </a>
                             <div class="label-block label-right">
                                 <div class="product-badget">40% OFF</div>
@@ -272,7 +272,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="axil-product">
                         <div class="thumbnail">
                             <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-03.png" alt="Product Images">
+                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-03.png" alt="Product Images">
                             </a>
                             <div class="label-block label-right">
                                 <div class="product-badget">30% OFF</div>
@@ -312,7 +312,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="axil-product">
                         <div class="thumbnail">
                             <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-04.png" alt="Product Images">
+                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-04.png" alt="Product Images">
                             </a>
                             <div class="label-block label-right">
                                 <div class="product-badget">50% OFF</div>
@@ -352,7 +352,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="axil-product">
                         <div class="thumbnail">
                             <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-05.png" alt="Product Images">
+                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-05.png" alt="Product Images">
                             </a>
                             <div class="label-block label-right">
                                 <div class="product-badget">25% OFF</div>
@@ -393,7 +393,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="axil-product">
                         <div class="thumbnail">
                             <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-03.png" alt="Product Images">
+                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-03.png" alt="Product Images">
                             </a>
                             <div class="label-block label-right">
                                 <div class="product-badget">30% OFF</div>
@@ -433,7 +433,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="axil-product">
                         <div class="thumbnail">
                             <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-04.png" alt="Product Images">
+                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-04.png" alt="Product Images">
                             </a>
                             <div class="label-block label-right">
                                 <div class="product-badget">50% OFF</div>
@@ -473,7 +473,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="axil-product">
                         <div class="thumbnail">
                             <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-05.png" alt="Product Images">
+                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-05.png" alt="Product Images">
                             </a>
                             <div class="label-block label-right">
                                 <div class="product-badget">25% OFF</div>
@@ -542,7 +542,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/icons/service1.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service1.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Fast &amp; Secure Delivery</h6>
@@ -553,7 +553,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/icons/service2.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service2.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Money Back Guarantee</h6>
@@ -564,7 +564,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/icons/service3.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service3.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">24 Hour Return Policy</h6>
@@ -575,7 +575,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/icons/service4.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service4.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Pro Quality Support</h6>
@@ -653,14 +653,14 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                             <span>Save $3 With App & New User only</span>
                             <div class="download-btn-group">
                                 <div class="qr-code">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/others/qr.png" alt="Axilthemes">
+                                    <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/qr.png" alt="Axilthemes">
                                 </div>
                                 <div class="app-link">
                                     <a href="#">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/others/app-store.png" alt="App Store">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/app-store.png" alt="App Store">
                                     </a>
                                     <a href="#">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/others/play-store.png" alt="Play Store">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/play-store.png" alt="Play Store">
                                     </a>
                                 </div>
                             </div>
@@ -696,9 +696,9 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                     <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
                         <span class="card-text">Accept For</span>
                         <ul class="payment-icons-bottom quick-link">
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
                         </ul>
                     </div>
                 </div>
@@ -724,34 +724,34 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                 <div class="col-lg-10 order-lg-2">
                                     <div class="single-product-thumbnail product-large-thumbnail axil-product thumbnail-badge zoom-gallery">
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-big-01.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-01.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?>/client_assets/assets/images/product/product-big-01.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?>/fix_assets/images/product/product-big-01.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-big-02.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-02.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?>/client_assets/assets/images/product/product-big-02.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?>/fix_assets/images/product/product-big-02.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-big-03.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-03.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?>/client_assets/assets/images/product/product-big-03.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?>/fix_assets/images/product/product-big-03.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
@@ -761,13 +761,13 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                 <div class="col-lg-2 order-lg-1">
                                     <div class="product-small-thumb small-thumb-wrapper">
                                         <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-thumb/thumb-08.png" alt="thumb image">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/thumb-08.png" alt="thumb image">
                                         </div>
                                         <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
                                         </div>
                                         <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
                                         </div>
                                     </div>
                                 </div>
@@ -778,7 +778,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                 <div class="inner">
                                     <div class="product-rating">
                                         <div class="star-rating">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/icons/rate.png" alt="Rate Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/rate.png" alt="Rate Images">
                                         </div>
                                         <div class="review-link">
                                             <a href="#">(<span>1</span> customer reviews)</a>
@@ -876,7 +876,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                 <div class="axil-product-list">
                     <div class="thumbnail">
                         <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
                         </a>
                     </div>
                     <div class="product-content">
@@ -904,7 +904,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                 <div class="axil-product-list">
                     <div class="thumbnail">
                         <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
                         </a>
                     </div>
                     <div class="product-content">
@@ -947,7 +947,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
             <ul class="cart-item-list">
                 <li class="cart-item">
                     <div class="item-img">
-                        <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-01.png" alt="Commodo Blown Lamp"></a>
+                        <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-01.png" alt="Commodo Blown Lamp"></a>
                         <button class="close-btn"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="item-content">
@@ -970,7 +970,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                 </li>
                 <li class="cart-item">
                     <div class="item-img">
-                        <a href="single-product-2.html"><img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-02.png" alt="Commodo Blown Lamp"></a>
+                        <a href="single-product-2.html"><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-02.png" alt="Commodo Blown Lamp"></a>
                         <button class="close-btn"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="item-content">
@@ -993,7 +993,7 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                 </li>
                 <li class="cart-item">
                     <div class="item-img">
-                        <a href="single-product-3.html"><img src="<?php echo ASSETS_URL_ROOT ?>/client_assets/assets/images/product/electric/product-03.png" alt="Commodo Blown Lamp"></a>
+                        <a href="single-product-3.html"><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-03.png" alt="Commodo Blown Lamp"></a>
                         <button class="close-btn"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="item-content">
