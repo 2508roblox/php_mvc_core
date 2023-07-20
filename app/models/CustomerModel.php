@@ -1,8 +1,33 @@
 <?php
 class CustomerModel extends Database
 {
+    public function getAll()
+    {
+        $sql  = "SELECT * FROM tbl_customer";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function del($id)
+    {
+        $sql = "DELETE FROM tbl_customer WHERE CustomerID = '$id'";
+        $result = $this->delete($sql);
+        if ($result) {
 
-
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function getUser($username)
+    {
+        $sql1 = "SELECT * FROM tbl_customer WHERE Username ='$username' ";
+        $result =  $this->select($sql1);
+        return $result;
+    }
     public function signup($data)
     {
         $Firstname = $data['Firstname'];

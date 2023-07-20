@@ -20,22 +20,25 @@ class CartModel extends Database
             return false;
         }
     }
+    public function delAll()
+    {
+        $SessionID = session_id();
+        $sql = "DELETE FROM tbl_cart WHERE SessionID = '$SessionID'";
+        return $this->del($sql);
+    }
     public function add_to_cart($data)
     {
         $SessionID  = session_id();
         $ProductID = $data['ProductID'];
         $Quantity = $data['Quantity'];
-        $Price = $data['CurrentPrice'];
         $CurrentPrice = $data['CurrentPrice'];
 
         $SessionID = mysqli_escape_string($this->link, $SessionID);
         $ProductID = mysqli_escape_string($this->link, $ProductID);
         $Quantity = mysqli_escape_string($this->link, $Quantity);
-        $Price = mysqli_escape_string($this->link, $Price);
         $CurrentPrice = mysqli_escape_string($this->link, $CurrentPrice);
         $sql = "SELECT * FROM tbl_cart WHERE SessionID = '$SessionID' AND ProductID = '$ProductID'";
         $isAdded  = $this->select($sql);
-        print_r($isAdded);
         if ($isAdded) {
             $isAdded =  $isAdded->fetch_assoc();
             $CartID = $isAdded['CartID'];
@@ -47,7 +50,7 @@ class CartModel extends Database
                 return false;
             }
         } else {
-            $sql = "INSERT INTO tbl_cart (SessionID, ProductID, Quantity, Price) VALUES ('$SessionID', '$ProductID', '$Quantity', '$Price')";
+            $sql = "INSERT INTO tbl_cart (SessionID, ProductID, Quantity, Price) VALUES ('$SessionID', '$ProductID', '$Quantity', '$CurrentPrice')";
 
             $result = $this->insert($sql);
             if ($result) {
@@ -97,7 +100,7 @@ class CartModel extends Database
     }
     public function del($id)
     {
-        $sql = "DELETE FROM tbl_brand WHERE BrandID = '$id'";
+        $sql = "DELETE FROM tbl_cart WHERE CartID = '$id'";
         $result = $this->delete($sql);
         if ($result) {
 

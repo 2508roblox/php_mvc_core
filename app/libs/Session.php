@@ -33,13 +33,13 @@ class Session
       }
    }
 
-   public static function checkSession()
+   public static function checkSession($key)
    //check điều kiện để vào trang index
    {
       self::init();
-      if (self::get("adminLogin") == false) {
+      if (empty(self::get($key))) {
          self::destroy();
-         header("Location:login.php");
+         redirect('/user/signin');
       }
    }
 

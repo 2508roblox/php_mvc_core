@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/base.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/style.min.css">
-
+    <script defer src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
 
 
 </head>
@@ -35,7 +35,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
     <a href="#top" class="back-to-top" id="backto-top"><i class="fa-solid fa-arrow-up"></i></a>
-    <header class="header axil-header header-style-1">
+    <header style="background-color: #F6F7FB;" class="header axil-header header-style-1">
 
         <div class="axil-header-top">
             <div class="container">
@@ -101,24 +101,13 @@
                                 </a>
                             </div>
                             <ul class="mainmenu">
-                                <li class="menu-item-has-children">
+                                <li class="menu-item ">
                                     <a href="#">Home</a>
-                                    <ul class="axil-submenu">
-                                        <li><a href="index-1.html">Home - Electronics</a></li>
-                                        <li><a href="index-2.html">Home - NFT</a></li>
-                                        <li><a href="index-3.html">Home - Fashion</a></li>
-                                        <li><a href="index-4.html">Home - Jewellery</a></li>
-                                        <li><a href="index-5.html">Home - Furniture</a></li>
-                                        <li><a href="index-7.html">Home - Multipurpose</a></li>
-                                        <li><a href="https://new.axilthemes.com/demo/template/etrade-rtl/">RTL
-                                                Version</a></li>
-                                    </ul>
+
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Shop
-                                        <svg xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24" width="10" height="10">
-                                            <path d="M1.51,6.079a1.492,1.492,0,0,1,1.06.44l7.673,7.672a2.5,2.5,0,0,0,3.536,0L21.44,6.529A1.5,1.5,0,1,1,23.561,8.65L15.9,16.312a5.505,5.505,0,0,1-7.778,0L.449,8.64A1.5,1.5,0,0,1,1.51,6.079Z" />
-                                        </svg>
+
                                     </a>
 
                                     <ul class="axil-submenu">
@@ -133,10 +122,9 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="abouts">About</a></li>
-                                <li><a href="blog">Blog</a></li>
-
-                                <li><a href="contact">Contact</a></li>
+                                <li><a href="<?php echo ASSETS_URL_ROOT . '/abouts' ?>">About</a></li>
+                                <li><a href="<?php echo ASSETS_URL_ROOT . '/blog' ?>">Blog</a></li>
+                                <li><a href="<?php echo ASSETS_URL_ROOT . '/contact' ?>">Contact</a></li>
                             </ul>
                         </nav>
                         <!-- End Mainmanu Nav -->

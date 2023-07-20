@@ -21,7 +21,11 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                     <div class="col-12 mb--20">
                                         <div class="single-product-thumbnail axil-product thumbnail-grid">
                                             <div class="thumbnail">
-                                                <img class="img-fluid" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_detail['Image'] ?> " alt="Product Images">
+
+                                                <div style="width: 500px;  object-fit: cover; overflow: hidden;" id="zoom_img">
+                                                    <img style="  object-fit: cover;" class="zoom_img" class="img-fluid" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_detail['Image'] ?> " alt="Product Images">
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -948,6 +952,22 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
     </div>
 </div>
 <!-- Header Search Modal End -->
+<script>
+    const container = document.getElementById("zoom_img");
+    const img = document.querySelector(".zoom_img");
+    container.addEventListener("mousemove", (e) => {
+        const containerRect = container.getBoundingClientRect();
+        const x = (e.clientX - containerRect.left) / containerRect.width;
+        const y = (e.clientY - containerRect.top) / containerRect.height;
+
+        img.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+        img.style.transform = "scale(2)";
+    });
+    container.addEventListener("mouseleave", () => {
+        img.style.transformOrigin = "center";
+        img.style.transform = "scale(1)";
+    });
+</script>
 
 
 <?php include  __DIR__ . '/./inc/cart_.php' ?>

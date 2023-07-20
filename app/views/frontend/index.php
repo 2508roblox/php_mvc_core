@@ -5,12 +5,13 @@ $p_second =  $data['products_second'];
 $cat =  $data['cate'];
 $latest_product =  $data['latest_product'];
 $fm = new Format();
+
 ?>
 
 
 
 <main class="main-wrapper">
-    <div class="axil-main-slider-area main-slider-style-1">
+    <div class="axil-main-slider-area main-slider-style-1" style="background-color: #F6F7FB;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-sm-6">
@@ -182,10 +183,7 @@ $fm = new Format();
                 </div>
             </div>
         </div>
-        <ul class="shape-group">
-            <li class="shape-1"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/shape-1.png" alt="Shape"></li>
-            <li class="shape-2"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/shape-2.png" alt="Shape"></li>
-        </ul>
+
     </div>
 
     <!-- Start Categorie Area  -->
@@ -271,168 +269,179 @@ $fm = new Format();
                             $count = 0;
                             while ($p_assoc = $p_first->fetch_assoc()) {
                         ?>
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                                    <div class="axil-product product-style-one">
-                                        <div class="thumbnail">
-                                            <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_assoc['ProductID'] ?>">
-                                                <img style="height: 300px; object-fit: contain;" data-sal="zoom-out" width="300px" height="300px" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_assoc['Image'] ?>" alt="Product Images">
-                                                <img class="hover-img" width="300px" height="300px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_assoc['Image'] ?>" alt="Product Images">
-                                            </a>
-                                            <div class="label-block label-right">
-                                                <?php
-                                                if ($p_assoc['Discount'] != '0') {
-                                                    $discount = $p_assoc['Discount'];
-                                                    echo  "<div class=\"product-badget\">$discount% Off</div>";
-                                                }
-                                                ?>
-                                            </div>
-                                            <div class="product-hover-action">
-                                                <ul class="cart-action">
-                                                    <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                                    <li class="select-option">
-                                                        <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                                            Add to Cart
-                                                        </a>
-                                                    </li>
-                                                    <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="inner">
-                                                <div class="product-rating">
-                                                    <span class="icon">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </span>
-                                                    <span class="rating-number">(64)</span>
-                                                </div>
-                                                <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $fm->textShorten($p_assoc['Name'], 50) ?></a></h5>
-                                                <div class="product-price-variant">
-                                                    <?php
-                                                    if ($p_assoc['PromotionPrice']  != '0') {
-                                                    ?>
-                                                        <span class="price current-price">$<?php echo $p_assoc['PromotionPrice'] ?></span>
-                                                        <span class="price old-price">$<?php echo $p_assoc['Price'] ?></span>
-                                                    <?php
-                                                    } else {
-                                                    ?>
-                                                        <span class="price current-price">$<?php echo $p_assoc['Price'] ?></span>
 
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
+                                    <form id="add-to-cart-form" action="<?php echo ASSETS_URL_ROOT ?>/products/addtocard" method="POST" enctype="multipart/form-data">
+
+
+                                        <input type="number" hidden name="ProductID" value="<?php echo $p_assoc['ProductID'] ?>">
+                                        <input type="text" hidden name="Name" value="<?php echo $p_assoc['Name'] ?>">
+                                        <input type="text" hidden name="Quantity" value="1">
+                                        <div class="axil-product product-style-one">
+                                            <div class="thumbnail">
+                                                <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_assoc['ProductID'] ?>">
+                                                    <img style="height: 300px; object-fit: contain;" data-sal="zoom-out" width="300px" height="300px" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_assoc['Image'] ?>" alt="Product Images">
+                                                    <img class="hover-img" width="300px" height="300px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_assoc['Image'] ?>" alt="Product Images">
+                                                </a>
+                                                <div class="label-block label-right">
                                                     <?php
+                                                    if ($p_assoc['Discount'] != '0') {
+                                                        $discount = $p_assoc['Discount'];
+                                                        echo  "<div class=\"product-badget\">$discount% Off</div>";
                                                     }
                                                     ?>
                                                 </div>
+                                                <div class="product-hover-action">
+                                                    <ul class="cart-action">
+                                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                                        <li class="select-option">
+                                                            <a class="ct-s_btn" id="add-to-cart-btn">Add to Cart</a>
+                                                        </li>
+                                                        <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="inner">
+                                                    <div class="product-rating">
+                                                        <span class="icon">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </span>
+                                                        <span class="rating-number">(64)</span>
+                                                    </div>
+                                                    <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $fm->textShorten($p_assoc['Name'], 50) ?></a></h5>
+                                                    <div class="product-price-variant">
+
+                                                        <?php
+                                                        if ($p_assoc['PromotionPrice']  != '0') {
+                                                        ?>
+                                                            <span class="price current-price">$<?php echo $p_assoc['PromotionPrice'] ?></span>
+                                                            <span class="price old-price">$<?php echo $p_assoc['Price'] ?></span>
+                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo $p_assoc['PromotionPrice'] ?>">
+
+                                                        <?php
+                                                        } else {
+                                                        ?>
+                                                            <span class="price current-price">$<?php echo $p_assoc['Price'] ?></span>
+                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo $p_assoc['Price'] ?>">
+
+
+                                                        <?php
+                                                        }
+                                                        ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </form>
+                                </div>
+                    </div>
+            <?php
+                            }
+                        }
+
+            ?>
+            <!-- End Single Product  -->
+
+            <!-- End Single Product  -->
+                </div>
+            </div>
+            <!-- second 8 End .slick-single-layout -->
+            <div class="slick-single-layout">
+                <div class="row row--15">
+                    <?php
+                    if (isset($p_second)) {
+                        while ($p_s_data  = $p_second->fetch_assoc()) {
+                            # code...
+                    ?>
+                            <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
+                                <div class="axil-product product-style-one">
+                                    <div class="thumbnail">
+                                        <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
+                                            <img style="height: 300px; object-fit: contain;" data-sal="zoom-out" width="300px" height="300px" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>" alt="Product Images">
+                                            <img class="hover-img" width="300px" height="300px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>" alt="Product Images">
+                                        </a>
+                                        </a>
+                                        <div class="label-block label-right">
+
+                                            <?php
+                                            if ($p_s_data['Discount'] != '0') {
+                                                $discount = $p_s_data['Discount'];
+                                                echo  "<div class=\"product-badget\">$discount% Off</div>";
+                                            }
+                                            ?>
+                                        </div>
+                                        <div class="product-hover-action">
+                                            <ul class="cart-action">
+                                                <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                                <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>">Select Option</a>
+                                                </li>
+                                                <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="inner">
+                                            <div class="product-rating">
+                                                <span class="icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                                <span class="rating-number">(64)</span>
+                                            </div>
+                                            <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $p_s_data['Name'] ?></a></h5>
+                                            <div class="product-price-variant">
+                                                <?php
+                                                if ($p_s_data['PromotionPrice']  != '0') {
+                                                ?>
+                                                    <span class="price current-price">$<?php echo $p_s_data['PromotionPrice'] ?></span>
+                                                    <span class="price old-price">$<?php echo $p_s_data['Price'] ?></span>
+                                                <?php
+                                                } else {
+                                                ?>
+                                                    <span class="price current-price">$<?php echo $p_s_data['Price'] ?></span>
+
+                                                <?php
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        <?php
-                            }
+                            </div>
+                    <?php
                         }
-
-                        ?>
-                        <!-- End Single Product  -->
-
-                        <!-- End Single Product  -->
-                    </div>
-                </div>
-                <!-- second 8 End .slick-single-layout -->
-                <div class="slick-single-layout">
-                    <div class="row row--15">
-                        <?php
-                        if (isset($p_second)) {
-                            while ($p_s_data  = $p_second->fetch_assoc()) {
-                                # code...
-                        ?>
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                                    <div class="axil-product product-style-one">
-                                        <div class="thumbnail">
-                                            <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                                <img style="height: 300px; object-fit: contain;" data-sal="zoom-out" width="300px" height="300px" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>" alt="Product Images">
-                                                <img class="hover-img" width="300px" height="300px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>" alt="Product Images">
-                                            </a>
-                                            </a>
-                                            <div class="label-block label-right">
-
-                                                <?php
-                                                if ($p_s_data['Discount'] != '0') {
-                                                    $discount = $p_s_data['Discount'];
-                                                    echo  "<div class=\"product-badget\">$discount% Off</div>";
-                                                }
-                                                ?>
-                                            </div>
-                                            <div class="product-hover-action">
-                                                <ul class="cart-action">
-                                                    <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                                    <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>">Select Option</a>
-                                                    </li>
-                                                    <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="inner">
-                                                <div class="product-rating">
-                                                    <span class="icon">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </span>
-                                                    <span class="rating-number">(64)</span>
-                                                </div>
-                                                <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $p_s_data['Name'] ?></a></h5>
-                                                <div class="product-price-variant">
-                                                    <?php
-                                                    if ($p_s_data['PromotionPrice']  != '0') {
-                                                    ?>
-                                                        <span class="price current-price">$<?php echo $p_s_data['PromotionPrice'] ?></span>
-                                                        <span class="price old-price">$<?php echo $p_s_data['Price'] ?></span>
-                                                    <?php
-                                                    } else {
-                                                    ?>
-                                                        <span class="price current-price">$<?php echo $p_s_data['Price'] ?></span>
-
-                                                    <?php
-                                                    }
-                                                    ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        <?php
-                            }
-                        }
-                        ?>
+                    }
+                    ?>
 
 
-                        <!-- End Single Product  -->
+                    <!-- End Single Product  -->
 
-                        <!-- End Single Product  -->
+                    <!-- End Single Product  -->
 
-                    </div>
-                </div>
-                <!-- End .slick-single-layout -->
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center mt--20 mt_sm--0">
-                    <a href="products" class="axil-btn btn-bg-lighter btn-load-more">View All Products</a>
                 </div>
             </div>
-
+            <!-- End .slick-single-layout -->
         </div>
+        <div class="row">
+            <div class="col-lg-12 text-center mt--20 mt_sm--0">
+                <a href="products" class="axil-btn btn-bg-lighter btn-load-more">View All Products</a>
+            </div>
+        </div>
+
+    </div>
     </div>
 
     <!-- End Expolre Product Area  -->
 
     <!-- Start Testimonila Area Users Feedback  -->
-    <div class="axil-testimoial-area axil-section-gap bg-vista-white">
+    <div style="background-color: #F6F7FB;" class="axil-testimoial-area axil-section-gap bg-vista-white">
         <div class="container">
             <div class="section-title-wrapper">
                 <span class="title-highlighter highlighter-secondary"> <i class="fa-solid fa-quote-left"></i>Testimonials</span>
@@ -537,8 +546,8 @@ $fm = new Format();
                             <div class="slick-single-layout">
                                 <div class="axil-product product-style-two">
                                     <div class="thumbnail">
-                                        <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $l_data['ProductID'] ?>">
-                                            <img data-sal="zoom-out" data-sal-delay="200" data-sal-duration="500" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $l_data['Image'] ?>" alt="Product Images">
+                                        <a style="display: flex; justify-content: center; align-items: center;" href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $l_data['ProductID'] ?>">
+                                            <img style="height: 70%; width: 70%; object-fit: contain;" data-sal="zoom-out" data-sal-delay="200" data-sal-duration="500" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $l_data['Image'] ?>" alt="Product Images">
                                         </a>
                                         <div class="label-block label-right">
                                             <?php
@@ -1363,6 +1372,7 @@ $fm = new Format();
         </div>
     </div>
 </div>
+
 <!-- Header Search Modal End -->
 
 
@@ -1386,6 +1396,21 @@ $fm = new Format();
     </div>
 </div>
 <div class="closeMask"></div>
+<script>
+    // Lấy đối tượng form và nút "Add to Cart"
+    const addToCartForm = document.querySelectorAll('#add-to-cart-form');
+    const addToCartBtn = document.querySelectorAll('.select-option');
+    console.log(addToCartForm, addToCartBtn)
+
+    // Thêm sự kiện click cho nút "Add to Cart"
+    addToCartBtn.forEach((btn, index) => {
+        btn.addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của nút "Add to Cart"
+            console.log(btn)
+            addToCartForm[index].submit(); // Submit form tương ứng
+        });
+    });
+</script>
 <?php
 include_once __DIR__ . '/./inc/footer.php';
 ?>

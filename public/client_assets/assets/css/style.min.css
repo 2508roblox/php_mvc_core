@@ -2121,7 +2121,7 @@ textarea:-ms-input-placeholder {
 }
 
 .bg-vista-white {
-    background-color: #f9f3f0
+    background-color: #F6F7FB;
 }
 
 .bg-wild-sand {
@@ -9417,16 +9417,6 @@ button.axil-btn.btn-size-md i {
     margin-right: 15px
 }
 
-.mainmenu>.menu-item-has-children>a::after {
-    content: "⌵";
-    font-family: var(--font-awesome);
-    font-weight: 400;
-    color: #a4a4a4;
-    font-size: 16px;
-    position: absolute;
-    top: 1px;
-    right: -14px
-}
 
 .mainmenu>.menu-item-has-children.menu-item-open>a:before {
     width: 100%;

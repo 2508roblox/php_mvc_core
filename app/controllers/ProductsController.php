@@ -38,11 +38,12 @@ class ProductsController extends Controller
     }
     public function addtocard()
     {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addproduct'])) {
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $result = $this->model('cart')->add_to_cart($_POST);
             if ($result) {
                 // Thêm sản phẩm vào giỏ hàng thành công, chuyển hướng đến trang giỏ hàng
-                redirect("/cart");
+                redirect("/cart"); // -> redirect to CartController , excuse get mothed in this class
                 $this->view('frontend/cart');
             } else {
 

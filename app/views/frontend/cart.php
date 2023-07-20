@@ -34,24 +34,29 @@ $cart = isset($data['cart']) ? $data['cart'] : [''];
                         <tbody>
                             <?php
                             if (isset($cart)) {
+                                $subtotal = 0;
                                 foreach ($cart as $cart_data) {
                                     # code...
 
 
                             ?>
-                                    <tr>
-                                        <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
-                                        <td class="product-thumbnail"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $cart_data['Image'] ?> " alt="Digital Product"></a></td>
-                                        <td class="product-title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $cart_data['Name'] ?></a></td>
-                                        <td class="product-price" data-title="Price"><span class="currency-symbol">$</span><?php echo $cart_data['Price'] ?></td>
-                                        <td class="product-quantity" data-title="Qty">
-                                            <div class="pro-qty">
-                                                <input type="number" class="quantity-input" value="<?php echo $cart_data['Quantity'] ?>">
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span><?php echo $cart_data['Quantity'] * $cart_data['Price'] ?></td>
-                                    </tr>
+                                    <form class="" action="">
+
+                                        <tr>
+                                            <td class="product-remove"><a href="<?php echo ASSETS_URL_ROOT . '/cart/del' . '?Id=' . $cart_data['CartID']  ?>" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
+                                            <td class="product-thumbnail"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $cart_data['Image'] ?> " alt="Digital Product"></a></td>
+                                            <td class="product-title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $cart_data['Name'] ?></a></td>
+                                            <td class="product-price" data-title="Price"><span class="currency-symbol">$</span><?php echo $cart_data['Price'] ?></td>
+                                            <td class="product-quantity" data-title="Qty">
+                                                <div class="pro-qty">
+                                                    <input type="number" class="quantity-input" value="<?php echo $cart_data['Quantity'] ?>">
+                                                </div>
+                                            </td>
+                                            <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span><?php echo $cart_data['Quantity'] * $cart_data['Price'] ?></td>
+                                        </tr>
+                                    </form>
                             <?php
+                                    $subtotal += $cart_data['Quantity'] * $cart_data['Price'];
                                 }
                             }
                             ?>
@@ -65,54 +70,12 @@ $cart = isset($data['cart']) ? $data['cart'] : [''];
                             <button type="submit" class="axil-btn btn-outline">Apply</button>
                         </div>
                     </div>
-                    <div class="update-btn">
-                        <a href="#" class="axil-btn btn-outline">Update Cart</a>
+                    <div class="" style="display: flex;justify-content: end; gap:1rem;">
+                        <div class="update-btn"> <a href="#" class="axil-btn btn-outline">Update Cart</a> </div>
+                        <div class="update-btn"> <a href=" <?php echo ASSETS_URL_ROOT ?>/checkout" class="axil-btn btn-outline">Checkout</a> </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-5 col-lg-7 offset-xl-7 offset-lg-5">
-                        <div class="axil-order-summery mt--80">
-                            <h5 class="title mb--20">Order Summary</h5>
-                            <div class="summery-table-wrap">
-                                <table class="table summery-table mb--30">
-                                    <tbody>
-                                        <tr class="order-subtotal">
-                                            <td>Subtotal</td>
-                                            <td>$117.00</td>
-                                        </tr>
-                                        <tr class="order-shipping">
-                                            <td>Shipping</td>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input type="radio" id="radio1" name="shipping" checked>
-                                                    <label for="radio1">Free Shippping</label>
-                                                </div>
-                                                <div class="input-group">
-                                                    <input type="radio" id="radio2" name="shipping">
-                                                    <label for="radio2">Local: $35.00</label>
-                                                </div>
-                                                <div class="input-group">
-                                                    <input type="radio" id="radio3" name="shipping">
-                                                    <label for="radio3">Flat rate: $12.00</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order-tax">
-                                            <td>State Tax</td>
-                                            <td>$8.00</td>
-                                        </tr>
-                                        <tr class="order-total">
-                                            <td>Total</td>
-                                            <td class="order-total-amount">$125.00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <a href="<?php echo ASSETS_URL_ROOT ?>/checkout" class="axil-btn btn-bg-primary checkout-btn">Process to
-                                Checkout</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -522,6 +485,17 @@ $cart = isset($data['cart']) ? $data['cart'] : [''];
         </div>
     </div>
 </div>
+<script>
+    // Get the form and icon elements
+    const myForm = document.getElementById('go_checkout');
+    const myIcon = document.getElementById('mySubmit');
+
+    // Add a click event listener to the icon
+    myIcon.addEventListener('click', function() {
+        console.log(myForm, myIcon)
+        myForm.submit();
+    });
+</script>
 <!-- Header Search Modal End -->
 
 

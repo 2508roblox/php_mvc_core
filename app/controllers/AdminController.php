@@ -43,7 +43,7 @@ class AdminController extends Controller
         //isset POST update
         $c_data =  $this->model('category')->getAll();
         $b_data =  $this->model('brand')->getAll();
-        if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             print_r($_POST['Tag']);
             $files = $_FILES['filepond'];
             $files_string = array();
@@ -294,18 +294,54 @@ class AdminController extends Controller
             redirect('/admin');
         }
     }
-    public function orders()
-    {
-
-        // handle all method del, get, update, ->view
-        //isset POST update
-        $this->view('admin/orders');
-    }
+ 
     public function reviews()
     {
 
         // handle all method del, get, update, ->view
         //isset POST update
         $this->view('admin/reviews');
+    }
+    public function customerlist()
+    {
+        $result =  $this->model('customer')->getAll();
+        if ($result) {
+            $this->view('admin/customerlist', ['customer' => $result]);
+        } else {
+            $this->view('admin/customerlist', ['customer' => '']);
+        }
+    }
+    public function delcustomer()
+    {
+        if (isset($_GET['delid']) && $_GET['delid'] != null) {
+            // id != '';
+            $id = $_GET['delid'];
+            $result = $this->model('customer')->del($id);
+            //return object -> assoc_array
+            // if ($result) {
+            //      .
+            self::customerlist();
+            // }
+        } else {
+            redirect('/admin');
+        }
+    }
+    public function orders()
+    {
+        $result =  $this->model('orders')->getAll();
+        if ($result) {
+            $this->view('admin/orders', ['orders' => $result]);
+        } else {
+            $this->view('admin/orders', ['orders' => '']);
+        }
+    }
+    public function orderdetail()
+    {
+        $result =  $this->model('orders')->getAll();
+        if ($result) {
+            $this->view('admin/orderdetail', ['orderdetail' => $result]);
+        } else {
+            $this->view('admin/orderdetail', ['orderdetail' => '']);
+        }
     }
 }

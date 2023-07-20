@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/./inc/header.php';
 include __DIR__ . '/./inc/sidebar.php';
-$result = isset($data['orders']) ? $data['orders'] : [''];
+$result = isset($data['customer']) ? $data['customer'] : [''];
 ?>
 
 
@@ -11,12 +11,12 @@ $result = isset($data['orders']) ? $data['orders'] : [''];
     <div class="container-fluid">
         <!-- Page Header -->
         <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
-            <h1 class="page-title fw-semibold fs-18 mb-0">Products List</h1>
+            <h1 class="page-title fw-semibold fs-18 mb-0">Customer List</h1>
             <div class="ms-md-1 ms-0">
                 <nav>
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="#">Admin</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Products List</li>
+                        <li class="breadcrumb-item active" aria-current="page">Customer List</li>
                     </ol>
                 </nav>
             </div>
@@ -27,7 +27,7 @@ $result = isset($data['orders']) ? $data['orders'] : [''];
             <div class="col-xl-12">
                 <div class="card custom-card">
                     <div class="card-header">
-                        <div class="card-title">Category List</div>
+                        <div class="card-title">Customer List</div>
                     </div>
                     <div class="card-body">
                         <table id="file-export" class="table table-bordered text-nowrap" style="width:100%">
@@ -35,86 +35,72 @@ $result = isset($data['orders']) ? $data['orders'] : [''];
 
 
                                 <tr>
-                                    <th>OrderID</th>
                                     <th>CustomerID</th>
-                                    <th>OrderDate</th>
-                                    <th>Status</th>
-                                    <th>PaymentMethod</th>
-                                    <th>Phone</th>
-                                    <th>Address</th>
-                                    <th>TotalPrice</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Full Name</th>
+
+                                    <th>CreatedDate</th>
+                                    <th>Stauts</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                                if ($result) {
-                                    while ($c_data = $result->fetch_assoc()) {
-                                ?>
+                                if ($result != '') {
+                                    # code...
+                                    while ($p_data = $result->fetch_assoc()) {
 
+
+                                ?>
                                         <tr>
                                             <td>
-                                                <?php echo $c_data['OrderID'] ?>
+                                                <?php echo $p_data['CustomerID'] ?>
                                             </td>
                                             <td>
-                                                <?php echo $c_data['CustomerID'] ?>
-
+                                                <?php echo $p_data['Username'] ?>
                                             </td>
                                             <td>
-                                                <?php echo $c_data['OrderDate'] ?>
+                                                <?php echo $p_data['Email'] ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $p_data['Firstname'] . ' ' . $p_data['Lastname'] ?>
+
+
+
 
                                             </td>
 
-
+                                            <td> <?php echo $p_data['CreatedDate']   ?>
+                                            </td>
                                             <td>
                                                 <?php
-                                                if ($c_data['Status'] == 'pending') {
-                                                ?>
-                                                    <span class="badge bg-success text-light">Pending</span>
+                                                if ($p_data['Status'] == '0') {
+                                                    echo    '<span class="badge bg-danger text-light">
+                                                        Offline
+                                                        </span>';
+                                                } else {
 
-                                                <?php
-                                                } elseif ($c_data['Status'] == 'confirmed') {
-                                                ?>
-                                                    <span class="badge bg-danger text-light">Confirmed</span>
-
-                                                <?php
+                                                    echo    '<span class="badge bg-success text-light">
+                                                        Online
+                                                        </span>';
                                                 }
                                                 ?>
-                                            </td>
-
-                                            <td>
-                                                <?php echo $c_data['PaymentMethod'] ?>
-
 
                                             </td>
 
-                                            <td>
-                                                <?php echo $c_data['Phone'] ?>
 
-
-                                            </td>
-
-                                            <td>
-                                                <?php echo $c_data['Address'] ?>
-
-
-                                            </td>
-                                            <td>
-                                                $ <?php echo $c_data['TotalPrice'] ?>
-
-
-                                            </td>
                                             <td>
                                                 <div class="hstack gap-2 fs-15">
-                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updateorders' . '?id=' . $c_data['OrderID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
-                                                    <a onclick="return confirm('Are you sure about that?')" href="<?php echo ASSETS_URL_ROOT . '/admin/delorders' . '?delid=' . $c_data['OrderID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updatecustomer' . '?id=' . $p_data['CustomerID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/delcustomer' . '?delid=' . $p_data['CustomerID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
                                 <?php
                                     }
-                                }
-                                ?>
+                                } ?>
+
 
 
 

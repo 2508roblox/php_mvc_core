@@ -8,11 +8,12 @@
             <ul class="cart-item-list">
                 <?php if (isset($_SESSION['cart'])) { ?>
                     <?php foreach ($_SESSION['cart'] as $item) { ?>
+
                         <li class="cart-item">
                             <div class="item-img">
-                                <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
+                                <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' . $item['CartID'] ?>">
                                     <img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $item['Image'] ?>" alt="Commodo Blown Lamp"></a>
-                                <button class="close-btn"><i class="fas fa-times"></i></button>
+                                <a href="<?php echo ASSETS_URL_ROOT . '/cart/del?Id=' . $item['CartID'] ?>"> <button class="close-btn"><i class="fas fa-times"></i></button></a>
                             </div>
                             <div class="item-content">
                                 <div class="product-rating">

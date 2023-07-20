@@ -151,51 +151,66 @@ $p_data  = isset($data['products']) ? $data['products'] : null;
 
                         ?>
                                 <div class="col-xl-4 col-sm-6">
-                                    <div class="axil-product product-style-one mb--30">
-                                        <div class="thumbnail">
-                                            <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_single_data['ProductID'] ?>">
-                                                <img style="max-height: 300px; object-fit: contain;" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_single_data['Image'] ?>" alt="Product Images">
-                                            </a>
-                                            <div class="label-block label-right">
-                                                <div class="product-badget">
-                                                    <?php
-                                                    if ($p_single_data['Discount'] != '0') {
-                                                        $discount = $p_single_data['Discount'];
-                                                        echo  "<div class=\"product-badget\">$discount% Off</div>";
-                                                    }
-                                                    ?>
-                                                </div>
-                                            </div>
-                                            <div class="product-hover-action">
-                                                <ul class="cart-action">
-                                                    <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
-                                                    <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/cart">Add to Cart</a></li>
-                                                    <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="inner">
-                                                <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $p_single_data['Name'] ?></a>
-                                                </h5>
-                                                <div class="product-price-variant">
-                                                    <?php
-                                                    if ($p_single_data['PromotionPrice']  != '0') {
-                                                    ?>
-                                                        <span class="price current-price">$<?php echo $p_single_data['PromotionPrice'] ?></span>
-                                                        <span class="price old-price">$<?php echo $p_single_data['Price'] ?></span>
-                                                    <?php
-                                                    } else {
-                                                    ?>
-                                                        <span class="price current-price">$<?php echo $p_single_data['Price'] ?></span>
+                                    <form id="add-to-cart-form" action="<?php echo ASSETS_URL_ROOT ?>/products/addtocard" method="POST" enctype="multipart/form-data">
 
-                                                    <?php
-                                                    }
-                                                    ?>
+
+                                        <input type="number" hidden name="ProductID" value="<?php echo $p_single_data['ProductID'] ?>">
+                                        <input type="text" hidden name="Name" value="<?php echo $p_single_data['Name'] ?>">
+                                        <input type="text" hidden name="Quantity" value="1">
+                                        <div class="axil-product product-style-one mb--30">
+
+                                            <div class="thumbnail">
+                                                <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_single_data['ProductID'] ?>">
+                                                    <img style="max-height: 300px; object-fit: contain;" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_single_data['Image'] ?>" alt="Product Images">
+                                                </a>
+                                                <div class="label-block label-right">
+                                                <?php
+                                                        if ($p_single_data['Discount'] != '0') {
+                                                            $discount = $p_single_data['Discount'];
+                                                            echo '<div class="product-badget">';
+                                                        
+                                                            echo  "<div class=\"product-badget\">$discount% Off</div>";
+                                                            echo '</div>';
+                                                        }
+                                                        ?>
+                                                    
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul class="cart-action">
+                                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                                        <li class="select-option"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">Add to Cart</a>
+                                                        </li>
+                                                        <li class="wishlist"><a href="wishlist"><i class="far fa-heart"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="inner">
+                                                    <h5 class="title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $p_single_data['Name'] ?></a>
+                                                    </h5>
+                                                    <div class="product-price-variant">
+                                                        <?php
+                                                        if ($p_single_data['PromotionPrice']  != '0') {
+                                                        ?>
+                                                            <span class="price current-price">$<?php echo $p_single_data['PromotionPrice'] ?></span>
+                                                            <span class="price old-price">$<?php echo $p_single_data['Price'] ?></span>
+                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo $p_single_data['PromotionPrice'] ?>">
+
+                                                        <?php
+                                                        } else {
+                                                        ?>
+                                                            <span class="price current-price">$<?php echo $p_single_data['Price'] ?></span>
+                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo $p_single_data['Price'] ?>">
+
+
+                                                        <?php
+                                                        }
+                                                        ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                                 <!-- End Single Product  -->
                         <?php
@@ -640,7 +655,21 @@ $p_data  = isset($data['products']) ? $data['products'] : null;
 </div>
 <!-- Header Search Modal End -->
 
+<script>
+    // Lấy đối tượng form và nút "Add to Cart"
+    const addToCartForm = document.querySelectorAll('#add-to-cart-form');
+    const addToCartBtn = document.querySelectorAll('.select-option');
+    console.log(addToCartForm, addToCartBtn)
 
+    // Thêm sự kiện click cho nút "Add to Cart"
+    addToCartBtn.forEach((btn, index) => {
+        btn.addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của nút "Add to Cart"
+            console.log(btn)
+            addToCartForm[index].submit(); // Submit form tương ứng
+        });
+    });
+</script>
 
 <?php include  __DIR__ . '/./inc/cart_.php' ?>
 
