@@ -1,5 +1,6 @@
 <?php
 include_once __DIR__ . '/./inc/header.php';
+$p_detail = isset($data['orders']) ? $data['orders'] : null;
 ?>
 
 
@@ -44,8 +45,9 @@ include_once __DIR__ . '/./inc/header.php';
                             <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/author1.png" alt="Hello Annie">
                         </div>
                         <div class="media-body">
-                            <h5 class="title mb-0">Hello Annie</h5>
+                            <h5 class="title mb-0">Hello <?php echo $_SESSION['User_username'] ?></h5>
                             <span class="joining-date">eTrade Member Since Sep 2020</span>
+
                         </div>
                     </div>
                 </div>
@@ -59,7 +61,6 @@ include_once __DIR__ . '/./inc/header.php';
                                     <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-downloads" role="tab" aria-selected="false"><i class="fas fa-file-download"></i>Downloads</a>
                                     <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-address" role="tab" aria-selected="false"><i class="fas fa-home"></i>Addresses</a>
                                     <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-account" role="tab" aria-selected="false"><i class="fas fa-user"></i>Account Details</a>
-                                    <a class="nav-item nav-link" href="user/signin"><i class="fal fa-sign-out"></i>Logout</a>
                                 </div>
                             </nav>
                         </aside>
@@ -68,7 +69,7 @@ include_once __DIR__ . '/./inc/header.php';
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel">
                                 <div class="axil-dashboard-overview">
-                                    <div class="welcome-text">Hello Annie (not <span>Annie?</span> <a href="user/signin">Log Out</a>)</div>
+                                    <div class="welcome-text">Hello Annie (not <span><?php echo $_SESSION['User_username'] ?></span> <a href="user/signin">Log Out</a>)</div>
                                     <p>From your account dashboard you can view your recent orders, manage your
                                         shipping and billing addresses, and edit your password and account details.
                                     </p>
@@ -87,42 +88,76 @@ include_once __DIR__ . '/./inc/header.php';
                                                     <th scope="col">Actions</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">#6523</th>
-                                                    <td>September 10, 2020</td>
-                                                    <td>Processing</td>
-                                                    <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">#6523</th>
-                                                    <td>September 10, 2020</td>
-                                                    <td>On Hold</td>
-                                                    <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">#6523</th>
-                                                    <td>September 10, 2020</td>
-                                                    <td>Processing</td>
-                                                    <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">#6523</th>
-                                                    <td>September 10, 2020</td>
-                                                    <td>Processing</td>
-                                                    <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">#6523</th>
-                                                    <td>September 10, 2020</td>
-                                                    <td>Processing</td>
-                                                    <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
-                                                </tr>
+                                            <tbody> <?php
+                                                    if (isset($p_detail)) {
+
+                                                        while ($p_ = $p_detail->fetch_assoc()) {
+
+                                                            # code...
+
+
+                                                    ?>
+                                                        <tr>
+                                                            <th scope="row">#<?php echo $p_['OrderID'] ?></th>
+                                                            <td><?php echo $p_['OrderDate'] ?></td>
+                                                            <?php
+                                                            if ($p_['Delivered'] == 1) {
+                                                            ?>
+                                                                <td>
+                                                                    <span style="color: white !important;" class="badge bg-info text-light">Delivered</span>
+                                                                </td>
+
+                                                            <?php
+                                                            } elseif ($p_['Status'] == 'pending') {
+                                                            ?>
+                                                                <td>
+                                                                    <span style="color: white !important;" class="badge bg-info text-light">Pending</span>
+                                                                </td>
+
+                                                            <?php
+                                                            } elseif ($p_['Status'] == 'confirmed') {
+                                                            ?>
+                                                                <td>
+                                                                    <span style="color: white !important;" class="badge bg-success text-light">Delivering</span>
+                                                                </td>
+
+                                                            <?php
+                                                            } elseif ($p_['Status'] == 'cancle') {
+                                                            ?>
+                                                                <td>
+                                                                    <span style="color: white !important;" class="badge bg-danger text-light">Cancle</span>
+                                                                </td>
+
+                                                            <?php
+                                                            }
+                                                            ?>
+
+                                                            <td>$<?php echo $p_['TotalPrice'] ?></td>
+
+                                                            <?php
+                                                            if ($p_['Status'] == 'pending') {
+                                                            ?>
+                                                                <td><a href="#" class="axil-btn view-btn">View</a></td>
+
+                                                            <?php
+                                                            } elseif ($p_['Status'] == 'confirmed') {
+                                                            ?>
+                                                                <td><a href="<?php echo ASSETS_URL_ROOT . '/user/delivered' . '?id=' . $p_['OrderID'] ?>" class="axil-btn view-btn">Delivered</a></td>
+
+                                                            <?php
+                                                            } elseif ($p_['Status'] == 'cancle') {
+                                                            ?>
+                                                                <td><a href="#" class="axil-btn view-btn">Contact</a></td>
+
+                                                            <?php
+                                                            }
+                                                            ?>
+                                                        </tr>
+                                                <?php
+
+                                                        }
+                                                    }
+                                                ?>
                                             </tbody>
                                         </table>
                                     </div>

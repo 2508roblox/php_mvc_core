@@ -169,9 +169,16 @@
                                 <div class="my-account-dropdown">
                                     <span class="title">QUICKLINKS</span>
                                     <ul>
-                                        <li>
-                                            <a href="user">My Account</a>
-                                        </li>
+                                        <?php
+                                        if (Session::get('User_login')) {
+                                        ?>
+                                            <li>
+                                                <a href="user">My Account</a>
+                                            </li>
+                                        <?php
+                                        }
+                                        ?>
+
                                         <li>
                                             <a href="#">Initiate return</a>
                                         </li>

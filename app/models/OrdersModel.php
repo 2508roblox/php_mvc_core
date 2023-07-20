@@ -42,6 +42,29 @@ class OrdersModel extends Database
             return false;
         }
     }
+    public function getByUsername($username)
+    {
+        $sql  = "SELECT o.*, c.*
+        FROM tbl_orders o
+        JOIN tbl_customer c ON o.CustomerID = c.CustomerID
+        WHERE c.Username = '$username'";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function delivered($id)
+    {
+        $sql  = "UPDATE tbl_orders SET delivered = 1 WHERE OrderID ='$id'";
+        $result = $this->update($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
     public function confirm($id)
     {
         $sql = "UPDATE tbl_orders SET Status = 'confirmed' WHERE OrderID = '$id'";

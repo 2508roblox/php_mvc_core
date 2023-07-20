@@ -3,7 +3,17 @@ class UserController extends Controller
 {
     public function get()
     {
-        $this->view('frontend/profile');
+        $username = $_SESSION['User_username'];
+        print_r($username);
+        $result = $this->model('orders')->getByUsername($username);
+
+        return $this->view('frontend/profile', ['orders' => $result]);
+    }
+    public function delivered()
+    {
+        $id = $_GET['id'];
+        $result = $this->model('orders')->delivered($id);
+        Self::get();
     }
     public function signin()
     {

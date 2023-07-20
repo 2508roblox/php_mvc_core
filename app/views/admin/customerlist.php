@@ -75,7 +75,7 @@ $result = isset($data['customer']) ? $data['customer'] : [''];
                                             </td>
                                             <td>
                                                 <?php
-                                                if ($p_data['Status'] == '0') {
+                                                if ($p_data['OnlineStatus'] == '0') {
                                                     echo    '<span class="badge bg-danger text-light">
                                                         Offline
                                                         </span>';
