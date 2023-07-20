@@ -294,7 +294,7 @@ class AdminController extends Controller
             redirect('/admin');
         }
     }
- 
+
     public function reviews()
     {
 
@@ -335,13 +335,51 @@ class AdminController extends Controller
             $this->view('admin/orders', ['orders' => '']);
         }
     }
+
+    public function ordersconfirm()
+    {
+        if (isset($_GET['id']) && $_GET['id'] != null) {
+            // id != '';
+            $id = $_GET['id'];
+            $result = $this->model('orders')->confirm($id);
+            //return object -> assoc_array
+            // if ($result) {
+            //      .
+            self::orders();
+            // }
+        } else {
+            redirect('/admin');
+        }
+    }
+    public function orderscancle()
+    {
+        if (isset($_GET['id']) && $_GET['id'] != null) {
+            // id != '';
+            $id = $_GET['id'];
+            $result = $this->model('orders')->cancle($id);
+            //return object -> assoc_array
+            // if ($result) {
+            //      .
+            self::orders();
+            // }
+        } else {
+            redirect('/admin');
+        }
+    }
     public function orderdetail()
     {
-        $result =  $this->model('orders')->getAll();
-        if ($result) {
-            $this->view('admin/orderdetail', ['orderdetail' => $result]);
+        if (isset($_GET['id']) && $_GET['id'] != null) {
+            // id != '';
+            $id = $_GET['id'];
+            $result = $this->model('orderdetail')->get($id);
+            if ($result) {
+                $this->view('admin/orderdetail', ['orderdetail' => $result]);
+            } else {
+                $this->view('admin/orderdetail', ['orderdetail' => '']);
+            }
+            // }
         } else {
-            $this->view('admin/orderdetail', ['orderdetail' => '']);
+            redirect('/admin');
         }
     }
 }

@@ -42,4 +42,24 @@ class OrdersModel extends Database
             return false;
         }
     }
+    public function confirm($id)
+    {
+        $sql = "UPDATE tbl_orders SET Status = 'confirmed' WHERE OrderID = '$id'";
+        $result = $this->update($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function cancle($id)
+    {
+        $sql = "UPDATE tbl_orders SET Status = 'cancle' WHERE OrderID = '$id'";
+        $result = $this->update($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
 }

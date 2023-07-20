@@ -67,7 +67,7 @@
                 <!-- Start::slide -->
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/customerlist" class="side-menu__item"> <i class="bx bx-bar-chart side-menu__icon"></i> <span class="side-menu__label">Customers</span> </a> </li>
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/orders" class="side-menu__item"> <i class="bx bx-battery side-menu__icon"></i> <span class="side-menu__label">Orders</span> </a> </li>
-                <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/ordersdetail" class="side-menu__item"> <i class="bx bx-bitcoin side-menu__icon"></i> <span class="side-menu__label">Order Details</span> </a> </li>
+                <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/orderdetail" class="side-menu__item"> <i class="bx bx-bitcoin side-menu__icon"></i> <span class="side-menu__label">Order Details</span> </a> </li>
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/orders" class="side-menu__item"> <i class="bx bx-abacus side-menu__icon"></i> <span class="side-menu__label">Blog</span> </a> </li>
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/orders" class="side-menu__item"> <i class="bx bx-analyse side-menu__icon"></i> <span class="side-menu__label">Blog Comments</span> </a> </li>
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/orders" class="side-menu__item"> <i class="bx bx-aperture side-menu__icon"></i> <span class="side-menu__label">Slide</span> </a> </li>

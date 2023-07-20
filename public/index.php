@@ -1,4 +1,3 @@
- 
 <?php
 session_start();
 include "../app/libs/Session.php";
