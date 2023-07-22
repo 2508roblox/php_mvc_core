@@ -2,6 +2,7 @@
 include __DIR__ . '/./inc/header.php';
 include __DIR__ . '/./inc/sidebar.php';
 $result = isset($data['products']) ? $data['products'] : [''];
+$fm = new Format();
 ?>
 
 
@@ -57,7 +58,7 @@ $result = isset($data['products']) ? $data['products'] : [''];
                                             <td>
                                                 <div class="d-flex align-items-center">
                                                     <div class="me-2"> <span class="avatar avatar-md avatar-rounded"> <img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_data['Image'] ?>" alt=""> </span> </div>
-                                                    <div class="fw-semibold"> <?php echo $p_data['Name'] ?> </div>
+                                                    <div class="fw-semibold"> <?php echo $fm->textShorten($p_data['Name'], 30)  ?> </div>
                                                 </div>
                                             </td>
                                             <td>
@@ -88,9 +89,15 @@ $result = isset($data['products']) ? $data['products'] : [''];
                                                 </span>
                                             </td>
 
+<<<<<<< HEAD
                                             <td><?php echo number_format($p_data['Price']) ?></td>
                                             <td><?php echo number_format($p_data['Quantity']) ?></td>
                                             <td><?php echo number_format($p_data['Sold']) ?></td>
+=======
+                                            <td>$<?php echo number_format($p_data['Price']) ?></td>
+                                            <td><?php echo $p_data['Quantity'] ?></td>
+                                            <td><?php echo $p_data['Sold'] ?></td>
+>>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                                             <td>
                                                 <?php
                                                 if ($p_data['Status'] == 'Published') {

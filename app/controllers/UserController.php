@@ -23,7 +23,10 @@ class UserController extends Controller
             } else {
                 $result = $this->model('customer')->signin($_POST);
                 if ($result) {
+<<<<<<< HEAD
                     // set Session
+=======
+>>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                     Session::set('User_login', true);
                     Session::set('User_username', $_POST['Username']);
                     Session::set('User_firstname', $result['Firstname']);
@@ -53,6 +56,7 @@ class UserController extends Controller
                     Session::set('User_firstname', $_POST['Firstname']);
                     Session::set('User_lastname', $_POST['Lastname']);
                     Session::set('User_username', $_POST['Username']);
+                    Session::set('User_email', $_POST['Email']);
                     redirect('/');
                 } else {
                     $result = "<p style=\"color: red;\">Username has been taken</p>";

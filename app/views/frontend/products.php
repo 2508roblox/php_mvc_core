@@ -164,16 +164,16 @@ $p_data  = isset($data['products']) ? $data['products'] : null;
                                                     <img style="max-height: 300px; object-fit: contain;" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_single_data['Image'] ?>" alt="Product Images">
                                                 </a>
                                                 <div class="label-block label-right">
-                                                <?php
-                                                        if ($p_single_data['Discount'] != '0') {
-                                                            $discount = $p_single_data['Discount'];
-                                                            echo '<div class="product-badget">';
-                                                        
-                                                            echo  "<div class=\"product-badget\">$discount% Off</div>";
-                                                            echo '</div>';
-                                                        }
-                                                        ?>
-                                                    
+                                                    <?php
+                                                    if ($p_single_data['Discount'] != '0') {
+                                                        $discount = $p_single_data['Discount'];
+                                                        echo '<div class="product-badget">';
+
+                                                        echo  "<div class=\"product-badget\">$discount% Off</div>";
+                                                        echo '</div>';
+                                                    }
+                                                    ?>
+
                                                 </div>
                                                 <div class="product-hover-action">
                                                     <ul class="cart-action">
@@ -192,15 +192,15 @@ $p_data  = isset($data['products']) ? $data['products'] : null;
                                                         <?php
                                                         if ($p_single_data['PromotionPrice']  != '0') {
                                                         ?>
-                                                            <span class="price current-price">$<?php echo $p_single_data['PromotionPrice'] ?></span>
-                                                            <span class="price old-price">$<?php echo $p_single_data['Price'] ?></span>
-                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo $p_single_data['PromotionPrice'] ?>">
+                                                            <span class="price current-price">$<?php echo number_format($p_single_data['PromotionPrice'])  ?></span>
+                                                            <span class="price old-price">$<?php echo number_format($p_single_data['Price'])  ?></span>
+                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_single_data['PromotionPrice']) ?>">
 
                                                         <?php
                                                         } else {
                                                         ?>
-                                                            <span class="price current-price">$<?php echo $p_single_data['Price'] ?></span>
-                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo $p_single_data['Price'] ?>">
+                                                            <span class="price current-price">$<?php echo number_format($p_single_data['Price']) ?></span>
+                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_single_data['Price']) ?>">
 
 
                                                         <?php

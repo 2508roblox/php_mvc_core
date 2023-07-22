@@ -105,7 +105,11 @@ $result = isset($data['orders']) ? $data['orders'] : [''];
 
                                             </td>
                                             <td>
+<<<<<<< HEAD
                                                 $<?php echo number_format($c_data['TotalPrice']) ?>
+=======
+                                                $<?php echo number_format($c_data['TotalPrice'])  ?>
+>>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
 
 
                                             </td>
