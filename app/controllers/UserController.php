@@ -4,7 +4,6 @@ class UserController extends Controller
     public function get()
     {
         $username = $_SESSION['User_username'];
-        print_r($username);
         $result = $this->model('orders')->getByUsername($username);
 
         return $this->view('frontend/profile', ['orders' => $result]);

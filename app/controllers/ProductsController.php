@@ -40,17 +40,22 @@ class ProductsController extends Controller
     {
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $result = $this->model('cart')->add_to_cart($_POST);
-            if ($result) {
-                // Thêm sản phẩm vào giỏ hàng thành công, chuyển hướng đến trang giỏ hàng
-                redirect("/cart"); // -> redirect to CartController , excuse get mothed in this class
-                $this->view('frontend/cart');
-            } else {
 
+            $result = $this->model('product')->checkStock($_POST['ProductID']);
+
+            if ($result > 0) {
+                $result = $this->model('cart')->add_to_cart($_POST);
+                if ($result) {
+                    // Thêm sản phẩm vào giỏ hàng thành công, chuyển hướng đến trang giỏ hàng
+                    redirect("/cart"); // -> redirect to CartController , excuse get mothed in this class
+                    $this->view('frontend/cart');
+                } else {
+
+                    $this->view('frontend/cart');
+                }
+            } else {
                 $this->view('frontend/cart');
             }
-        } else {
-            $this->view('frontend/cart');
         }
     }
     // public function productdetail()

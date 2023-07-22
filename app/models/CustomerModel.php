@@ -1,6 +1,16 @@
 <?php
 class CustomerModel extends Database
 {
+    public function count()
+    {
+        $sql  = "SELECT COUNT(CustomerID) AS TotalCustomer FROM tbl_customer";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
     public function getAll()
     {
         $sql  = "SELECT * FROM tbl_customer";

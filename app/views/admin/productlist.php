@@ -40,6 +40,7 @@ $result = isset($data['products']) ? $data['products'] : [''];
                                     <th>Vat</th>
                                     <th>Price</th>
                                     <th>Stock</th>
+                                    <th>Sold</th>
                                     <th>Published</th>
                                     <th>Action</th>
                                 </tr>
@@ -89,6 +90,7 @@ $result = isset($data['products']) ? $data['products'] : [''];
 
                                             <td><?php echo $p_data['Price'] ?></td>
                                             <td><?php echo $p_data['Quantity'] ?></td>
+                                            <td><?php echo $p_data['Sold'] ?></td>
                                             <td>
                                                 <?php
                                                 if ($p_data['Status'] == '1') {

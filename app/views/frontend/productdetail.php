@@ -83,9 +83,9 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                                 </div>
                                             </div>
                                             <ul class="product-meta">
-                                                <li><i class="fal fa-check"></i>In stock</li>
-                                                <li><i class="fal fa-check"></i>Free delivery available</li>
-                                                <li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>
+                                                <li>- <?php echo $p_detail['Quantity'] ?> items in stock</li>
+                                                <li>- Free delivery available</li>
+                                                <li>- Sales 30% Off Use Code: MOTIVE30</li>
                                             </ul>
                                             <p class="description">In ornare lorem ut est dapibus, ut tincidunt nisi
                                                 pretium. Integer ante est, hendrerit in rutrum quis, elementum eget

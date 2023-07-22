@@ -2,7 +2,16 @@
 class OrdersModel extends Database
 {
 
-
+    public function count()
+    {
+        $sql  = "SELECT COUNT(OrderID) AS TotalOrders FROM tbl_orders";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
     public function add($data)
     {
 
@@ -47,7 +56,7 @@ class OrdersModel extends Database
         $sql  = "SELECT o.*, c.*
         FROM tbl_orders o
         JOIN tbl_customer c ON o.CustomerID = c.CustomerID
-        WHERE c.Username = '$username'";
+        WHERE c.Username = '$username' ORDER BY OrderID DESC";
         $result = $this->select($sql);
         if ($result) {
             return $result;
@@ -79,6 +88,16 @@ class OrdersModel extends Database
     {
         $sql = "UPDATE tbl_orders SET Status = 'cancle' WHERE OrderID = '$id'";
         $result = $this->update($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function getAllCashOnDelivered()
+    {
+        $sql = "SELECT SUM(TotalPrice) AS TotalPrice FROM tbl_orders WHERE Delivered = 1";
+        $result = $this->select($sql);
         if ($result) {
             return $result;
         } else {

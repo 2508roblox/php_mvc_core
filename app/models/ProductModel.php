@@ -164,4 +164,37 @@ class ProductModel extends Database
             return false;
         }
     }
+    public function checkStock($id)
+    {
+        $sql  = "SELECT Quantity FROM tbl_product WHERE ProductID = '$id'";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result->fetch_assoc()['Quantity'];
+        } else {
+            return false;
+        }
+    }
+    public function delStock($num, $id)
+    {
+        $sql  = "UPDATE tbl_product
+                 SET Quantity = Quantity - $num,
+                     Sold = Sold + $num
+                 WHERE ProductID = '$id'";
+        $result = $this->update($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function getSoldCount()
+    {
+        $sql  = "SELECT SUM(Sold) AS TotalSold FROM tbl_product";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
 }

@@ -5,7 +5,21 @@ class AdminController extends Controller
     public function get()
     {
         // if not auth -> view to login else go to dashboard
-        $this->view('admin/index');
+        //get data to show on dashboard
+        $total_sales = $this->model('product')->getSoldCount();
+        $total_sales = $total_sales->fetch_assoc();
+        $total_price = $this->model('orders')->getAllCashOnDelivered();
+        $total_price = $total_price->fetch_assoc();
+        $total_customer = $this->model('customer')->count();
+        $total_customer = $total_customer->fetch_assoc();
+        $total_orders = $this->model('orders')->count();
+        $total_orders = $total_orders->fetch_assoc();
+
+
+        $this->view('admin/index', [
+            'total_sales' => $total_sales['TotalSold'], 'total_price' => $total_price['TotalPrice'],
+            'total_customer' => $total_customer['TotalCustomer'], 'total_orders' => $total_orders['TotalOrders']
+        ]);
     }
     public function table()
     {

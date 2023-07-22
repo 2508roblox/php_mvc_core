@@ -24,7 +24,8 @@ class CartModel extends Database
     {
         $SessionID = session_id();
         $sql = "DELETE FROM tbl_cart WHERE SessionID = '$SessionID'";
-        return $this->del($sql);
+        $result = $this->delete($sql);
+        return $result;
     }
     public function add_to_cart($data)
     {
