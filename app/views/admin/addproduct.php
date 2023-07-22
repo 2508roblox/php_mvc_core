@@ -132,8 +132,8 @@ $c_data = isset($data['c_data']) ? $data['c_data'] : '';
                                                     <div class="col-xl-6"> <label for="publish-time" class="form-label">Publish Time</label> <input type="text" class="form-control" id="publish-time" placeholder="Choose time"> </div>
                                                     <div class="col-xl-6"> <label for="product-status-add" class="form-label">Published Status</label> <select class="form-control" data-trigger name="Status" id="product-status-add">
                                                             <option value="">Select</option>
-                                                            <option value="1">Published</option>
-                                                            <option value="0">UnPublished</option>
+                                                            <option value="Published">Published</option>
+                                                            <option value="UnPublished">UnPublished</option>
                                                         </select> </div>
                                                     <div class="col-xl-6"> <label for="product-status-add1" class="form-label">Availability</label> <select class="form-control" data-trigger name="product-status-add1" id="product-status-add1">
                                                             <option value="">Select</option>

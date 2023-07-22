@@ -80,8 +80,9 @@ class CustomerModel extends Database
         $sql1 = "SELECT * FROM tbl_customer WHERE Username ='$Username' AND Password = '$Password' ";
         $result =  $this->select($sql1);
         if ($result) {
-            //check pass
-            return true;
+            $sql1 = "SELECT * FROM tbl_customer WHERE Username ='$Username'  ";
+            $result =  $this->select($sql1);
+            return $result->fetch_assoc();
         } else {
             return false;
         }

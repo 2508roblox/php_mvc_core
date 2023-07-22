@@ -105,7 +105,7 @@ $result = isset($data['orders']) ? $data['orders'] : [''];
 
                                             </td>
                                             <td>
-                                                $ <?php echo $c_data['TotalPrice'] ?>
+                                                $<?php echo number_format($c_data['TotalPrice'])  ?>
 
 
                                             </td>

@@ -132,7 +132,7 @@ $p_detail = isset($data['orders']) ? $data['orders'] : null;
                                                             }
                                                             ?>
 
-                                                            <td>$<?php echo $p_['TotalPrice'] ?></td>
+                                                            <td>$<?php echo number_format($p_['TotalPrice']) ?></td>
 
                                                             <?php
                                                             if ($p_['Status'] == 'pending') {

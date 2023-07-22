@@ -23,10 +23,11 @@ class UserController extends Controller
             } else {
                 $result = $this->model('customer')->signin($_POST);
                 if ($result) {
-                    // set Session
-                    print_r($result);
                     Session::set('User_login', true);
                     Session::set('User_username', $_POST['Username']);
+                    Session::set('User_firstname', $result['Firstname']);
+                    Session::set('User_lastname', $result['Lastname']);
+                    Session::set('User_email', $result['Email']);
                     redirect('/');
                 } else {
                     $result = "<p style=\"color: red;\">Username or Password didn't match.</p>";
@@ -51,6 +52,7 @@ class UserController extends Controller
                     Session::set('User_firstname', $_POST['Firstname']);
                     Session::set('User_lastname', $_POST['Lastname']);
                     Session::set('User_username', $_POST['Username']);
+                    Session::set('User_email', $_POST['Email']);
                     redirect('/');
                 } else {
                     $result = "<p style=\"color: red;\">Username has been taken</p>";

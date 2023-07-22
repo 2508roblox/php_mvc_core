@@ -72,7 +72,7 @@
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/orders" class="side-menu__item"> <i class="bx bx-analyse side-menu__icon"></i> <span class="side-menu__label">Blog Comments</span> </a> </li>
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/orders" class="side-menu__item"> <i class="bx bx-aperture side-menu__icon"></i> <span class="side-menu__label">Slide</span> </a> </li>
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/feedbacks" class="side-menu__item"> <i class="bx bx-area side-menu__icon"></i> <span class="side-menu__label">Feedbacks</span> </a> </li>
-                <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/feedbacks" class="side-menu__item"> <i class="bx bx-area side-menu__icon"></i> <span class="side-menu__label">Contacts</span> </a> </li>
+                <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/contacts" class="side-menu__item"> <i class="bx bx-area side-menu__icon"></i> <span class="side-menu__label">Contacts</span> </a> </li>
                 <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/feedbacks" class="side-menu__item"> <i class="bx bx-atom side-menu__icon"></i> <span class="side-menu__label">Setting</span> </a> </li>
                 <li class="slide">
 

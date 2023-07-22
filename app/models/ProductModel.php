@@ -7,9 +7,19 @@ class ProductModel extends Database
     // }
     // không dùng __contruct ở class con khi extend class cha có __contruct
     // => sẽ không chạy __contruct của class cha
+    public function getAllProductsAdmin()
+    {
+        $sql  = "SELECT * FROM tbl_product ";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
     public function getAllProducts()
     {
-        $sql  = "SELECT * FROM tbl_product";
+        $sql  = "SELECT * FROM tbl_product  WHERE Status = 'Published'";
         $result = $this->select($sql);
         if ($result) {
             return $result;
@@ -136,7 +146,7 @@ class ProductModel extends Database
     }
     public function getFirst8Products()
     {
-        $sql  = "SELECT * FROM tbl_product LIMIT 8 ";
+        $sql  = "SELECT * FROM tbl_product WHERE Status = 'Published' LIMIT 8 ";
         $result = $this->select($sql);
         if ($result) {
             return $result;
@@ -146,7 +156,7 @@ class ProductModel extends Database
     }
     public function getSecond8Products()
     {
-        $sql  = "SELECT * FROM tbl_product LIMIT 8 OFFSET 8";
+        $sql  = "SELECT * FROM tbl_product WHERE Status = 'Published' LIMIT 8 OFFSET 8 ";
         $result = $this->select($sql);
         if ($result) {
             return $result;
@@ -156,7 +166,7 @@ class ProductModel extends Database
     }
     public function getLastestProduct()
     {
-        $sql  = "SELECT * FROM tbl_product  ORDER BY ProductID DESC LIMIT 5";
+        $sql  = "SELECT * FROM tbl_product WHERE Status = 'Published'  ORDER BY ProductID DESC LIMIT 5 ";
         $result = $this->select($sql);
         if ($result) {
             return $result;

@@ -159,7 +159,7 @@ class AdminController extends Controller
     public function productlist()
     {
         $model = $this->model('product');
-        $result = $model->getAllProducts();
+        $result = $model->getAllProductsAdmin();
         if ($result) {
             $this->view('admin/productlist', ['products' => $result]);
         } else {
@@ -395,5 +395,11 @@ class AdminController extends Controller
         } else {
             redirect('/admin');
         }
+    }
+    public function contacts()
+    {
+        $result = $this->model('contact')->getAll();
+
+        $this->view('admin/contact', ['contact' => $result]);
     }
 }

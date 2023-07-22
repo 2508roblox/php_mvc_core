@@ -319,15 +319,15 @@ $fm = new Format();
                                                         <?php
                                                         if ($p_assoc['PromotionPrice']  != '0') {
                                                         ?>
-                                                            <span class="price current-price">$<?php echo $p_assoc['PromotionPrice'] ?></span>
-                                                            <span class="price old-price">$<?php echo $p_assoc['Price'] ?></span>
-                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo $p_assoc['PromotionPrice'] ?>">
+                                                            <span class="price current-price">$<?php echo number_format($p_assoc['PromotionPrice']) ?></span>
+                                                            <span class="price old-price">$<?php echo number_format($p_assoc['Price']) ?></span>
+                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_assoc['PromotionPrice']) ?>">
 
                                                         <?php
                                                         } else {
                                                         ?>
-                                                            <span class="price current-price">$<?php echo $p_assoc['Price'] ?></span>
-                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo $p_assoc['Price'] ?>">
+                                                            <span class="price current-price">$<?php echo number_format($p_assoc['Price']) ?></span>
+                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_assoc['Price']) ?>">
 
 
                                                         <?php
@@ -575,12 +575,12 @@ $fm = new Format();
                                                 <?php
                                                 if ($l_data['PromotionPrice']  != '0') {
                                                 ?>
-                                                    <span class="price current-price">$<?php echo $l_data['PromotionPrice'] ?></span>
-                                                    <span class="price old-price">$<?php echo $l_data['Price'] ?></span>
+                                                    <span class="price current-price">$<?php echo number_format($l_data['PromotionPrice']) ?></span>
+                                                    <span class="price old-price">$<?php echo number_format($l_data['Price']) ?></span>
                                                 <?php
                                                 } else {
                                                 ?>
-                                                    <span class="price current-price">$<?php echo $l_data['Price'] ?></span>
+                                                    <span class="price current-price">$<?php echo number_format($l_data['Price']) ?></span>
 
                                                 <?php
                                                 }

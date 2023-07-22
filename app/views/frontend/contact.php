@@ -1,5 +1,6 @@
 <?php
 include_once __DIR__ . '/./inc/header.php';
+$user_data = isset($_SESSION['User_username']) ? $_SESSION : null;
 ?>
 
 
@@ -49,19 +50,19 @@ include_once __DIR__ . '/./inc/header.php';
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="contact-name">Name <span>*</span></label>
-                                            <input type="text" name="Name" id="contact-name">
+                                            <input type="text" value="<?php echo ($user_data) ? $user_data['User_firstname']   : '' ?>" name="Name" id="contact-name">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="contact-phone">Phone <span>*</span></label>
-                                            <input type="text" name="Phone" id="contact-phone">
+                                            <input type="text" value="<?php echo ($user_data) ? $user_data['User_username'] : '' ?>" name="Phone" id="contact-phone">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="contact-email">E-mail <span>*</span></label>
-                                            <input type="email" name="Email" id=" contact-email">
+                                            <input type="email" value="<?php echo ($user_data) ? $user_data['User_email'] : '' ?>" name="Email" id=" contact-email">
                                         </div>
                                     </div>
                                     <div class="col-12">

@@ -55,14 +55,14 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                                 <?php
                                                 if ($p_detail['PromotionPrice']  != '0') {
                                                 ?>
-                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['PromotionPrice'] ?></span>
-                                                    <span style="color: gray; text-decoration-line: line-through;" class="price old-price">$<?php echo $p_detail['Price'] ?></span>
-                                                    <input type="number" hidden name="CurrentPrice" value="<?php echo $p_detail['PromotionPrice'] ?>">
+                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo number_format($p_detail['PromotionPrice']) ?></span>
+                                                    <span style="color: gray; text-decoration-line: line-through;" class="price old-price">$<?php echo number_format($p_detail['Price']) ?></span>
+                                                    <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_detail['PromotionPrice'])  ?>">
                                                 <?php
                                                 } else {
                                                 ?>
-                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['Price'] ?></span>
-                                                    <input type="number" hidden name="CurrentPrice" value="<?php echo $p_detail['Price'] ?>">
+                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo number_format($p_detail['Price']) ?></span>
+                                                    <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_detail['Price']) ?>">
 
 
                                                 <?php
