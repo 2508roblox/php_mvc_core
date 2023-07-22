@@ -70,11 +70,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 ps-0">
                                         <div class="mb-2">Total Expenses</div>
                                         <div class="text-muted mb-1 fs-12"> <span class="text-dark fw-semibold fs-20 lh-1 vertical-bottom">
-<<<<<<< HEAD
                                                 $<?php echo number_format($d_data['total_price']) ?> </span> </div>
-=======
-                                                $<?php echo   number_format($d_data['total_price']) ?> </span> </div>
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                                         <div> <span class="fs-12 mb-0">Increase by <span class="badge bg-success-transparent text-success mx-1">+12.0%</span>
                                                 this month</span>
                                         </div>
@@ -96,11 +92,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 ps-0">
                                         <div class="mb-2">Total Visitors</div>
                                         <div class="text-muted mb-1 fs-12"> <span class="text-dark fw-semibold fs-20 lh-1 vertical-bottom">
-<<<<<<< HEAD
                                                 <?php echo number_format($d_data['total_customer']) ?>
-=======
-                                                <?php echo  number_format($d_data['total_customer']) ?>
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                                             </span> </div>
                                         <div> <span class="fs-12 mb-0">Decreased by <span class="badge bg-danger-transparent text-danger mx-1">-7.6%</span>
                                                 this month</span>

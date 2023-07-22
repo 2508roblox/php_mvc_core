@@ -321,21 +321,13 @@ $fm = new Format();
                                                         ?>
                                                             <span class="price current-price">$<?php echo number_format($p_assoc['PromotionPrice']) ?></span>
                                                             <span class="price old-price">$<?php echo number_format($p_assoc['Price']) ?></span>
-<<<<<<< HEAD
                                                             <input type="number" hidden name="CurrentPrice" value="<?php echo $p_assoc['PromotionPrice'] ?>">
-=======
-                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_assoc['PromotionPrice']) ?>">
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
 
                                                         <?php
                                                         } else {
                                                         ?>
                                                             <span class="price current-price">$<?php echo number_format($p_assoc['Price']) ?></span>
-<<<<<<< HEAD
                                                             <input type="number" hidden name="CurrentPrice" value="<?php echo $p_assoc['Price'] ?>">
-=======
-                                                            <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_assoc['Price']) ?>">
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
 
 
                                                         <?php

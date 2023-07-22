@@ -50,27 +50,19 @@ $user_data = isset($_SESSION['User_username']) ? $_SESSION : null;
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="contact-name">Name <span>*</span></label>
-<<<<<<< HEAD
-                                            <input type="text" value="<?php echo ($user_data) ? $user_data['User_firstname']   : '' ?>"  name="Name" id="contact-name">
-=======
                                             <input type="text" value="<?php echo ($user_data) ? $user_data['User_firstname']   : '' ?>" name="Name" id="contact-name">
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="contact-phone">Phone <span>*</span></label>
-                                            <input type="text" value="<?php echo ($user_data) ? $user_data['User_username'] : '' ?>" name="Phone" id="contact-phone">
+                                            <input type="text" value="" name="Phone" id="contact-phone">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="contact-email">E-mail <span>*</span></label>
-<<<<<<< HEAD
-                                            <input type="email"   value="<?php echo ($user_data) ? $user_data['User_email'] : '' ?>" name="Email" id=" contact-email">
-=======
                                             <input type="email" value="<?php echo ($user_data) ? $user_data['User_email'] : '' ?>" name="Email" id=" contact-email">
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                                         </div>
                                     </div>
                                     <div class="col-12">

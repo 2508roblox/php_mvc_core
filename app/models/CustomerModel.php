@@ -83,11 +83,7 @@ class CustomerModel extends Database
             $sql1 = "SELECT * FROM tbl_customer WHERE Username ='$Username'  ";
             $result =  $this->select($sql1);
             return $result->fetch_assoc();
-<<<<<<< HEAD
-            //check pass
-        
-=======
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
+
         } else {
             return false;
         }

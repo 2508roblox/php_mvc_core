@@ -89,15 +89,9 @@ $fm = new Format();
                                                 </span>
                                             </td>
 
-<<<<<<< HEAD
-                                            <td><?php echo number_format($p_data['Price']) ?></td>
-                                            <td><?php echo number_format($p_data['Quantity']) ?></td>
-                                            <td><?php echo number_format($p_data['Sold']) ?></td>
-=======
                                             <td>$<?php echo number_format($p_data['Price']) ?></td>
                                             <td><?php echo $p_data['Quantity'] ?></td>
                                             <td><?php echo $p_data['Sold'] ?></td>
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                                             <td>
                                                 <?php
                                                 if ($p_data['Status'] == 'Published') {

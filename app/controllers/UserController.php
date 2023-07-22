@@ -23,10 +23,6 @@ class UserController extends Controller
             } else {
                 $result = $this->model('customer')->signin($_POST);
                 if ($result) {
-<<<<<<< HEAD
-                    // set Session
-=======
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                     Session::set('User_login', true);
                     Session::set('User_username', $_POST['Username']);
                     Session::set('User_firstname', $result['Firstname']);

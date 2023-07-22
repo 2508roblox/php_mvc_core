@@ -57,20 +57,12 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                                 ?>
                                                     <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo number_format($p_detail['PromotionPrice']) ?></span>
                                                     <span style="color: gray; text-decoration-line: line-through;" class="price old-price">$<?php echo number_format($p_detail['Price']) ?></span>
-<<<<<<< HEAD
                                                     <input type="number" hidden name="CurrentPrice" value="<?php echo $p_detail['PromotionPrice'] ?>">
-=======
-                                                    <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_detail['PromotionPrice'])  ?>">
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
                                                 <?php
                                                 } else {
                                                 ?>
                                                     <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo number_format($p_detail['Price']) ?></span>
-<<<<<<< HEAD
                                                     <input type="number" hidden name="CurrentPrice" value="<?php echo $p_detail['Price'] ?>">
-=======
-                                                    <input type="number" hidden name="CurrentPrice" value="<?php echo number_format($p_detail['Price']) ?>">
->>>>>>> d7a8fdeb9fc983e241e73991b95435d165778bbf
 
 
                                                 <?php
