@@ -24,9 +24,11 @@ class UserController extends Controller
                 $result = $this->model('customer')->signin($_POST);
                 if ($result) {
                     // set Session
-                    print_r($result);
                     Session::set('User_login', true);
                     Session::set('User_username', $_POST['Username']);
+                    Session::set('User_firstname', $result['Firstname']);
+                    Session::set('User_lastname', $result['Lastname']);
+                    Session::set('User_email', $result['Email']);
                     redirect('/');
                 } else {
                     $result = "<p style=\"color: red;\">Username or Password didn't match.</p>";

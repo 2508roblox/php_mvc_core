@@ -4,7 +4,6 @@ Session::checkSession('User_login');
 $user_data = isset($data['user']) ? $data['user']  : null;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    print_r($_POST);
 }
 ?>
 
@@ -19,8 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="container">
             <form action="<?php echo ASSETS_URL_ROOT ?>/checkout/add" method="POST">
                 <input type="text" hidden name="CustomerID" value="<?php echo $user_data['CustomerID'] ?>">
-                <input type="text" name="CustomerID" value="<?php echo $user_data['CustomerID'] ?>">
-                <input type="text" name="CustomerID" value="<?php echo $user_data['CustomerID'] ?>">
+
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="axil-checkout-notice">
@@ -83,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             foreach ($_SESSION['cart'] as $item) { ?>
                                                 <tr class="order-product">
                                                     <td><?php echo $item['Name'] ?><span class="quantity">: x<?php echo $item['Quantity'] ?></span></td>
-                                                    <td>$<?php echo $item['Quantity'] * $item['Price'] ?></td>
+                                                    <td>$<?php echo  number_format($item['Quantity'] * $item['Price']) ?></td>
                                                 </tr>
                                             <?php
                                                 $subtotal += $item['Quantity'] * $item['Price'];
@@ -111,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                         </tr>
                                         <tr class="order-total">
                                             <td>Total</td>
-                                            <td class="order-total-amount">$<?php echo $subtotal ?></td>
+                                            <td class="order-total-amount">$<?php echo number_format($subtotal) ?></td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -30,4 +30,18 @@ class ContactModel extends Database
             return false;
         }
     }
+    public function getAll()
+    {
+
+
+        $sql  = "SELECT * FROM tbl_contact";
+
+        $result =   $this->select($sql);
+
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
 }

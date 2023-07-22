@@ -88,12 +88,12 @@ $result = isset($data['products']) ? $data['products'] : [''];
                                                 </span>
                                             </td>
 
-                                            <td><?php echo $p_data['Price'] ?></td>
-                                            <td><?php echo $p_data['Quantity'] ?></td>
-                                            <td><?php echo $p_data['Sold'] ?></td>
+                                            <td><?php echo number_format($p_data['Price']) ?></td>
+                                            <td><?php echo number_format($p_data['Quantity']) ?></td>
+                                            <td><?php echo number_format($p_data['Sold']) ?></td>
                                             <td>
                                                 <?php
-                                                if ($p_data['Status'] == '1') {
+                                                if ($p_data['Status'] == 'Published') {
                                                 ?>
                                                     <span class="badge bg-success text-light">Published</span>
 

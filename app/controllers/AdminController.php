@@ -396,4 +396,10 @@ class AdminController extends Controller
             redirect('/admin');
         }
     }
+    public function contacts()
+    {
+        $result = $this->model('contact')->getAll();
+
+        $this->view('admin/contact', ['contact' => $result]);
+    }
 }

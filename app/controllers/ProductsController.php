@@ -40,10 +40,11 @@ class ProductsController extends Controller
     {
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+            $Quantity = $_POST['Quantity'];
+            $Id = $_POST['ProductID'];
             $result = $this->model('product')->checkStock($_POST['ProductID']);
 
-            if ($result > 0) {
+            if ($result > 0 && $result >= $Quantity) {
                 $result = $this->model('cart')->add_to_cart($_POST);
                 if ($result) {
                     // Thêm sản phẩm vào giỏ hàng thành công, chuyển hướng đến trang giỏ hàng
@@ -54,7 +55,10 @@ class ProductsController extends Controller
                     $this->view('frontend/cart');
                 }
             } else {
-                $this->view('frontend/cart');
+                $result =   $this->model('product')->getById($Id);
+                $mess = "<p style=\"color: red;\">Sorry, the Product is out of stock</p>";
+
+                $this->view('frontend/productdetail', ['p_detail' => $result, 'mess' => $mess]);
             }
         }
     }

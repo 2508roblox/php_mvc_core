@@ -49,7 +49,7 @@ $fm = new Format();
                             <div class="card-header d-block">
                                 <div class="d-sm-flex d-block align-items-center ">
                                     <div class="me-2"> <span class="avatar bg-light avatar-md mb-1"> <img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $c_data['image'] ?>" alt=""> </span> </div>
-                                    <div class="flex-fill"> <a href="javascript:void(0)"> <span class="fs-14 fw-semibold"><?php echo $fm->textShorten($c_data['Name'], 20)  ?> x <?php echo $c_data['Quantity']   ?></span> </a> <span class="d-block text-success">$<?php echo $c_data['Price'] ?></span> </div>
+                                    <div class="flex-fill"> <a href="javascript:void(0)"> <span class="fs-14 fw-semibold"><?php echo $fm->textShorten($c_data['Name'], 20)  ?> x <?php echo $c_data['Quantity']   ?></span> </a> <span class="d-block text-success">$<?php echo number_format($c_data['Price']) ?></span> </div>
                                     <div class="text-sm-center"> <span class="fs-14 fw-semibold">Order Id : </span> <span class="d-sm-block">
                                             #<?php echo $c_data['OrderID']   ?>
                                         </span> </div>

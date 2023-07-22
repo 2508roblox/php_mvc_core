@@ -46,13 +46,13 @@ $cart = isset($data['cart']) ? $data['cart'] : [''];
                                             <td class="product-remove"><a href="<?php echo ASSETS_URL_ROOT . '/cart/del' . '?Id=' . $cart_data['CartID']  ?>" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
                                             <td class="product-thumbnail"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $cart_data['Image'] ?> " alt="Digital Product"></a></td>
                                             <td class="product-title"><a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail"><?php echo $cart_data['Name'] ?></a></td>
-                                            <td class="product-price" data-title="Price"><span class="currency-symbol">$</span><?php echo $cart_data['Price'] ?></td>
+                                            <td class="product-price" data-title="Price"><span class="currency-symbol">$</span><?php echo number_format($cart_data['Price']) ?></td>
                                             <td class="product-quantity" data-title="Qty">
                                                 <div class="pro-qty">
                                                     <input type="number" class="quantity-input" value="<?php echo $cart_data['Quantity'] ?>">
                                                 </div>
                                             </td>
-                                            <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span><?php echo $cart_data['Quantity'] * $cart_data['Price'] ?></td>
+                                            <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span><?php echo number_format($cart_data['Quantity'] * $cart_data['Price']) ?></td>
                                         </tr>
                                     </form>
                             <?php

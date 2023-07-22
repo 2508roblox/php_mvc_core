@@ -55,13 +55,13 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                                 <?php
                                                 if ($p_detail['PromotionPrice']  != '0') {
                                                 ?>
-                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['PromotionPrice'] ?></span>
-                                                    <span style="color: gray; text-decoration-line: line-through;" class="price old-price">$<?php echo $p_detail['Price'] ?></span>
+                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo number_format($p_detail['PromotionPrice']) ?></span>
+                                                    <span style="color: gray; text-decoration-line: line-through;" class="price old-price">$<?php echo number_format($p_detail['Price']) ?></span>
                                                     <input type="number" hidden name="CurrentPrice" value="<?php echo $p_detail['PromotionPrice'] ?>">
                                                 <?php
                                                 } else {
                                                 ?>
-                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo $p_detail['Price'] ?></span>
+                                                    <span style="font-weight: bold; font-size: 4rem;" class="price current-price">$<?php echo number_format($p_detail['Price']) ?></span>
                                                     <input type="number" hidden name="CurrentPrice" value="<?php echo $p_detail['Price'] ?>">
 
 
@@ -125,12 +125,15 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                             </div>
 
                                             <!-- Start Product Action Wrapper  -->
+                                            <?php echo isset($data['mess']) ? $data['mess'] : '' ?>
+
                                             <div class="product-action-wrapper d-flex-center">
                                                 <!-- Start Quentity Action  -->
                                                 <div class="pro-qty mr--20"><input name="Quantity" type="text" value="1"></div>
                                                 <!-- End Quentity Action  -->
 
                                                 <!-- Start Product Action  -->
+
                                                 <ul class="product-action d-flex-center mb--0">
                                                     <li class="add-to-cart">
 
