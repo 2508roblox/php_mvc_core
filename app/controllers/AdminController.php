@@ -402,4 +402,10 @@ class AdminController extends Controller
 
         $this->view('admin/contact', ['contact' => $result]);
     }
+    public function slidelist()
+    {
+
+
+        $this->view('admin/slidelist');
+    }
 }

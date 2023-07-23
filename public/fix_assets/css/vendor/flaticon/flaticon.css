@@ -19,15 +19,15 @@ i[class*=" flaticon-"]:before {
     content: "\f101";
 }
 
-.fa-solid fa-cart-shopping:before {
+.flaticon-shopping-cart:before {
     content: "\f102";
 }
 
-.fa-regular fa-user:before {
+.flaticon-person:before {
     content: "\f103";
 }
 
-.fa-solid fa-magnifying-glass:before {
+.flaticon-magnifying-glass:before {
     content: "\f104";
 }
 
@@ -51,7 +51,7 @@ i[class*=" flaticon-"]:before {
     content: "\f109";
 }
 
-.fa-regular fa-heart:before {
+.flaticon-heart:before {
     content: "\f10a";
 }
 

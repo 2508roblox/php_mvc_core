@@ -5233,7 +5233,7 @@ button.axil-btn.btn-size-md i {
 }
 
 .main-slider-style-1 {
-    background-color: var(--color-lighter);
+    background-color: #f9f3f0;
     padding: 90px 0;
     position: relative;
     z-index: 1;
@@ -7430,7 +7430,7 @@ button.axil-btn.btn-size-md i {
 }
 
 .header-top-dropdown .dropdown .dropdown-toggle:after {
-    content: "⏷";
+    content: "⌄";
     font-family: var(--font-awesome);
     border: none;
     margin-left: 5px;
@@ -8248,18 +8248,7 @@ button.axil-btn.btn-size-md i {
     line-height: 0
 }
 
-.header-action>ul>li>a::after {
-    content: "";
-    height: 45px;
-    width: 45px;
-    background-color: var(--color-secondary);
-    transform: scale(0);
-    border-radius: 50%;
-    position: absolute;
-    z-index: -1;
-    transition: var(--transition)
-}
-
+ 
 @media only screen and (max-width: 575px) {
     .header-action>ul>li>a::after {
         height: 35px;
@@ -8879,7 +8868,7 @@ button.axil-btn.btn-size-md i {
 }
 
 .axil-mainmenu.aside-category-menu .header-department .department-nav-menu .nav-link.has-megamenu:after {
-    content: "";
+    content: "⌄";
     font-family: var(--font-awesome);
     font-weight: 400;
     color: #c5c5c5;
@@ -10830,10 +10819,8 @@ body.open .closeMask {
 }
 
 .axil-product-list .product-content .product-rating .rating-icon {
-    color: #eca20d
+    color: #ffa800
 }
-
-
 
 .axil-product-list .product-content .product-price-variant {
     font-size: 20px;
@@ -11129,7 +11116,7 @@ body.open .closeMask {
 }
 
 .axil-shop-sidebar .toggle-list.active .title::before {
-    content: "―"
+    content: ""
 }
 
 .axil-shop-sidebar .toggle-list.active .title::after {
@@ -11148,7 +11135,7 @@ body.open .closeMask {
 }
 
 .axil-shop-sidebar .title::before {
-    content: "＋";
+    content: "";
     font-family: "Font Awesome 5 Pro";
     position: absolute;
     top: 0;

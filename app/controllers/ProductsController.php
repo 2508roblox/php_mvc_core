@@ -40,7 +40,6 @@ class ProductsController extends Controller
     {
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            print_r($_POST);
             $Quantity = $_POST['Quantity'];
             $Id = $_POST['ProductID'];
             $result = $this->model('product')->checkStock($_POST['ProductID']);
