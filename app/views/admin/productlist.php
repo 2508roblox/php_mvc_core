@@ -113,6 +113,13 @@ $fm = new Format();
                                                 <div class="hstack gap-2 fs-15">
                                                     <a href="<?php echo ASSETS_URL_ROOT . '/admin/updateproduct' . '?id=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
                                                     <a href="<?php echo ASSETS_URL_ROOT . '/admin/delproduct' . '?delid=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                    <a style="display: flex; align-items: center; justify-content: center;" href="<?php echo ASSETS_URL_ROOT . '/admin/addslide' . '?id=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-success-light product-btn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+                                                            <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                                                                <path d="M41 5.5H7v28h34v-28Z" />
+                                                                <path stroke-linecap="round" d="m16 41.5l8-8l8 8M13.924 24.663l5.642-5.508l4.442 4.345l9.959-9.98M4 5.5h40" />
+                                                            </g>
+                                                        </svg></a>
                                                 </div>
                                             </td>
                                         </tr>

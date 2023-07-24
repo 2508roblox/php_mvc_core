@@ -38,7 +38,6 @@ if (Session::get('admin_login')) {
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/@simonwep/pickr/themes/nano.min.css">
     <!-- Choices Css -->
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/@simonwep/pickr/themes/nano.min.css">
     <!-- Choices Css -->
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/quill/quill.snow.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/quill/quill.bubble.css">
@@ -51,6 +50,8 @@ if (Session::get('admin_login')) {
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.bootstrap5.min.css">
+    <!-- text editor -->
+    <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
     <meta http-equiv="imagetoolbar" content="no" />
     <style type="text/css">
 
@@ -58,7 +59,8 @@ if (Session::get('admin_login')) {
     <style type="text/css" media="print">
 
     </style>
-    <!--[if gte IE 5]><frame></frame><![endif]-->
+
+    <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/swiper/swiper-bundle.min.css">
 </head>
 
 <body>

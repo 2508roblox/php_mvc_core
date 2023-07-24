@@ -58,7 +58,6 @@ $c_data = isset($data['c_data']) ? $data['c_data'] : '';
                                                             <?php
                                                             if (isset($b_data) && $b_data != '') {
 
-                                                                print_r($b_data);
                                                                 while ($b = $b_data->fetch_assoc()) {
 
                                                             ?>
@@ -89,8 +88,17 @@ $c_data = isset($data['c_data']) ? $data['c_data'] : '';
                                                             <option value="Keyboard">#Keyboard</option>
                                                         </select> </div>
 
-                                                    <div class="col-xl-12"> <label for="product-description-add" class="form-label">Product Description</label> <textarea name="Description" class="form-control" id="product-description-add" rows="2"></textarea> <label for="product-description-add" class="form-label mt-1 fs-12 op-5 text-muted mb-0">*Description
-                                                            should not exceed 500 letters</label> </div>
+                                                    <div class="col-xl-12"> <label for="product-description-add" class="form-label">Product Description</label>
+
+                                                        <textarea name="productdesc" rows="" cols="80" required>
+                                                         </textarea>
+                                                        <script>
+                                                            CKEDITOR.replace('productdesc');
+                                                        </script>
+
+                                                        <label for="product-description-add" class="form-label mt-1 fs-12 op-5 text-muted mb-0">*Description
+                                                            should not exceed 500 letters</label>
+                                                    </div>
                                                     <div class="col-xl-12"> <label class="form-label">Product
                                                             Features</label>
                                                         <div id="product-features"></div>

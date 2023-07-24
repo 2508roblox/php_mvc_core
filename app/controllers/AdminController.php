@@ -58,7 +58,6 @@ class AdminController extends Controller
         $c_data =  $this->model('category')->getAll();
         $b_data =  $this->model('brand')->getAll();
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            print_r($_POST['Tag']);
             $files = $_FILES['filepond'];
             $files_string = array();
             $tags = array();
@@ -405,7 +404,32 @@ class AdminController extends Controller
     public function slidelist()
     {
 
+        $result = $this->model('slide')->getAll();
 
-        $this->view('admin/slidelist');
+        $this->view('admin/slidelist', ['slide' => $result]);
+    }
+    public function delslide()
+    {
+        if (isset($_GET['delid']) && $_GET['delid'] != null) {
+            // id != '';
+            $id = $_GET['delid'];
+            $result = $this->model('slide')->del($id);
+
+            self::slidelist();
+        } else {
+            redirect('/admin');
+        }
+    }
+    public function addslide()
+    {
+        if (isset($_GET['id']) && $_GET['id'] != null) {
+            // id != '';
+            $id = $_GET['id'];
+            $result = $this->model('slide')->add($id);
+
+            self::slidelist();
+        } else {
+            redirect('/admin');
+        }
     }
 }

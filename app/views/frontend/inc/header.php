@@ -35,7 +35,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
     <a href="#top" class="back-to-top" id="backto-top"><i class="fa-solid fa-arrow-up"></i></a>
-    <header style="background-color: #F6F7FB;" class="header axil-header header-style-1">
+    <header class="header axil-header header-style-1">
 
         <div class="axil-header-top">
             <div class="container">
@@ -173,7 +173,7 @@
                                         if (Session::get('User_login')) {
                                         ?>
                                             <li>
-                                                <a href="user">My Account</a>
+                                                <a href="<?php echo ASSETS_URL_ROOT . '/user' ?>">My Account</a>
                                             </li>
                                         <?php
                                         }

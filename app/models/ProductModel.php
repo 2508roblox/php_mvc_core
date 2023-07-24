@@ -35,7 +35,6 @@ class ProductModel extends Database
         $Status = $data['Status'];
         $CateID = $data['CateID'];
         $BrandID = $data['BrandID'];
-        $Description = $data['Description'];
         $Price = $data['Price'];
         $PromotionPrice = $data['PromotionPrice'];
         $Discount = $data['Discount'];
@@ -43,11 +42,11 @@ class ProductModel extends Database
         $Quantity = $data['Quantity'];
         $Tag = isset($data['Tag']) ? $data['Tag'] : '';
         $Warranty = $data['Warranty'];
+        $Detail = $data['productdesc'];
         $Name  = mysqli_escape_string($this->link, $Name);
         $Status = mysqli_escape_string($this->link, $Status);
         $CateID = mysqli_escape_string($this->link, $CateID);
         $BrandID = mysqli_escape_string($this->link, $BrandID);
-        $Description = mysqli_escape_string($this->link, $Description);
         $Price = mysqli_escape_string($this->link, $Price);
         $PromotionPrice = mysqli_escape_string($this->link, $PromotionPrice);
         $Discount = mysqli_escape_string($this->link, $Discount);
@@ -58,7 +57,7 @@ class ProductModel extends Database
 
 
         $sql  = "INSERT INTO tbl_product (Name, Tag, Status, Image, ListImage, Price, PromotionPrice, Discount, VAT, Quantity, Warranty, Hot, Description, Detail, CateID, BrandID)
-        VALUES ('$Name', '$Tag', '$Status', '$first_element', '$listFile', '$Price', '$PromotionPrice', '$Discount', '$VAT', '$Quantity', '$Warranty', '', '$Description', '', '$CateID', '$BrandID')";
+        VALUES ('$Name', '$Tag', '$Status', '$first_element', '$listFile', '$Price', '$PromotionPrice', '$Discount', '$VAT', '$Quantity', '$Warranty', '', '', ' $Detail', '$CateID', '$BrandID')";
         $result = $this->insert($sql);
         if ($result) {
             return $result;

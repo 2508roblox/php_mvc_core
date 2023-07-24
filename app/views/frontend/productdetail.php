@@ -207,8 +207,9 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
                                     <div class="col-lg-6 mb--30">
                                         <div class="single-desc">
                                             <h5 class="title">Specifications:</h5>
-                                            <p>We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather,
-                                                initial all the made, have spare to negatives.</p>
+                                            <p>
+                                                <?php echo $p_detail['Detail'] ?>
+                                            </p>
                                         </div>
                                     </div>
                                     <!-- End .col-lg-6 -->
