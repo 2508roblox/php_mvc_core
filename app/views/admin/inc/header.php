@@ -51,7 +51,9 @@ if (Session::get('admin_login')) {
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.bootstrap5.min.css">
     <!-- text editor -->
+
     <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+    <!-- box icon -->
     <meta http-equiv="imagetoolbar" content="no" />
     <style type="text/css">
 

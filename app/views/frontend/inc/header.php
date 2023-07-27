@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/vendor/base.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/css/style.min.css">
-    <script defer src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <script src="https://kit.fontawesome.com/38dc947407.js" defer crossorigin="anonymous"></script>
 
 
 </head>

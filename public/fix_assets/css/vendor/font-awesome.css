@@ -4832,7 +4832,7 @@
 }
 
 .fa-long-arrow-left:before {
-    content: "\f177"
+    content: "<"
 }
 
 .fa-long-arrow-right:before {

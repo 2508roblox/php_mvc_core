@@ -1,12 +1,6 @@
 <?php
 class ProductModel extends Database
 {
-
-    // public function __construct()
-    // {
-    // }
-    // không dùng __contruct ở class con khi extend class cha có __contruct
-    // => sẽ không chạy __contruct của class cha
     public function getAllProductsAdmin()
     {
         $sql  = "SELECT * FROM tbl_product ";

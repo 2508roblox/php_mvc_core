@@ -23,7 +23,6 @@
 
 <!-- Main JS -->
 <script src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/js/main.js"></script>
-<script src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/js/fontawesome.js" crossorigin="anonymous"></script>
 <!-- Modernizer JS -->
 <!-- jQuery JS -->
 <!-- Bootstrap JS -->

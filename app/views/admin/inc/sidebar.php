@@ -2,6 +2,11 @@
 
 <!-- /app-header -->
 <!-- Start::app-sidebar -->
+<style>
+    .n_pd>a {
+        padding: 0 0 0 1rem !important;
+    }
+</style>
 <aside class="app-sidebar sticky" id="sidebar">
     <!-- Start::main-sidebar-header -->
     <div class="main-sidebar-header"> <a href="index.html" class="header-logo"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark"> </a> </div>
@@ -29,37 +34,64 @@
                 <!-- End::slide__category -->
                 <!-- Start::slide -->
                 <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-package side-menu__icon"></i> <span class="side-menu__label">Products</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
-                    <ul class="slide-menu child1">
-                        <li class="slide side-menu__label1"> <a href="javascript:void(0)">Pages</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addproduct" class="side-menu__item">Add Product</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updateproduct" class="side-menu__item">Update Product</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/productlist" class="side-menu__item">Product List</a> </li>
 
-
-
-                    </ul>
                 </li>
+                <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/addproduct" class="side-menu__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                            <g fill="currentColor">
+                                <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48Z" opacity=".2" />
+                                <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+                            </g>
+                        </svg>
+                        Add Product</a> </li>
+                <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/productlist" class="side-menu__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                            <g fill="currentColor">
+                                <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48Z" opacity=".2" />
+                                <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+                            </g>
+                        </svg>
+                        Product List</a> </li>
                 <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-category side-menu__icon"></i> <span class="side-menu__label">Category</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
-                    <ul class="slide-menu child1">
-                        <li class="slide side-menu__label1"> <a href="javascript:void(0)">Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addcategory" class="side-menu__item">Add Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updatecategory" class="side-menu__item">Update Category</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/categorylist" class="side-menu__item">Category List</a> </li>
+                <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/addcategory" class="side-menu__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                            <g fill="currentColor">
+                                <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48Z" opacity=".2" />
+                                <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+                            </g>
+                        </svg>
+                        Add Category</a> </li>
 
-
-
-                    </ul>
+                <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/categorylist" class="side-menu__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                            <g fill="currentColor">
+                                <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48Z" opacity=".2" />
+                                <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+                            </g>
+                        </svg>
+                        Category List</a> </li>
                 </li>
                 <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-layer side-menu__icon"></i> <span class="side-menu__label">Brand</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
-                    <ul class="slide-menu child1">
-                        <li class="slide side-menu__label1"> <a href="javascript:void(0)">Brand</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/addbrand" class="side-menu__item">Add Brand</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/updatebrand" class="side-menu__item">Update Brand</a> </li>
-                        <li class="slide"> <a href="<?php echo URL_ROOT ?>/admin/brandlist" class="side-menu__item">Brand List</a> </li>
+
+
+                <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/addbrand" class="side-menu__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                            <g fill="currentColor">
+                                <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48Z" opacity=".2" />
+                                <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+                            </g>
+                        </svg>Add Brand</a> </li>
+                <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/brandlist" class="side-menu__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                            <g fill="currentColor">
+                                <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48Z" opacity=".2" />
+                                <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+                            </g>
+                        </svg>Brand List</a> </li>
 
 
 
-                    </ul>
+
                 </li>
 
 
