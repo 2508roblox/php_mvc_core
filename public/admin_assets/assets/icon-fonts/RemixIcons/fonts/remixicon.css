@@ -13,9 +13,11 @@
     font-family: "remixicon";
     src: url('remixicon.eot?t=1590207869815');
     /* IE9*/
-    src: url('remixicon.eot?t=1590207869815#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url("remixicon.woff2?t=1590207869815") format("woff2"), url("remixicon.woff?t=1590207869815") format("woff"), url('remixicon.ttf?t=1590207869815') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-    url('remixicon.svg?t=1590207869815#remixicon') format('svg');
+    src: url('remixicon.eot?t=1590207869815#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url("remixicon.woff2?t=1590207869815") format("woff2"), url("remixicon.woff?t=1590207869815") format("woff"), url('remixicon.ttf?t=1590207869815') format('truetype'),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+        url('remixicon.svg?t=1590207869815#remixicon') format('svg');
     /* iOS 4.1- */
     font-display: swap;
 }
@@ -1609,7 +1611,7 @@
     content: "\eb7a";
 }
 
-.ri-check-line:before {
+.bx bx-check:before {
     content: "\eb7b";
 }
 
@@ -2309,7 +2311,7 @@
     content: "\ec29";
 }
 
-.ri-delete-bin-line:before {
+.bx bx-x-circle:before {
     content: "\ec2a";
 }
 
@@ -2677,7 +2679,7 @@
     content: "\ec85";
 }
 
-.ri-edit-line:before {
+.bx bx-edit:before {
     content: "\ec86";
 }
 
@@ -2865,7 +2867,7 @@
     content: "\ecb4";
 }
 
-.ri-eye-line:before {
+.bx bxs-folder-open:before {
     content: "\ecb5";
 }
 
@@ -7797,11 +7799,11 @@
     content: "\f185";
 }
 
-.ri-star-fill:before {
+.bx bxs-star:before {
     content: "\f186";
 }
 
-.ri-star-half-fill:before {
+.bx bxs-star-half:before {
     content: "\f187";
 }
 

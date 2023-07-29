@@ -17,6 +17,8 @@ if (Session::get('admin_login')) {
     <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
     <meta name="Author" content="Spruko Technologies Private Limited">
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
+    <meta http-equiv="imagetoolbar" content="no" />
+
     <!-- Favicon -->
     <link rel="icon" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/brand-logos/favicon.ico" type="image/x-icon">
     <!-- Choices JS -->
@@ -54,15 +56,46 @@ if (Session::get('admin_login')) {
 
     <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
     <!-- box icon -->
-    <meta http-equiv="imagetoolbar" content="no" />
-    <style type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    </style>
-    <style type="text/css" media="print">
 
-    </style>
+
 
     <link rel="stylesheet" href="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/swiper/swiper-bundle.min.css">
+    <style>
+        .dropdown a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bxs-badge-check {
+            color: var(--primary-color) !important;
+
+        }
+
+        .card-header a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hstack a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bxs-download {
+            margin-top: .2rem;
+            margin-left: .3rem;
+        }
+
+        .bx-plus {
+            margin-top: .2rem;
+            margin-left: .3rem;
+        }
+    </style>
 </head>
 
 <body>

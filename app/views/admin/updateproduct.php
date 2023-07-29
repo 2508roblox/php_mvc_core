@@ -50,7 +50,7 @@ $mess = isset($data['mess']) ? $data['mess'] : '';
                                                                 while ($c = $c_data->fetch_assoc()) {
 
                                                             ?>
-                                                                    <option value="<?php echo $c['CateID'] ?>"><?php echo $c['Name'] ?></option>
+                                                                    <option <?php echo $c['CateID'] ==  $product_data['CateID'] ? 'selected' : '' ?> value="<?php echo $c['CateID'] ?>"><?php echo $c['Name'] ?></option>
 
 
                                                             <?php
@@ -170,8 +170,8 @@ $mess = isset($data['mess']) ? $data['mess'] : '';
                                 </div>
                             </div>
                             <div class="px-4 py-3 border-top border-block-start-dashed d-sm-flex justify-content-end">
-                                <i class="btn btn-primary-light m-1">Add Product<i class="bi bi-plus-lg ms-2"></i></i>
-                                <button class="btn btn-success-light m-1">Save Product<i class="bi bi-download ms-2"></i></button>
+                                <i class="btn btn-primary-light m-1">Add Product<i class="bx bx-plus"></i></i>
+                                <button class="btn btn-success-light m-1">Save Product<i class="bx bxs-download"></i></button>
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ $mess = isset($data['mess']) ? $data['mess'] : '';
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="input-group"> <a href="javascript:void(0);" class="input-group-text" id="Search-Grid"><i class="fe fe-search header-link-icon fs-18"></i></a> <input type="search" class="form-control border-0 px-2" placeholder="Search" aria-label="Username"> <a href="javascript:void(0);" class="input-group-text" id="voice-search"><i class="fe fe-mic header-link-icon"></i></a> <a href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fe fe-more-vertical"></i> </a>
+                <div class="input-group"> <a href="javascript:void(0);" class="input-group-text" id="Search-Grid"><i class="fe fe-search header-link-icon fs-18"></i></a> <input type="search" class="form-control border-0 px-2" placeholder="Search" aria-label="Username"> <a href="javascript:void(0);" class="input-group-text" id="voice-search"><i class="fe fe-mic header-link-icon"></i></a> <a href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bx bx-dots-vertical-rounded"></i> </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -227,7 +227,7 @@ $mess = isset($data['mess']) ? $data['mess'] : '';
 </footer>
 <!-- Footer End -->
 </div>
-<div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+<div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
 <div id="responsive-overlay"></div>
 <!-- Popper JS -->
 <script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/@popperjs/core/umd/popper.min.js"></script>

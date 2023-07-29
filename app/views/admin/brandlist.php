@@ -85,8 +85,8 @@ $result = isset($data['brand']) ? $data['brand'] : [''];
                                             </td>
                                             <td>
                                                 <div class="hstack gap-2 fs-15">
-                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updatebrand' . '?id=' . $c_data['CateID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
-                                                    <a onclick="return confirm('Are you sure about that?')" href="<?php echo ASSETS_URL_ROOT . '/admin/delbrand' . '?delid=' . $c_data['BrandID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updatebrand' . '?id=' . $c_data['CateID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="bx bx-edit"></i></a>
+                                                    <a onclick="return confirm('Are you sure about that?')" href="<?php echo ASSETS_URL_ROOT . '/admin/delbrand' . '?delid=' . $c_data['BrandID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="bx bx-x-circle"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -124,7 +124,7 @@ $result = isset($data['brand']) ? $data['brand'] : [''];
         </footer>
         <!-- Footer End -->
     </div>
-    <div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+    <div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
     <div id="responsive-overlay"></div>
 
     <!-- Popper JS -->

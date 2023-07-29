@@ -111,8 +111,8 @@ $fm = new Format();
                                             </td>
                                             <td>
                                                 <div class="hstack gap-2 fs-15">
-                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updateproduct' . '?id=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
-                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/delproduct' . '?delid=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updateproduct' . '?id=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="bx bx-edit"></i></a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/delproduct' . '?delid=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="bx bx-x-circle"></i></a>
                                                     <a style="display: flex; align-items: center; justify-content: center;" href="<?php echo ASSETS_URL_ROOT . '/admin/addslide' . '?id=' . $p_data['ProductID'] ?>" class="btn btn-icon btn-sm btn-success-light product-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
                                                             <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
@@ -157,7 +157,7 @@ $fm = new Format();
         </footer>
         <!-- Footer End -->
     </div>
-    <div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+    <div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
     <div id="responsive-overlay"></div>
 
     <!-- Popper JS -->

@@ -112,8 +112,8 @@ $result = isset($data['orders']) ? $data['orders'] : [''];
                                             </td>
                                             <td>
                                                 <div class="hstack gap-2 fs-15">
-                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/orderdetail' . '?id=' . $c_data['OrderID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-eye-line"></i> </a>
-                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/ordersconfirm' . '?id=' . $c_data['OrderID'] ?>" class="btn btn-icon btn-sm btn-success-light"><i class="ri-check-line"></i> </a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/orderdetail' . '?id=' . $c_data['OrderID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="bx bxs-folder-open"></i> </a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/ordersconfirm' . '?id=' . $c_data['OrderID'] ?>" class="btn btn-icon btn-sm btn-success-light"><i class="bx bx-check"></i> </a>
                                                     <a style="display: flex;" onclick="return confirm('Are you sure about that?')" href="<?php echo ASSETS_URL_ROOT . '/admin/orderscancle' . '?id=' . $c_data['OrderID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1200 1200">
                                                             <path fill="currentColor" d="M1024.263 175.738c-234.317-234.317-614.192-234.317-848.525 0c-234.317 234.317-234.317 614.192 0 848.525c234.317 234.316 614.192 234.316 848.525 0c234.316-234.318 234.316-614.193 0-848.525zm-163.489 57.44L233.193 860.743c-125.257-175.737-109.044-421.274 48.624-578.942s403.219-173.881 578.942-48.624h.015zm106.064 106.048c125.248 175.738 109.031 421.29-48.654 578.942c-157.652 157.683-403.205 173.911-578.942 48.639l627.581-627.581h.015z" />
@@ -158,7 +158,7 @@ $result = isset($data['orders']) ? $data['orders'] : [''];
         </footer>
         <!-- Footer End -->
     </div>
-    <div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+    <div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
     <div id="responsive-overlay"></div>
 
     <!-- Popper JS -->

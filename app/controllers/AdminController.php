@@ -99,7 +99,6 @@ class AdminController extends Controller
     {
         $mess = '';
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            print_r($_POST);
             $tags = array();
             foreach ($_POST['Tag'] as $key => $name) {
                 array_push($tags, $name);
@@ -138,7 +137,6 @@ class AdminController extends Controller
                 $this->view('admin/updateproduct', ['product_data' => $result, 'c_data' => $c_data, 'b_data' => $b_data, 'mess' => $mess]);
             }
         }
-        print_r($_POST);
     }
     public function delproduct()
     {
@@ -190,7 +188,6 @@ class AdminController extends Controller
             $destination = __DIR__ . '/../../public/imgs/' . $filename;
             move_uploaded_file($files['tmp_name'], $destination);
             echo "file have uploaded" . $filename;
-            print_r($_FILES);
             if ($_POST['Name'] == '') {
                 $result = "<p style=\"color: red;\">All fields must be not empty</p>";
                 return  $this->view('admin/addcategory', ['result' =>  $result]);
@@ -275,7 +272,6 @@ class AdminController extends Controller
             $filename = uniqid() . '.' . $ext;
             $destination = __DIR__ . '/../../public/imgs/' . $filename;
             move_uploaded_file($files['tmp_name'], $destination);
-            print_r($_POST);
             if ($_POST['Name'] == '' || $_POST['CateID'] == '') {
                 $result = "<p style=\"color: red;\">All fields must be not empty</p>";
                 return  $this->view('admin/addbrand', ['result' =>  $result, 'c_data' => $c_data]);

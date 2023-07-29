@@ -6,7 +6,11 @@ $p_data  = isset($data['products']) ? $data['products'] : null;
 
 
 <!-- End Header -->
-
+<style>
+    .axil-breadcrumb-area {
+        background-color: #00000000;
+    }
+</style>
 <main class="main-wrapper">
     <!-- Start Breadcrumb Area  -->
     <div class="axil-breadcrumb-area">
@@ -160,7 +164,7 @@ $p_data  = isset($data['products']) ? $data['products'] : null;
                                         <div class="axil-product product-style-one mb--30">
 
                                             <div class="thumbnail">
-                                                <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_single_data['ProductID'] ?>">
+                                                <a style="background-color: #00000000;" href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_single_data['ProductID'] ?>">
                                                     <img style="max-height: 300px; object-fit: contain;" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_single_data['Image'] ?>" alt="Product Images">
                                                 </a>
                                                 <div class="label-block label-right">

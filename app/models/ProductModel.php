@@ -139,7 +139,17 @@ class ProductModel extends Database
     }
     public function getFirst8Products()
     {
-        $sql  = "SELECT * FROM tbl_product WHERE Status = 'Published' LIMIT 8 ";
+        $sql  = "SELECT * FROM tbl_product WHERE Status = 'Published' ORDER BY RAND()  LIMIT 8 ";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function familiar8($id)
+    {
+        $sql  = "SELECT * FROM tbl_product WHERE CateID = '$id' ORDER BY RAND()  LIMIT 8 ";
         $result = $this->select($sql);
         if ($result) {
             return $result;

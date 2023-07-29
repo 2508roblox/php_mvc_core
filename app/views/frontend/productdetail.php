@@ -1,13 +1,19 @@
 <?php
 include_once __DIR__ . '/./inc/header.php';
 $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
+$f_ps = isset($data['f_ps']) ? $data['f_ps'] : null;
+$fm = new Format();
 ?>
 
 
 
 
 <!-- End Header -->
-
+<style>
+    .axil-product .thumbnail a {
+        background-color: #00000000;
+    }
+</style>
 <main class="main-wrapper">
     <!-- Start Shop Area  -->
     <div class="axil-single-product-area axil-section-gap pb--0 bg-color-white">
@@ -482,330 +488,86 @@ $p_detail = isset($data['p_detail']) ? $data['p_detail'] : null;
             <div class="container">
                 <div class="section-title-wrapper">
                     <span class="title-highlighter highlighter-primary"><i class="far fa-shopping-basket"></i> Your Recently</span>
-                    <h2 class="title">Viewed Items</h2>
+                    <h2 class="title">Familiar Items</h2>
                 </div>
                 <div class="recent-product-activation slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide">
-                    <div class="slick-single-layout">
-                        <div class="axil-product">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-01.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <?php
-                                    if ($p_detail['Discount'] != '0') {
-                                        $discount = $p_detail['Discount'];
-                                        echo '<div class="product-badget">';
+                    <?php
+                    if (isset($f_ps)) {
+                        while ($f_p  = $f_ps->fetch_assoc()) {
 
-                                        echo  "<div class=\"product-badget\">$discount% Off</div>";
-                                        echo '</div>';
-                                    }
-                                    ?>
+                    ?>
+                            <div class="slick-single-layout">
+                                <div class="axil-product">
+                                    <div class="thumbnail">
+                                        <a style="background-color: #00000000;" href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $f_p['ProductID'] ?>">
+                                            <img style="max-height: 300px; object-fit: contain;" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $f_p['Image'] ?>" alt="Product Images">
+                                        </a>
+                                        <div class="label-block label-right">
+                                            <?php
+                                            if ($f_p['Discount'] != '0') {
+                                                $discount = $f_p['Discount'];
+                                                echo '<div class="product-badget">';
 
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
+                                                echo  "<div class=\"product-badget\">$discount% Off</div>";
+                                                echo '</div>';
+                                            }
+                                            ?>
+
+                                        </div>
+                                        <div class="product-hover-action">
+                                            <ul class="cart-action">
+                                                <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                                                <li class="select-option"><a href="cart.html">Add to Cart</a></li>
+                                                <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="inner">
+                                            <h5 class="title"><a href="single-product.html"><?php echo $fm->textShorten($f_p['Name'], 100) ?></a></h5>
+                                            <div class="product-price-variant">
+
+                                                <?php
+                                                if ($f_p['PromotionPrice']  != '0') {
+                                                ?>
+                                                    <span class="price old-price">$<?php echo number_format($f_p['Price'])  ?></span>
+                                                    <span class="price current-price">$<?php echo number_format($f_p['PromotionPrice'])  ?></span>
+
+
+                                                <?php
+                                                } else {
+                                                ?>
+                                                    <span class="price current-price">$<?php echo number_format($f_p['Price'])  ?></span>
+
+
+
+                                                <?php
+                                                }
+                                                ?>
+                                            </div>
+                                            <div class="color-variant-wrapper">
+                                                <ul class="color-variant">
+                                                    <li class="color-extra-01 active"><span><span class="color"></span></span>
+                                                    </li>
+                                                    <li class="color-extra-02"><span><span class="color"></span></span>
+                                                    </li>
+                                                    <li class="color-extra-03"><span><span class="color"></span></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="single-product.html">3D™ wireless headset</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$30</span>
-                                        <span class="price current-price">$30</span>
-                                    </div>
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    } else {
+                        echo '<h3>No items found in this category.</h3>';
+                    }
+                    ?>
+
                     <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-02.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">40% OFF</div>
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="single-product.html">Media remote</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$80</span>
-                                        <span class="price current-price">$50</span>
-                                    </div>
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-03.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">30% OFF</div>
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="single-product.html">HD camera</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$60</span>
-                                        <span class="price current-price">$45</span>
-                                    </div>
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-04.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">50% OFF</div>
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="single-product.html">PS Remote Control</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$70</span>
-                                        <span class="price current-price">$35</span>
-                                    </div>
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-05.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">25% OFF</div>
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="single-product.html">PS Remote Control</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$50</span>
-                                        <span class="price current-price">$38</span>
-                                    </div>
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-03.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">30% OFF</div>
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="single-product.html">HD camera</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$60</span>
-                                        <span class="price current-price">$45</span>
-                                    </div>
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-04.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">50% OFF</div>
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="single-product.html">PS Remote Control</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$70</span>
-                                        <span class="price current-price">$35</span>
-                                    </div>
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-05.png" alt="Product Images">
-                                </a>
-                                <div class="label-block label-right">
-                                    <div class="product-badget">25% OFF</div>
-                                </div>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="single-product.html">PS5 Remote Control</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price old-price">$50</span>
-                                        <span class="price current-price">$38</span>
-                                    </div>
-                                    <div class="color-variant-wrapper">
-                                        <ul class="color-variant">
-                                            <li class="color-extra-01 active"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-02"><span><span class="color"></span></span>
-                                            </li>
-                                            <li class="color-extra-03"><span><span class="color"></span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- End .slick-single-layout -->
 
                 </div>

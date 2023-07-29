@@ -16,7 +16,9 @@ class ProductsController extends Controller
     {
         if (isset($id)) {
             $result =   $this->model('product')->getById($id);
-            $this->view('frontend/productdetail', ['p_detail' => $result]);
+            $cateID = $result['CateID'];
+            $familiarProducts = $this->model('product')->familiar8($cateID);
+            $this->view('frontend/productdetail', ['p_detail' => $result, 'f_ps' =>  $familiarProducts]);
         } else {
             redirect('/');
         }

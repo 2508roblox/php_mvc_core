@@ -44,7 +44,7 @@ print_r($c_data);
                                                     More</a></span> </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="d-flex align-items-center"> <span class="text-muted">Rating
-                                                    : </span> <span class="text-warning d-block ms-1"> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-half-fill"></i> </span> </div>
+                                                    : </span> <span class="text-warning d-block ms-1"> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star-half"></i> </span> </div>
                                             <div class="float-end fs-12 fw-semibold text-muted text-end"> <span>12
                                                     days ago</span> <span class="d-block fw-normal fs-12 text-success"><i><?php echo $c_fetch['Name'] ?></i></span> </div>
                                         </div>
@@ -65,7 +65,7 @@ print_r($c_data);
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <div class="input-group"> <a href="javascript:void(0);" class="input-group-text" id="Search-Grid"><i class="fe fe-search header-link-icon fs-18"></i></a> <input type="search" class="form-control border-0 px-2" placeholder="Search" aria-label="Username"> <a href="javascript:void(0);" class="input-group-text" id="voice-search"><i class="fe fe-mic header-link-icon"></i></a> <a href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fe fe-more-vertical"></i> </a>
+                        <div class="input-group"> <a href="javascript:void(0);" class="input-group-text" id="Search-Grid"><i class="fe fe-search header-link-icon fs-18"></i></a> <input type="search" class="form-control border-0 px-2" placeholder="Search" aria-label="Username"> <a href="javascript:void(0);" class="input-group-text" id="voice-search"><i class="fe fe-mic header-link-icon"></i></a> <a href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bx bx-dots-vertical-rounded"></i> </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -101,7 +101,7 @@ print_r($c_data);
         <!-- Footer Start -->
 
     </div>
-    <div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+    <div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
     <div id="responsive-overlay"></div>
     <script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/@popperjs/core/umd/popper.min.js"></script>
     <script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

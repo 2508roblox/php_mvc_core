@@ -23,7 +23,10 @@
                 <li class="slide__category"><span class="category-name">Main</span></li>
                 <!-- End::slide__category -->
                 <!-- Start::slide -->
-                <li class="slide has-sub"> <a href="<?php echo URL_ROOT ?>/admin" class="side-menu__item"> <i class="bx bx-home side-menu__icon"></i> <span class="side-menu__label">Dashboards<span class="badge bg-warning-transparent ms-2">12</span></span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
+                <li style=" display: flex;
+        align-items: center;
+        justify-content: space-between;" class="slide has-sub"> <a href="<?php echo URL_ROOT ?>/admin" class="side-menu__item"> <i class="bx bx-home side-menu__icon"></i> <span class="side-menu__label">Dashboards<span class="badge bg-warning-transparent ms-2">12</span></span> </a>
+                    <i class="bx bxs-chevron-right"></i>
                     <ul class="slide-menu child1">
 
                     </ul>
@@ -33,7 +36,10 @@
                 <li class="slide__category"><span class="category-name">Handle</span></li>
                 <!-- End::slide__category -->
                 <!-- Start::slide -->
-                <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-package side-menu__icon"></i> <span class="side-menu__label">Products</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
+                <li style=" display: flex;
+        align-items: center;
+        justify-content: space-between;" class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-package side-menu__icon"></i> <span class="side-menu__label">Products</span> </a>
+                    <i class='bx bxs-chevron-right'></i>
 
                 </li>
                 <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/addproduct" class="side-menu__item">
@@ -52,7 +58,10 @@
                             </g>
                         </svg>
                         Product List</a> </li>
-                <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-category side-menu__icon"></i> <span class="side-menu__label">Category</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
+                <li style=" display: flex;
+        align-items: center;
+        justify-content: space-between;" class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-category side-menu__icon"></i> <span class="side-menu__label">Category</span> </a>
+                    <i class="bx bxs-chevron-right"></i>
                 <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/addcategory" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
                             <g fill="currentColor">
@@ -71,7 +80,10 @@
                         </svg>
                         Category List</a> </li>
                 </li>
-                <li class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-layer side-menu__icon"></i> <span class="side-menu__label">Brand</span> <i class="fe fe-chevron-right side-menu__angle"></i> </a>
+                <li style=" display: flex;
+        align-items: center;
+        justify-content: space-between;" class="slide has-sub"> <a href="javascript:void(0);" class="side-menu__item"> <i class="bx bx-layer side-menu__icon"></i> <span class="side-menu__label">Brand</span> </a>
+                    <i class="bx bxs-chevron-right"></i>
 
 
                 <li class="slide n_pd"> <a href="<?php echo URL_ROOT ?>/admin/addbrand" class="side-menu__item">

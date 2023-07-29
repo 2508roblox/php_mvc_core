@@ -1594,7 +1594,7 @@
     content: "\eb7a"
 }
 
-.ri-check-line:before {
+.bx bx-check:before {
     content: "\eb7b"
 }
 
@@ -2294,7 +2294,7 @@
     content: "\ec29"
 }
 
-.ri-delete-bin-line:before {
+.bx bx-x-circle:before {
     content: "\ec2a"
 }
 
@@ -2662,7 +2662,7 @@
     content: "\ec85"
 }
 
-.ri-edit-line:before {
+.bx bx-edit:before {
     content: "\ec86"
 }
 
@@ -2850,7 +2850,7 @@
     content: "\ecb4"
 }
 
-.ri-eye-line:before {
+.bx bxs-folder-open:before {
     content: "\ecb5"
 }
 
@@ -7782,11 +7782,11 @@
     content: "\f185"
 }
 
-.ri-star-fill:before {
+.bx bxs-star:before {
     content: "\f186"
 }
 
-.ri-star-half-fill:before {
+.bx bxs-star-half:before {
     content: "\f187"
 }
 
@@ -25071,6 +25071,7 @@
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -25082,6 +25083,7 @@
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -33617,6 +33619,7 @@
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -33628,6 +33631,7 @@
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -33640,6 +33644,7 @@
         transform: scale(1);
         opacity: 1
     }
+
     90% {
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
@@ -33653,6 +33658,7 @@
         transform: scale(1);
         opacity: 1
     }
+
     90% {
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
@@ -33664,9 +33670,11 @@
     0% {
         opacity: 1
     }
+
     45% {
         opacity: 0
     }
+
     90% {
         opacity: 1
     }
@@ -33676,9 +33684,11 @@
     0% {
         opacity: 1
     }
+
     45% {
         opacity: 0
     }
+
     90% {
         opacity: 1
     }
@@ -33690,6 +33700,7 @@
         transform: translateX(0);
         opacity: 1
     }
+
     75% {
         -webkit-transform: translateX(-20px);
         transform: translateX(-20px);
@@ -33703,6 +33714,7 @@
         transform: translateX(0);
         opacity: 1
     }
+
     75% {
         -webkit-transform: translateX(-20px);
         transform: translateX(-20px);
@@ -33716,6 +33728,7 @@
         transform: translateX(0);
         opacity: 1
     }
+
     75% {
         -webkit-transform: translateX(20px);
         transform: translateX(20px);
@@ -33729,6 +33742,7 @@
         transform: translateX(0);
         opacity: 1
     }
+
     75% {
         -webkit-transform: translateX(20px);
         transform: translateX(20px);
@@ -33742,6 +33756,7 @@
         transform: translateY(0);
         opacity: 1
     }
+
     75% {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px);
@@ -33755,6 +33770,7 @@
         transform: translateY(0);
         opacity: 1
     }
+
     75% {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px);
@@ -33768,6 +33784,7 @@
         transform: translateY(0);
         opacity: 1
     }
+
     75% {
         -webkit-transform: translateY(20px);
         transform: translateY(20px);
@@ -33781,6 +33798,7 @@
         transform: translateY(0);
         opacity: 1
     }
+
     75% {
         -webkit-transform: translateY(20px);
         transform: translateY(20px);
@@ -33793,11 +33811,13 @@
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1)
     }
+
     10%,
     20% {
         -webkit-transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg);
         transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg)
     }
+
     30%,
     50%,
     70%,
@@ -33805,12 +33825,14 @@
         -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
         transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg)
     }
+
     40%,
     60%,
     80% {
         -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
         transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg)
     }
+
     to {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1)
@@ -33822,11 +33844,13 @@
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1)
     }
+
     10%,
     20% {
         -webkit-transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg);
         transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg)
     }
+
     30%,
     50%,
     70%,
@@ -33834,12 +33858,14 @@
         -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
         transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg)
     }
+
     40%,
     60%,
     80% {
         -webkit-transform: rotate3d(0, 0, 1, -10deg);
         transform: rotate3d(0, 0, 1, -10deg)
     }
+
     to {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1)

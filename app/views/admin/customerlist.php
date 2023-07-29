@@ -92,8 +92,8 @@ $result = isset($data['customer']) ? $data['customer'] : [''];
 
                                             <td>
                                                 <div class="hstack gap-2 fs-15">
-                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updatecustomer' . '?id=' . $p_data['CustomerID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
-                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/delcustomer' . '?delid=' . $p_data['CustomerID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/updatecustomer' . '?id=' . $p_data['CustomerID'] ?>" class="btn btn-icon btn-sm btn-info-light"><i class="bx bx-edit"></i></a>
+                                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/delcustomer' . '?delid=' . $p_data['CustomerID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="bx bx-x-circle"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -131,7 +131,7 @@ $result = isset($data['customer']) ? $data['customer'] : [''];
         </footer>
         <!-- Footer End -->
     </div>
-    <div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+    <div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
     <div id="responsive-overlay"></div>
 
     <!-- Popper JS -->

@@ -147,7 +147,7 @@ include __DIR__ . '/./inc/sidebar.php';
                         <div class="card custom-card">
                             <div class="card-header justify-content-between">
                                 <div class="card-title"> Recent Orders </div>
-                                <div class="dropdown"> <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown"> <i class="fe fe-more-vertical"></i> </a>
+                                <div class="dropdown"> <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown"> <i class="bx bx-dots-vertical-rounded"></i> </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                                         <li><a class="dropdown-item" href="javascript:void(0);">Another
@@ -288,7 +288,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/1.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -314,7 +314,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/2.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -340,7 +340,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/3.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -366,7 +366,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/4.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -392,7 +392,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/5.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                 </tbody>
@@ -426,7 +426,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/6.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -451,7 +451,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/7.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -477,7 +477,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/8.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -503,7 +503,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/9.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -529,7 +529,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/10.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                 </tbody>
@@ -563,7 +563,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/11.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -589,7 +589,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/12.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -615,7 +615,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/13.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -641,7 +641,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/14.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                     <tr>
@@ -667,7 +667,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </td>
                                                         <td> <span class="avatar avatar-md"> <img src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/images/ecommerce/png/15.png" alt=""> </span> </td>
                                                         <td> <a aria-label="anchor" href="javascript:void(0);">
-                                                                <span class="orders-arrow"><i class="ri-arrow-right-s-line fs-18"></i></span>
+                                                                <span class="orders-arrow"><i class="bx bxs-chevron-right"></i></span>
                                                             </a> </td>
                                                     </tr>
                                                 </tbody>
@@ -686,7 +686,7 @@ include __DIR__ . '/./inc/sidebar.php';
                         <div class="card custom-card">
                             <div class="card-header justify-content-between">
                                 <div class="card-title">Earnings</div>
-                                <div class="dropdown"> <a href="javascript:void(0);" class="p-2 fs-12 text-muted" data-bs-toggle="dropdown" aria-expanded="false"> View All<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                <div class="dropdown"> <a href="javascript:void(0);" class="p-2 fs-12 text-muted" data-bs-toggle="dropdown" aria-expanded="false"> View All<i class="bx bxs-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a class="dropdown-item" href="javascript:void(0);">Download</a>
@@ -789,7 +789,7 @@ include __DIR__ . '/./inc/sidebar.php';
                         <div class="card custom-card">
                             <div class="card-header justify-content-between">
                                 <div class="card-title"> Top Countries By Sales </div>
-                                <div class="dropdown"> <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown"> <i class="fe fe-more-vertical"></i> </a>
+                                <div class="dropdown"> <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown"> <i class="bx bx-dots-vertical-rounded"></i> </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
                                         <li><a class="dropdown-item" href="javascript:void(0);">Another
@@ -855,7 +855,7 @@ include __DIR__ . '/./inc/sidebar.php';
                         <div class="card custom-card">
                             <div class="card-header justify-content-between">
                                 <div class="card-title"> Top Customers </div>
-                                <div class="dropdown"> <a href="javascript:void(0);" class="p-2 fs-12 text-muted" data-bs-toggle="dropdown"> View All<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                <div class="dropdown"> <a href="javascript:void(0);" class="p-2 fs-12 text-muted" data-bs-toggle="dropdown"> View All<i class="bx bxs-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a class="dropdown-item" href="javascript:void(0);">Download</a>
@@ -875,7 +875,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </span> </div>
                                                     <div>
                                                         <p class="mb-0 fw-semibold">Emma Wilson</p>
-                                                        <p class="mb-0 text-muted fs-12">15 Purchases<i class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        <p class="mb-0 text-muted fs-12">15 Purchases<i class="bx bxs-badge-check"></i>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -891,7 +891,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </span> </div>
                                                     <div>
                                                         <p class="mb-0 fw-semibold">Robert Lewis</p>
-                                                        <p class="mb-0 text-muted fs-12">18 Purchases<i class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        <p class="mb-0 text-muted fs-12">18 Purchases<i class="bx bxs-badge-check"></i>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -907,7 +907,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </span> </div>
                                                     <div>
                                                         <p class="mb-0 fw-semibold">Angelina Hose</p>
-                                                        <p class="mb-0 text-muted fs-12">21 Purchases<i class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        <p class="mb-0 text-muted fs-12">21 Purchases<i class="bx bxs-badge-check"></i>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -923,7 +923,7 @@ include __DIR__ . '/./inc/sidebar.php';
                                                         </span> </div>
                                                     <div>
                                                         <p class="mb-0 fw-semibold">Samantha Sam</p>
-                                                        <p class="mb-0 text-muted fs-12">24 Purchases<i class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        <p class="mb-0 text-muted fs-12">24 Purchases<i class="bx bxs-badge-check"></i>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -947,7 +947,7 @@ include __DIR__ . '/./inc/sidebar.php';
                         <div class="card-title"> Products Overview </div>
                         <div class="d-flex">
                             <div class="me-3"> <input class="form-control form-control-sm" type="text" placeholder="Search" aria-label=".form-control-sm example"> </div>
-                            <div class="dropdown"> <a href="javascript:void(0);" class="btn btn-primary btn-sm btn-wave waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false"> Sort By<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i> </a>
+                            <div class="dropdown"> <a href="javascript:void(0);" class="btn btn-primary btn-sm btn-wave waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false"> Sort By<i class="bx bxs-chevron-down"></i> </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="dropdown-item" href="javascript:void(0);">New</a></li>
                                     <li><a class="dropdown-item" href="javascript:void(0);">Popular</a></li>
@@ -1072,7 +1072,7 @@ include __DIR__ . '/./inc/sidebar.php';
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="input-group"> <a href="javascript:void(0);" class="input-group-text" id="Search-Grid"><i class="fe fe-search header-link-icon fs-18"></i></a> <input type="search" class="form-control border-0 px-2" placeholder="Search" aria-label="Username"> <a href="javascript:void(0);" class="input-group-text" id="voice-search"><i class="fe fe-mic header-link-icon"></i></a> <a href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fe fe-more-vertical"></i> </a>
+                <div class="input-group"> <a href="javascript:void(0);" class="input-group-text" id="Search-Grid"><i class="fe fe-search header-link-icon fs-18"></i></a> <input type="search" class="form-control border-0 px-2" placeholder="Search" aria-label="Username"> <a href="javascript:void(0);" class="input-group-text" id="voice-search"><i class="fe fe-mic header-link-icon"></i></a> <a href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bx bx-dots-vertical-rounded"></i> </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -1114,7 +1114,7 @@ include __DIR__ . '/./inc/sidebar.php';
 </footer>
 <!-- Footer End -->
 </div>
-<div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+<div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
 <div id="responsive-overlay"></div>
 
 <!-- Popper JS -->
@@ -1144,7 +1144,7 @@ include __DIR__ . '/./inc/sidebar.php';
 <!-- All cdn for TableData -->
 <!-- table data -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+<div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
 <div id="responsive-overlay"></div>
 <!-- Datatables Cdn -->
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
@@ -1158,6 +1158,9 @@ include __DIR__ . '/./inc/sidebar.php';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <!-- Internal Datatables JS -->
 <script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/js/datatables.js"></script>
+<!-- box icon -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
 
 </body>

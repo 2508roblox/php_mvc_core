@@ -35,7 +35,7 @@ $fm = new Format();
                                 <div class="card-header" style="display: flex; justify-content: space-between;">
                                     <div class="card-title"> Basic Swiper
                                     </div>
-                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/delslide' . '?delid=' . $s_f_data['SlideID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                    <a href="<?php echo ASSETS_URL_ROOT . '/admin/delslide' . '?delid=' . $s_f_data['SlideID'] ?>" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="bx bx-x-circle"></i></a>
                                 </div>
                                 <div class="card-body">
                                     <div class="swiper swiper-basic">
@@ -62,7 +62,7 @@ $fm = new Format();
 
         <!-- Footer End -->
     </div>
-    <div class="scrollToTop"> <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span> </div>
+    <div class="scrollToTop"> <span class="arrow"><i class="bx bxs-upvote"></i></span> </div>
     <div id="responsive-overlay"></div>
     <!-- Popper JS -->
     <script src="<?php echo ASSETS_URL_ROOT . '/public/' ?>admin_assets/assets/libs/@popperjs/core/umd/popper.min.js"></script>

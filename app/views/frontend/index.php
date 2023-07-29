@@ -8,7 +8,11 @@ $fm = new Format();
 
 ?>
 
-
+<style>
+    .axil-product>.thumbnail>a {
+        background-color: #00000000;
+    }
+</style>
 
 <main class="main-wrapper">
     <div class="axil-main-slider-area main-slider-style-1" ">
@@ -283,7 +287,7 @@ $fm = new Format();
                                         <input type="text" hidden name="Quantity" value="1">
                                         <div class="axil-product product-style-one">
                                             <div class="thumbnail">
-                                                <a href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_assoc['ProductID'] ?>">
+                                                <a style="background-color: #00000000;" href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_assoc['ProductID'] ?>">
                                                     <img style="height: 300px; object-fit: contain;" data-sal="zoom-out" width="300px" height="300px" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_assoc['Image'] ?>" alt="Product Images">
                                                     <img class="hover-img" width="300px" height="300px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_assoc['Image'] ?>" alt="Product Images">
                                                 </a>
@@ -364,7 +368,7 @@ $fm = new Format();
                             <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
                                 <div class="axil-product product-style-one">
                                     <div class="thumbnail">
-                                        <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
+                                        <a style="background-color: #00000000;" href="<?php echo ASSETS_URL_ROOT . '/products/productdetail/' .   $p_s_data['ProductID'] ?>">
                                             <img style="height: 300px; object-fit: contain;" data-sal="zoom-out" width="300px" height="300px" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>" alt="Product Images">
                                             <img class="hover-img" width="300px" height="300px" src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_s_data['Image'] ?>" alt="Product Images">
                                         </a>
