@@ -213,9 +213,13 @@ $fm = new Format();
                                     <div class="col-lg-6 mb--30">
                                         <div class="single-desc">
                                             <h5 class="title">Specifications:</h5>
-                                            <p>
-                                                <?php echo $p_detail['Detail'] ?>
-                                            </p>
+                                            <?php
+                                            if ($p_detail['Detail'] != '') {
+                                                echo $p_detail['Detail'];
+                                            } else {
+                                                echo "Description is empty";
+                                            }
+                                            ?>
                                         </div>
                                     </div>
                                     <!-- End .col-lg-6 -->
