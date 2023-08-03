@@ -5,17 +5,18 @@
 //     $postModel->getAllPost();
 class Controller
 {
-    public $fm ;
+    public $fm;
     public function __construct()
     {
         $this->fm = new Format();
-        
     }
     public function model($model)
     {
+        $exit_model = array('brand', 'admin', 'cart', 'category', 'contact', 'customer', 'orderdetail', 'orders', 'product', 'slide');
+
         // model first name ex: product
-        if (file_exists('../app/models/' . $model . 'Model.php')) {
-            require_once __DIR__ . "/../models/" . $model . 'Model.php';
+        if (in_array($model, $exit_model)) {
+            require_once __DIR__ . "/../models/" . ucfirst($model)  . 'Model.php';
             $model = ucfirst($model) . 'Model';
             return new  $model();
         } else {
@@ -31,6 +32,3 @@ class Controller
         }
     }
 }
-
-
-

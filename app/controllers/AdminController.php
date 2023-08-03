@@ -51,6 +51,7 @@ class AdminController extends Controller
         Session::destroy();
         $this->view('admin/login');
     }
+  
     public function addproduct()
     {
         // handle all method, ->view

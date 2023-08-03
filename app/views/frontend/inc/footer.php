@@ -26,7 +26,7 @@
 <!-- Modernizer JS -->
 <!-- jQuery JS -->
 <!-- Bootstrap JS -->
-<script src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/js/vendor/jquery.style.switcher.js"></script>
+<script src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/js/vendor/jquery.style.switcher.js"></script>
 
 </body>
 

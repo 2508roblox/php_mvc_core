@@ -17,7 +17,7 @@ $fm = new Format();
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL_ROOT ?> /fix_assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL_ROOT ?>/fix_assets/images/favicon.png">
 
     <!-- CSS
     ============================================ -->
@@ -45,7 +45,7 @@ $fm = new Format();
         <div class="signin-header">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <a href="<?php echo URL_ROOT ?>/" class="site-logo"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/logo/logo.png" alt="logo"></a>
+                    <a href="<?php echo URL_ROOT ?>/" class="site-logo"><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="col-md-6">
                     <div class="singin-header-btn">

@@ -34,10 +34,10 @@ $fm = new Format();
                                 <div class="item-rating">
                                     <div class="thumb">
                                         <ul>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author1.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author2.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author3.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author4.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author1.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author2.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author3.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author4.png" alt="Author"></li>
                                         </ul>
                                     </div>
                                     <div class="content">
@@ -65,10 +65,10 @@ $fm = new Format();
                                 <div class="item-rating">
                                     <div class="thumb">
                                         <ul>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author1.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author2.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author3.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author4.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author1.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author2.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author3.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author4.png" alt="Author"></li>
                                         </ul>
                                     </div>
                                     <div class="content">
@@ -96,10 +96,10 @@ $fm = new Format();
                                 <div class="item-rating">
                                     <div class="thumb">
                                         <ul>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author1.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author2.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author3.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author4.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author1.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author2.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author3.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author4.png" alt="Author"></li>
                                         </ul>
                                     </div>
                                     <div class="content">
@@ -127,10 +127,10 @@ $fm = new Format();
                                 <div class="item-rating">
                                     <div class="thumb">
                                         <ul>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author1.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author2.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author3.png" alt="Author"></li>
-                                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/author4.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author1.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author2.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author3.png" alt="Author"></li>
+                                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/author4.png" alt="Author"></li>
                                         </ul>
                                     </div>
                                     <div class="content">
@@ -155,28 +155,28 @@ $fm = new Format();
                 <div class="main-slider-large-thumb">
                     <div class="slider-thumb-activation-one axil-slick-dots">
                         <div class="single-slide slick-slide" data-sal="slide-up" data-sal-delay="600" data-sal-duration="1500">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-38.png" alt="Product">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-38.png" alt="Product">
                             <div class="product-price">
                                 <span class="text">From</span>
                                 <span class="price-amount">$49.00</span>
                             </div>
                         </div>
                         <div class="single-slide slick-slide" data-sal="slide-up" data-sal-delay="600" data-sal-duration="1500">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-39.png" alt="Product">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-39.png" alt="Product">
                             <div class="product-price">
                                 <span class="text">From</span>
                                 <span class="price-amount">$49.00</span>
                             </div>
                         </div>
                         <div class="single-slide slick-slide">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-38.png" alt="Product">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-38.png" alt="Product">
                             <div class="product-price">
                                 <span class="text">From</span>
                                 <span class="price-amount">$49.00</span>
                             </div>
                         </div>
                         <div class="single-slide slick-slide">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-39.png" alt="Product">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-39.png" alt="Product">
                             <div class="product-price">
                                 <span class="text">From</span>
                                 <span class="price-amount">$49.00</span>
@@ -187,8 +187,8 @@ $fm = new Format();
             </div>
         </div>
         <ul class="shape-group">
-            <li class="shape-1"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/shape-1.png" alt="Shape"></li>
-            <li class="shape-2"><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/shape-2.png" alt="Shape"></li>
+            <li class="shape-1"><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/shape-1.png" alt="Shape"></li>
+            <li class="shape-2"><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/shape-2.png" alt="Shape"></li>
         </ul>
     </div>
 
@@ -244,7 +244,7 @@ $fm = new Format();
                     </div>
                     <div class="col-xl-7 col-lg-6">
                         <div class="poster-countdown-thumbnail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/poster/poster-03.png" alt="Poster Product">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/poster/poster-03.png" alt="Poster Product">
                             <div class="music-singnal">
                                 <div class="item-circle circle-1"></div>
                                 <div class="item-circle circle-2"></div>
@@ -465,7 +465,7 @@ $fm = new Format();
                     </div>
                     <div class="media">
                         <div class="thumbnail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/testimonial/image-1.png" alt="testimonial image">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/testimonial/image-1.png" alt="testimonial image">
                         </div>
                         <div class="media-body">
                             <span class="designation">Head Of Idea</span>
@@ -483,7 +483,7 @@ $fm = new Format();
                     </div>
                     <div class="media">
                         <div class="thumbnail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/testimonial/image-2.png" alt="testimonial image">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/testimonial/image-2.png" alt="testimonial image">
                         </div>
                         <div class="media-body">
                             <span class="designation">Head Of Idea</span>
@@ -501,7 +501,7 @@ $fm = new Format();
                     </div>
                     <div class="media">
                         <div class="thumbnail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/testimonial/image-3.png" alt="testimonial image">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/testimonial/image-3.png" alt="testimonial image">
                         </div>
                         <div class="media-body">
                             <span class="designation">Head Of Idea</span>
@@ -519,7 +519,7 @@ $fm = new Format();
                     </div>
                     <div class="media">
                         <div class="thumbnail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/testimonial/image-2.png" alt="testimonial image">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/testimonial/image-2.png" alt="testimonial image">
                         </div>
                         <div class="media-body">
                             <span class="designation">Head Of Idea</span>
@@ -632,7 +632,7 @@ $fm = new Format();
                         <div class="axil-product-list">
                             <div class="thumbnail">
                                 <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-in" data-sal-delay="100" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
+                                    <img data-sal="zoom-in" data-sal-delay="100" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
                                 </a>
                             </div>
                             <div class="product-content">
@@ -662,7 +662,7 @@ $fm = new Format();
                         <div class="axil-product-list">
                             <div class="thumbnail">
                                 <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-in" data-sal-delay="200" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-10.png" alt="Yantiti Leather Bags">
+                                    <img data-sal="zoom-in" data-sal-delay="200" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-10.png" alt="Yantiti Leather Bags">
                                 </a>
                             </div>
                             <div class="product-content">
@@ -691,7 +691,7 @@ $fm = new Format();
                         <div class="axil-product-list">
                             <div class="thumbnail">
                                 <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-in" data-sal-delay="300" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-11.png" alt="Yantiti Leather Bags">
+                                    <img data-sal="zoom-in" data-sal-delay="300" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-11.png" alt="Yantiti Leather Bags">
                                 </a>
                             </div>
                             <div class="product-content">
@@ -720,7 +720,7 @@ $fm = new Format();
                         <div class="axil-product-list">
                             <div class="thumbnail">
                                 <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-in" data-sal-delay="400" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-12.png" alt="Yantiti Leather Bags">
+                                    <img data-sal="zoom-in" data-sal-delay="400" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-12.png" alt="Yantiti Leather Bags">
                                 </a>
                             </div>
                             <div class="product-content">
@@ -749,7 +749,7 @@ $fm = new Format();
                         <div class="axil-product-list">
                             <div class="thumbnail">
                                 <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-in" data-sal-delay="500" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-13.png" alt="Yantiti Leather Bags">
+                                    <img data-sal="zoom-in" data-sal-delay="500" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-13.png" alt="Yantiti Leather Bags">
                                 </a>
                             </div>
                             <div class="product-content">
@@ -778,7 +778,7 @@ $fm = new Format();
                         <div class="axil-product-list">
                             <div class="thumbnail">
                                 <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-in" data-sal-delay="600" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-14.png" alt="Yantiti Leather Bags">
+                                    <img data-sal="zoom-in" data-sal-delay="600" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-14.png" alt="Yantiti Leather Bags">
                                 </a>
                             </div>
                             <div class="product-content">
@@ -808,7 +808,7 @@ $fm = new Format();
                         <div class="axil-product-list">
                             <div class="thumbnail">
                                 <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-in" data-sal-delay="400" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-15.png" alt="Yantiti Leather Bags">
+                                    <img data-sal="zoom-in" data-sal-delay="400" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-15.png" alt="Yantiti Leather Bags">
                                 </a>
                             </div>
                             <div class="product-content">
@@ -837,7 +837,7 @@ $fm = new Format();
                         <div class="axil-product-list">
                             <div class="thumbnail">
                                 <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                                    <img data-sal="zoom-in" data-sal-delay="500" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-16.png" alt="Yantiti Leather Bags">
+                                    <img data-sal="zoom-in" data-sal-delay="500" data-sal-duration="1500" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-16.png" alt="Yantiti Leather Bags">
                                 </a>
                             </div>
                             <div class="product-content">
@@ -880,7 +880,7 @@ $fm = new Format();
                 <div class="col">
                     <div class="service-box">
                         <div class="icon">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service6.png" alt="Service">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service6.png" alt="Service">
                         </div>
                         <h6 class="title">Fast &amp; Secure Delivery</h6>
                     </div>
@@ -888,7 +888,7 @@ $fm = new Format();
                 <div class="col">
                     <div class="service-box">
                         <div class="icon">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service7.png" alt="Service">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service7.png" alt="Service">
                         </div>
                         <h6 class="title">100% Guarantee On Product</h6>
                     </div>
@@ -896,7 +896,7 @@ $fm = new Format();
                 <div class="col">
                     <div class="service-box">
                         <div class="icon">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service8.png" alt="Service">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service8.png" alt="Service">
                         </div>
                         <h6 class="title">24 Hour Return Policy</h6>
                     </div>
@@ -904,7 +904,7 @@ $fm = new Format();
                 <div class="col">
                     <div class="service-box">
                         <div class="icon">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service9.png" alt="Service">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service9.png" alt="Service">
                         </div>
                         <h6 class="title">24 Hour Return Policy</h6>
                     </div>
@@ -912,7 +912,7 @@ $fm = new Format();
                 <div class="col">
                     <div class="service-box">
                         <div class="icon">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service10.png" alt="Service">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service10.png" alt="Service">
                         </div>
                         <h6 class="title">Next Level Pro Quality</h6>
                     </div>
@@ -930,7 +930,7 @@ $fm = new Format();
                 <div class="col-lg-6 mb--30">
                     <div class="single-poster">
                         <a href="products">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/poster/poster-01.png" alt="eTrade promotion poster">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/poster/poster-01.png" alt="eTrade promotion poster">
                             <div class="poster-content">
                                 <div class="inner">
                                     <h3 class="title">Rich sound, <br> for less.</h3>
@@ -945,7 +945,7 @@ $fm = new Format();
                 <div class="col-lg-6 mb--30">
                     <div class="single-poster">
                         <a href="shop-sidebar.html">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/poster/poster-02.png" alt="eTrade promotion poster">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/poster/poster-02.png" alt="eTrade promotion poster">
                             <div class="poster-content content-left">
                                 <div class="inner">
                                     <span class="sub-title">50% Offer In Winter</span>
@@ -991,7 +991,7 @@ $fm = new Format();
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service1.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service1.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Fast &amp; Secure Delivery</h6>
@@ -1002,7 +1002,7 @@ $fm = new Format();
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service2.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service2.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Money Back Guarantee</h6>
@@ -1013,7 +1013,7 @@ $fm = new Format();
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service3.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service3.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">24 Hour Return Policy</h6>
@@ -1024,7 +1024,7 @@ $fm = new Format();
             <div class="col">
                 <div class="service-box service-style-2">
                     <div class="icon">
-                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/service4.png" alt="Service">
+                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/service4.png" alt="Service">
                     </div>
                     <div class="content">
                         <h6 class="title">Pro Quality Support</h6>
@@ -1047,7 +1047,7 @@ $fm = new Format();
                         <h5 class="widget-title">Support</h5>
                         <!-- <div class="logo mb--30">
                             <a href="<?php echo URL_ROOT ?>/">
-                                <img class="light-logo" src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/logo/logo.png" alt="Logo Images">
+                                <img class="light-logo" src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/logo/logo.png" alt="Logo Images">
                             </a>
                         </div> -->
                         <div class="inner">
@@ -1104,14 +1104,14 @@ $fm = new Format();
                             <span>Save $3 With App & New User only</span>
                             <div class="download-btn-group">
                                 <div class="qr-code">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/qr.png" alt="Axilthemes">
+                                    <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/qr.png" alt="Axilthemes">
                                 </div>
                                 <div class="app-link">
                                     <a href="#">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/app-store.png" alt="App Store">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/app-store.png" alt="App Store">
                                     </a>
                                     <a href="#">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/others/play-store.png" alt="Play Store">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/others/play-store.png" alt="Play Store">
                                     </a>
                                 </div>
                             </div>
@@ -1147,9 +1147,9 @@ $fm = new Format();
                     <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
                         <span class="card-text">Accept For</span>
                         <ul class="payment-icons-bottom quick-link">
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
-                            <li><img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
+                            <li><img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
                         </ul>
                     </div>
                 </div>
@@ -1175,34 +1175,34 @@ $fm = new Format();
                                 <div class="col-lg-10 order-lg-2">
                                     <div class="<?php echo ASSETS_URL_ROOT ?>/products/productdetail-thumbnail product-large-thumbnail axil-product thumbnail-badge zoom-gallery">
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-01.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-01.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?> /fix_assets/images/product/product-big-01.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?>/fix_assets/images/product/product-big-01.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-02.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-02.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?> /fix_assets/images/product/product-big-02.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?>/fix_assets/images/product/product-big-02.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-03.png" alt="Product Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-03.png" alt="Product Images">
                                             <div class="label-block label-right">
                                                 <div class="product-badget">20% OFF</div>
                                             </div>
                                             <div class="product-quick-view position-view">
-                                                <a href="<?php echo URL_ROOT ?> /fix_assets/images/product/product-big-03.png" class="popup-zoom">
+                                                <a href="<?php echo URL_ROOT ?>/fix_assets/images/product/product-big-03.png" class="popup-zoom">
                                                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                                                 </a>
                                             </div>
@@ -1214,7 +1214,7 @@ $fm = new Format();
 
 
                                         <div class="small-thumb-img">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
                                         </div>
                                     </div>
                                 </div>
@@ -1225,7 +1225,7 @@ $fm = new Format();
                                 <div class="inner">
                                     <div class="product-rating">
                                         <div class="star-rating">
-                                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/icons/rate.png" alt="Rate Images">
+                                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/icons/rate.png" alt="Rate Images">
                                         </div>
                                         <div class="review-link">
                                             <a href="#">(<span>1</span> customer reviews)</a>
@@ -1323,7 +1323,7 @@ $fm = new Format();
                 <div class="axil-product-list">
                     <div class="thumbnail">
                         <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
                         </a>
                     </div>
                     <div class="product-content">
@@ -1351,7 +1351,7 @@ $fm = new Format();
                 <div class="axil-product-list">
                     <div class="thumbnail">
                         <a href="<?php echo ASSETS_URL_ROOT ?>/products/productdetail">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/electric/product-09.png" alt="Yantiti Leather Bags">
                         </a>
                     </div>
                     <div class="product-content">

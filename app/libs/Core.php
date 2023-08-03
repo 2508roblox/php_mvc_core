@@ -8,9 +8,12 @@ class Core
     // default controller, method, params
     public function __construct()
     {
+        $exit_controller = array('abouts', 'admin', 'blog', 'cart', 'checkout', 'contact', 'home', 'posts', 'products', 'user', 'wishlist');
+
         $url = self::explodeUrl();
         // tồn tại url và controller
-        if (isset($url) && file_exists('../app/controllers/' . ucfirst($url[0]) . 'Controller.php')) {
+
+        if (isset($url) &&   in_array($url[0], $exit_controller)) {
 
             $this->controller = ucfirst($url[0]) . 'Controller';
             include_once __DIR__ . '/../controllers/' . $this->controller . '.php';

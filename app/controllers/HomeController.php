@@ -4,7 +4,7 @@ class HomeController extends Controller
 
     public function get()
     {
-
+        echo "model exist";
         $first_8 = $this->model('product')->getFirst8Products();
         $last_8 = $this->model('product')->getSecond8Products();
         $category = $this->model('category')->getAllPublished();
@@ -15,6 +15,7 @@ class HomeController extends Controller
                 'latest_product' => $latest_product
             ]);
         } else {
+         
             $this->view('frontend/index');
         }
     }

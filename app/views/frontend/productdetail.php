@@ -32,17 +32,17 @@ $fm = new Format();
                                         </div>
                                         <div class="thumbnail">
                                             <a href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/images/product/product-big-02.png" class="popup-zoom">
-                                                <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-02.png" alt="Product Images">
+                                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-02.png" alt="Product Images">
                                             </a>
                                         </div>
                                         <div class="thumbnail">
                                             <a href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/images/product/product-big-03.png" class="popup-zoom">
-                                                <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-03.png" alt="Product Images">
+                                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-03.png" alt="Product Images">
                                             </a>
                                         </div>
                                         <div class="thumbnail">
                                             <a href="<?php echo ASSETS_URL_ROOT . '/public/' ?>fix_assets/images/product/product-big-02.png" class="popup-zoom">
-                                                <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-big-02.png" alt="Product Images">
+                                                <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-big-02.png" alt="Product Images">
                                             </a>
                                         </div>
                                     </div>
@@ -72,13 +72,13 @@ $fm = new Format();
                                         <img src="<?php echo ASSETS_URL_ROOT . '/public/imgs/' . $p_detail['Image'] ?> " alt="thumb image">
                                     </div>
                                     <div class="small-thumb-img">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
                                     </div>
                                     <div class="small-thumb-img">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/thumb-09.png" alt="thumb image">
                                     </div>
                                     <div class="small-thumb-img">
-                                        <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
+                                        <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/thumb-07.png" alt="thumb image">
                                     </div>
                                 </div>
                             </div>
@@ -237,19 +237,19 @@ $fm = new Format();
                                         <ul class="pro-des-features">
                                             <li class="single-features">
                                                 <div class="icon">
-                                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/icon-3.png" alt="icon">
+                                                    <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-3.png" alt="icon">
                                                 </div>
                                                 Easy Returns
                                             </li>
                                             <li class="single-features">
                                                 <div class="icon">
-                                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/icon-2.png" alt="icon">
+                                                    <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-2.png" alt="icon">
                                                 </div>
                                                 Quality Service
                                             </li>
                                             <li class="single-features">
                                                 <div class="icon">
-                                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/product/product-thumb/icon-1.png" alt="icon">
+                                                    <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/product/product-thumb/icon-1.png" alt="icon">
                                                 </div>
                                                 Original Product
                                             </li>

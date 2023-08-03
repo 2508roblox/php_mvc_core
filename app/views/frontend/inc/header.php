@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL_ROOT ?> /fix_assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL_ROOT ?>/fix_assets/images/favicon.png">
 
     <!-- CSS
     ============================================ -->
@@ -85,10 +85,10 @@
                 <div class="header-navbar">
                     <div class="header-brand">
                         <a href="<?php echo URL_ROOT ?>/" class="logo logo-dark">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/logo/logo.png" alt="Site Logo">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/logo/logo.png" alt="Site Logo">
                         </a>
                         <a href="<?php echo URL_ROOT ?>/" class="logo logo-light">
-                            <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/logo/logo-light.png" alt="Site Logo">
+                            <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/logo/logo-light.png" alt="Site Logo">
                         </a>
                     </div>
                     <div class="header-main-nav">
@@ -97,7 +97,7 @@
                             <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
                             <div class="mobile-nav-brand">
                                 <a href="<?php echo URL_ROOT ?>/" class="logo">
-                                    <img src="<?php echo ASSETS_URL_ROOT ?> /fix_assets/images/logo/logo.png" alt="Site Logo">
+                                    <img src="<?php echo ASSETS_URL_ROOT ?>/fix_assets/images/logo/logo.png" alt="Site Logo">
                                 </a>
                             </div>
                             <ul class="mainmenu">
